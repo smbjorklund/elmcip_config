@@ -1,0 +1,30 @@
+uuid: 3d6af19e-ec9f-4d92-9424-b441232aa317
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_noted
+    - node.type.event
+    - node.type.notebook_entry
+id: node.notebook_entry.field_event_noted
+field_name: field_event_noted
+entity_type: node
+bundle: notebook_entry
+label: 'Event noted'
+description: 'If the note discusses an event, enter the name of the event here. This is an autocomplete field that will only reference records of events that are already in the Knowledge Base. If the name of the event does not autocomplete, first <a href="/node/add/event" target="_blank">add the event</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      event: event
+field_type: entity_reference

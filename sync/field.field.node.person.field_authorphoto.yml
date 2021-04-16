@@ -1,0 +1,23 @@
+uuid: 5b5b3a43-0f4a-419c-b53e-eb4765ad128a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authorphoto
+    - node.type.person
+id: node.person.field_authorphoto
+field_name: field_authorphoto
+entity_type: node
+bundle: person
+label: 'Author photo'
+description: 'Upload a photo of the person.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

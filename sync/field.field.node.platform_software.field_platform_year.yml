@@ -1,0 +1,21 @@
+uuid: 9e432651-d2c6-4985-b066-dff67b45eee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_platform_year
+    - node.type.platform_software
+  module:
+    - datetime
+id: node.platform_software.field_platform_year
+field_name: field_platform_year
+entity_type: node
+bundle: platform_software
+label: 'Year initiated'
+description: "Indicate the year that this platform/software was first released.\n<br>Format: 2017"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,27 @@
+uuid: b5abe88c-3366-442a-8e08-133f3d898860
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_files
+field_name: field_files
+entity_type: node
+bundle: databases_and_archives
+label: 'PDF Attachment'
+description: 'PDF Attachment for the database or resource, only PDF files are allowed here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      document: document
+      remote_video: remote_video
+      image_flickr: image_flickr
+      video: video
+      video_flickr: video_flickr
+  handler: 'default:media'
+field_type: entity_reference

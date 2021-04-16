@@ -1,0 +1,27 @@
+uuid: 87ab6670-cd6d-4fed-b503-200adde7543c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_record_status_lib
+field_name: field_record_status_lib
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'Not approved by librarian'
+    -
+      value: '1'
+      label: 'Approved by librarian'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

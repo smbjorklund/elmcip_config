@@ -1,0 +1,23 @@
+uuid: 810cec8a-9f17-4830-82d6-719d2cb73177
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_asset
+    - node.type.teaching_resource
+id: node.teaching_resource.field_media_asset
+field_name: field_media_asset
+entity_type: node
+bundle: teaching_resource
+label: Multimedia
+description: 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      video: video
+  handler: 'default:media'
+field_type: entity_reference

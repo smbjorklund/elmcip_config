@@ -1,0 +1,23 @@
+uuid: 49a7e268-5d7c-428d-84a4-abddaadc15a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.critical_writing
+  module:
+    - link
+id: node.critical_writing.field_url
+field_name: field_url
+entity_type: node
+bundle: critical_writing
+label: URL
+description: 'Indicate the title of the work in the title field and the web address in the URL field. If more than one URL exists for the work, enter the publisher in parentheses after the title. For example: Locating the Literary in New Media (Contemporary Literature), Locating the Literary in New Media (ebr), etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

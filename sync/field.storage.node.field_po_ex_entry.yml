@@ -1,0 +1,19 @@
+uuid: 81477bf7-b95f-48d8-89bc-2c547c093d2c
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_po_ex_entry
+field_name: field_po_ex_entry
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

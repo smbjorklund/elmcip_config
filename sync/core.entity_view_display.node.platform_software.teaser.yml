@@ -1,0 +1,48 @@
+uuid: 00a1fc27-53d3-4340-827f-4cc3088c5df9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.platform_software.field_editorial_notes
+    - field.field.node.platform_software.field_license
+    - field.field.node.platform_software.field_media
+    - field.field.node.platform_software.field_platform_developers
+    - field.field.node.platform_software.field_platform_versions
+    - field.field.node.platform_software.field_platform_year
+    - field.field.node.platform_software.field_ps_attachment
+    - field.field.node.platform_software.field_ps_description
+    - field.field.node.platform_software.field_ps_image
+    - field.field.node.platform_software.field_publisher_or_organization
+    - field.field.node.platform_software.field_record_status_tax
+    - field.field.node.platform_software.field_repository
+    - field.field.node.platform_software.field_url
+    - field.field.node.platform_software.field_version_history
+    - node.type.platform_software
+  module:
+    - user
+id: node.platform_software.teaser
+targetEntityType: node
+bundle: platform_software
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_editorial_notes: true
+  field_license: true
+  field_media: true
+  field_platform_developers: true
+  field_platform_versions: true
+  field_platform_year: true
+  field_ps_attachment: true
+  field_ps_description: true
+  field_ps_image: true
+  field_publisher_or_organization: true
+  field_record_status_tax: true
+  field_repository: true
+  field_url: true
+  field_version_history: true

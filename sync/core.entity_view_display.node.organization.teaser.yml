@@ -1,0 +1,36 @@
+uuid: a1f931fd-a545-4e25-b3de-ab5270599911
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organization.field_address
+    - field.field.node.organization.field_editorial_notes
+    - field.field.node.organization.field_email
+    - field.field.node.organization.field_files
+    - field.field.node.organization.field_multi_images
+    - field.field.node.organization.field_record_status_tax
+    - field.field.node.organization.field_textfield
+    - field.field.node.organization.field_url
+    - node.type.organization
+  module:
+    - user
+id: node.organization.teaser
+targetEntityType: node
+bundle: organization
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_editorial_notes: true
+  field_email: true
+  field_files: true
+  field_multi_images: true
+  field_record_status_tax: true
+  field_textfield: true
+  field_url: true

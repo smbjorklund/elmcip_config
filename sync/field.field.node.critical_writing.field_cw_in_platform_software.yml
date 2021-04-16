@@ -1,0 +1,30 @@
+uuid: cb03bf26-24d0-4d84-b450-25c90b926a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cw_in_platform_software
+    - node.type.critical_writing
+    - node.type.platform_software
+id: node.critical_writing.field_cw_in_platform_software
+field_name: field_cw_in_platform_software
+entity_type: node
+bundle: critical_writing
+label: Platform/Software
+description: 'If this critical writing is made for the computer, use this field to indicate what platforms were used in its production (for example Flash, Scalar, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: title
+      direction: ASC
+    target_bundles:
+      platform_software: platform_software
+field_type: entity_reference

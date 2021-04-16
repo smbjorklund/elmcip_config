@@ -1,0 +1,21 @@
+uuid: cea1527c-b941-47ac-9b54-9cc894ad9265
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_critical_writing_year
+    - node.type.critical_writing
+  module:
+    - datetime
+id: node.critical_writing.field_critical_writing_year
+field_name: field_critical_writing_year
+entity_type: node
+bundle: critical_writing
+label: Year
+description: 'Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

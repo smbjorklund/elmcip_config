@@ -1,0 +1,20 @@
+uuid: 360c903d-2bfd-47de-8275-813e29c7fb3d
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_gender_sel
+field_name: field_gender_sel
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

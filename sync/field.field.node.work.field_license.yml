@@ -1,0 +1,21 @@
+uuid: 6a89d551-e071-4ede-b3cb-1cd6278db7e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license
+    - node.type.work
+  module:
+    - options
+id: node.work.field_license
+field_name: field_license
+entity_type: node
+bundle: work
+label: License
+description: 'If the license of the work is known, select here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

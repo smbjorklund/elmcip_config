@@ -1,0 +1,32 @@
+uuid: 7bbdc60b-eab1-4142-abf7-7e9e4863873d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_ref
+    - node.type.organization
+    - node.type.publisher
+    - node.type.work
+id: node.work.field_node_ref
+field_name: field_node_ref
+entity_type: node
+bundle: work
+label: Publisher
+description: 'If the work was not self-published, enter the publisher (journal, publishing house, etc.) or organization (organizer of conference or event, e.g. Electronic Literature Organization). The publisher or organization''s name will autocomplete if it is in the database. If the publisher or organization is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a> or <a href="/node/add/organization" target="_blank">add the organization</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+      publisher: publisher
+field_type: entity_reference

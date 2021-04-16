@@ -1,0 +1,30 @@
+uuid: 1a7f8d9b-563e-4b7d-9f9c-35bc4f18c375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_critical_writing
+    - node.type.critical_writing
+    - node.type.research_collection
+id: node.research_collection.field_critical_writing
+field_name: field_critical_writing
+entity_type: node
+bundle: research_collection
+label: 'Critical writing'
+description: 'Use this field to include critical writings in this collection. The critical writing will autocomplete if it is in the database. If the critical writing is not in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

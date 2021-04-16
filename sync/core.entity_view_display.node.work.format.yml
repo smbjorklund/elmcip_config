@@ -1,0 +1,225 @@
+uuid: 9469552a-f169-4f15-bfe0-10a450b9058b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.format
+    - field.field.node.work.field_abstract_lang
+    - field.field.node.work.field_abstract_lang_tax
+    - field.field.node.work.field_archiveurl
+    - field.field.node.work.field_author_name
+    - field.field.node.work.field_authoring_software_entry
+    - field.field.node.work.field_brown_digital_repository
+    - field.field.node.work.field_contributor
+    - field.field.node.work.field_contributors
+    - field.field.node.work.field_doi
+    - field.field.node.work.field_downloadurl
+    - field.field.node.work.field_editorial_notes
+    - field.field.node.work.field_electronic_literature_dire
+    - field.field.node.work.field_files
+    - field.field.node.work.field_i_e_poetry_entry
+    - field.field.node.work.field_in_anthology
+    - field.field.node.work.field_isbn_text
+    - field.field.node.work.field_language_tax
+    - field.field.node.work.field_license
+    - field.field.node.work.field_media_asset
+    - field.field.node.work.field_multi_image
+    - field.field.node.work.field_node_ref
+    - field.field.node.work.field_node_ref_event
+    - field.field.node.work.field_nt2_entry
+    - field.field.node.work.field_other_edition_work
+    - field.field.node.work.field_other_lang_ver_link
+    - field.field.node.work.field_part_of_another_work
+    - field.field.node.work.field_po_ex_entry
+    - field.field.node.work.field_pullquote
+    - field.field.node.work.field_record_status_lib
+    - field.field.node.work.field_record_status_tax
+    - field.field.node.work.field_repository
+    - field.field.node.work.field_series_ref
+    - field.field.node.work.field_tech_notes
+    - field.field.node.work.field_textfield
+    - field.field.node.work.field_translator
+    - field.field.node.work.field_url
+    - field.field.node.work.field_venue_tax
+    - field.field.node.work.field_work_platform_software
+    - field.field.node.work.field_work_year
+    - field.field.node.work.field_worldcat_link
+    - field.field.node.work.taxonomy_vocabulary_1
+    - node.type.work
+  module:
+    - link
+    - options
+    - text
+    - user
+id: node.work.format
+targetEntityType: node
+bundle: work
+mode: format
+content:
+  field_abstract_lang:
+    label: hidden
+    weight: 3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_archiveurl:
+    label: hidden
+    weight: -1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_author_name:
+    label: hidden
+    weight: -4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_contributors:
+    label: hidden
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_downloadurl:
+    label: hidden
+    weight: 0
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: hidden
+    weight: 2
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_in_anthology:
+    label: hidden
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_license:
+    label: hidden
+    weight: 3
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_multi_image:
+    label: hidden
+    weight: 0
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_node_ref:
+    label: hidden
+    weight: -1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_node_ref_event:
+    label: hidden
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_other_lang_ver_link:
+    label: hidden
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_pullquote:
+    label: hidden
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tech_notes:
+    label: hidden
+    weight: 7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_textfield:
+    label: hidden
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: hidden
+    weight: -2
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_abstract_lang_tax: true
+  field_authoring_software_entry: true
+  field_brown_digital_repository: true
+  field_contributor: true
+  field_doi: true
+  field_editorial_notes: true
+  field_electronic_literature_dire: true
+  field_i_e_poetry_entry: true
+  field_isbn_text: true
+  field_language_tax: true
+  field_media_asset: true
+  field_nt2_entry: true
+  field_other_edition_work: true
+  field_part_of_another_work: true
+  field_po_ex_entry: true
+  field_record_status_lib: true
+  field_record_status_tax: true
+  field_repository: true
+  field_series_ref: true
+  field_translator: true
+  field_venue_tax: true
+  field_work_platform_software: true
+  field_work_year: true
+  field_worldcat_link: true
+  taxonomy_vocabulary_1: true

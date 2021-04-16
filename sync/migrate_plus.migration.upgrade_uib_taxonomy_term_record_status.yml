@@ -1,0 +1,97 @@
+uuid: f63de060-0d28-4995-b831-df243d888423
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_uib_taxonomy_term_record_status
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+  - uib
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms record status'
+source:
+  plugin: d7_taxonomy_term
+  bundle: record_status
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_uib_taxonomy_vocabulary
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_uib_taxonomy_term_tag
+        - upgrade_uib_taxonomy_term_event_type
+        - upgrade_uib_taxonomy_term_record_status
+        - upgrade_uib_taxonomy_term_critical_writing_type
+        - upgrade_uib_taxonomy_term_creative_work_type
+        - upgrade_uib_taxonomy_term_language
+        - upgrade_uib_taxonomy_term_project_type
+        - upgrade_uib_taxonomy_term_gender
+        - upgrade_uib_taxonomy_term_news_tags
+        - upgrade_uib_taxonomy_term_publisher_and_journal_types
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  forum_container:
+    -
+      plugin: get
+      source: is_container
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: record_status
+migration_dependencies:
+  required:
+    - upgrade_uib_taxonomy_vocabulary
+  optional:
+    - upgrade_upgrade_d7_field_instance
+    - upgrade_uib_taxonomy_vocabulary
+    - upgrade_uib_taxonomy_term_tag
+    - upgrade_uib_taxonomy_term_event_type
+    - upgrade_uib_taxonomy_term_record_status
+    - upgrade_uib_taxonomy_term_critical_writing_type
+    - upgrade_uib_taxonomy_term_creative_work_type
+    - upgrade_uib_taxonomy_term_language
+    - upgrade_uib_taxonomy_term_project_type
+    - upgrade_uib_taxonomy_term_gender
+    - upgrade_uib_taxonomy_term_news_tags
+    - upgrade_uib_taxonomy_term_publisher_and_journal_types

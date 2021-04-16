@@ -1,0 +1,30 @@
+uuid: 25e4a866-8b75-48f7-a996-630400624a7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collection_curated_by
+    - node.type.person
+    - node.type.research_collection
+id: node.research_collection.field_collection_curated_by
+field_name: field_collection_curated_by
+entity_type: node
+bundle: research_collection
+label: 'Collection curated by'
+description: 'Enter the names of the primary contributors to curating and developing this Research Collection. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

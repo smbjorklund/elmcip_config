@@ -1,0 +1,30 @@
+uuid: 739c328b-88af-4273-ad17-faf61d31d564
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editor_name
+    - node.type.critical_writing
+    - node.type.person
+id: node.critical_writing.field_editor_name
+field_name: field_editor_name
+entity_type: node
+bundle: critical_writing
+label: Editor
+description: 'Enter the editor if applicable. The name will autocomplete if the editor is already in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>. If you are entering an article or chapter from an anthology, do not enter the editor of the volume here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: 26bbaa70-57ab-4d02-a193-93376301cac6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_author
+    - node.type.person
+    - node.type.teaching_resource
+id: node.teaching_resource.field_tr_author
+field_name: field_tr_author
+entity_type: node
+bundle: teaching_resource
+label: Author
+description: 'Enter the name of the person or people who developed this resource. The author''s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

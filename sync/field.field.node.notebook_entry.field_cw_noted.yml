@@ -1,0 +1,30 @@
+uuid: 0fcf3f1c-39b1-499e-ade6-df4be7a48ecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cw_noted
+    - node.type.critical_writing
+    - node.type.notebook_entry
+id: node.notebook_entry.field_cw_noted
+field_name: field_cw_noted
+entity_type: node
+bundle: notebook_entry
+label: 'Critical Writing noted'
+description: 'Enter the title of the critical writing discussed in this note. This is an autocomplete field that will only complete on items that already have records in the knowledge base. If the critical writing is not in the KB, first <a href="/node/add/critical_writing" target="_blank">add the critical writing</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

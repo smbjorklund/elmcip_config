@@ -1,0 +1,16 @@
+uuid: 858daaf7-86c8-4540-b08f-9923ecf637fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'features:0:'
+name: Publisher
+type: publisher
+description: 'Short description of publisher. The publisher can be the name of a press (e.g. The MIT Press) or the title of a journal (e.g. ebr Electronic Book Review).'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

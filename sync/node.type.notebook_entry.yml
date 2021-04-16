@@ -1,0 +1,16 @@
+uuid: a50f7d23-588c-4785-8320-39f511da9761
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: 'Notebook entry'
+type: notebook_entry
+description: 'A content type for individual users to record their own notes with references to records in the Knowledge Base.'
+help: 'Enter a brief descriptive title for this note (e.g. "Coding and Afternoon" or "Malloy''s early hypertexts")'
+new_revision: true
+preview_mode: 1
+display_submitted: true

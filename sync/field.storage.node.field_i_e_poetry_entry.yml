@@ -1,0 +1,19 @@
+uuid: 51b20c4d-df38-4dfe-a24a-2944d28b0a70
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_i_e_poetry_entry
+field_name: field_i_e_poetry_entry
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: eb910dce-3a70-4b7d-ba7b-e501e261c52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doi
+    - node.type.critical_writing
+id: node.critical_writing.field_doi
+field_name: field_doi
+entity_type: node
+bundle: critical_writing
+label: DOI
+description: "A digital object identifier <a target=\"_blank\" href=\"https://www.doi.org\">(DOI)</a> is a unique alphanumeric string assigned by a registration agency to identify content and provide a persistent link to its location on the Internet. The publisher assigns a DOI when your article is published and made available electronically.\nAll DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,89 @@
+uuid: 9191022a-b20a-48be-8c72-656e1feb8222
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.organization.field_address
+    - field.field.node.organization.field_editorial_notes
+    - field.field.node.organization.field_email
+    - field.field.node.organization.field_files
+    - field.field.node.organization.field_multi_images
+    - field.field.node.organization.field_record_status_tax
+    - field.field.node.organization.field_textfield
+    - field.field.node.organization.field_url
+    - node.type.organization
+  module:
+    - address
+    - link
+    - text
+    - user
+id: node.organization.default
+targetEntityType: node
+bundle: organization
+mode: default
+content:
+  field_address:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_editorial_notes:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_email:
+    label: above
+    weight: 3
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 14
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_record_status_tax:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_textfield:
+    label: above
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_multi_images: true

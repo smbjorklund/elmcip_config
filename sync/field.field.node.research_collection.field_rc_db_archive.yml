@@ -1,0 +1,30 @@
+uuid: b39205fb-037e-421a-878f-8f6dc40650fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rc_db_archive
+    - node.type.databases_and_archives
+    - node.type.research_collection
+id: node.research_collection.field_rc_db_archive
+field_name: field_rc_db_archive
+entity_type: node
+bundle: research_collection
+label: 'Database or Archive reference'
+description: 'Use this field to include database or archive in this collection. The database or archive will autocomplete if it is in the database. If the database or archive is not in the database, <a href="/node/add/databases-and-archives" target="_blank">add the database or archive</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      databases_and_archives: databases_and_archives
+field_type: entity_reference

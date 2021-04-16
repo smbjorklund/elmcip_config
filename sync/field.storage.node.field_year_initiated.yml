@@ -1,0 +1,20 @@
+uuid: 80121d60-d7e3-4116-b38b-79adc10303e7
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_year_initiated
+field_name: field_year_initiated
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

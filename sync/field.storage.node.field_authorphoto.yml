@@ -1,0 +1,20 @@
+uuid: 9f1f90a8-5763-4cce-825d-3629204028a3
+langcode: und
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_authorphoto
+field_name: field_authorphoto
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

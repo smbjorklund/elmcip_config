@@ -1,0 +1,30 @@
+uuid: a2f9c6bb-dfd4-4282-8578-17b0e9570984
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_work
+    - node.type.teaching_resource
+    - node.type.work
+id: node.teaching_resource.field_tr_work
+field_name: field_tr_work
+entity_type: node
+bundle: teaching_resource
+label: 'Creative Works Referenced'
+description: 'If the teaching resource references  a work of electronic literature or digital art, link to it here. The work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/work" target="_blank">add the work</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      work: work
+field_type: entity_reference

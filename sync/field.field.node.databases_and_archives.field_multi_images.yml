@@ -1,0 +1,23 @@
+uuid: 1de52951-49cf-41c9-8c08-c49ae81bcd03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multi_images
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_multi_images
+field_name: field_multi_images
+entity_type: node
+bundle: databases_and_archives
+label: 'Multimedia '
+description: 'Multimedia content related to the database or archive. For example, screencasts or tutorials.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

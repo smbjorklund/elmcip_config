@@ -1,0 +1,111 @@
+uuid: 300c4204-727b-4bee-bbbe-69bcbdd37336
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_address
+    - field.field.node.event.field_archiveurl
+    - field.field.node.event.field_associated_event
+    - field.field.node.event.field_curator
+    - field.field.node.event.field_date
+    - field.field.node.event.field_editorial_notes
+    - field.field.node.event.field_email
+    - field.field.node.event.field_event_abstract_lang
+    - field.field.node.event.field_event_abstract_lang_tax
+    - field.field.node.event.field_event_series
+    - field.field.node.event.field_files
+    - field.field.node.event.field_individual_organizers
+    - field.field.node.event.field_media_asset
+    - field.field.node.event.field_multi_images
+    - field.field.node.event.field_node_ref
+    - field.field.node.event.field_record_status_tax
+    - field.field.node.event.field_textfield
+    - field.field.node.event.field_url
+    - field.field.node.event.taxonomy_vocabulary_1
+    - field.field.node.event.taxonomy_vocabulary_2
+    - node.type.event
+  module:
+    - datetime
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_associated_event:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_curator:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_date:
+    label: inline
+    weight: 8
+    type: datetime_default
+    settings:
+      format_type: hidden
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_event_series:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_individual_organizers:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_node_ref:
+    label: inline
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_2:
+    label: inline
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_archiveurl: true
+  field_editorial_notes: true
+  field_email: true
+  field_event_abstract_lang: true
+  field_event_abstract_lang_tax: true
+  field_files: true
+  field_media_asset: true
+  field_multi_images: true
+  field_record_status_tax: true
+  field_textfield: true
+  field_url: true
+  taxonomy_vocabulary_1: true

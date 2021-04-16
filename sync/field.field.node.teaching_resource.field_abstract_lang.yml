@@ -1,0 +1,21 @@
+uuid: 61e9cfb8-7595-4395-8b61-068141b28d46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract_lang
+    - node.type.teaching_resource
+  module:
+    - text
+id: node.teaching_resource.field_abstract_lang
+field_name: field_abstract_lang
+entity_type: node
+bundle: teaching_resource
+label: 'Abstract (in original language)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

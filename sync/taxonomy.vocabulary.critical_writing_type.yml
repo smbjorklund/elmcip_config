@@ -1,0 +1,8 @@
+uuid: 061d6a2c-663c-48db-8f00-b0f66c2c0115
+langcode: en
+status: true
+dependencies: {  }
+name: 'Critical Writing Publication Type'
+vid: critical_writing_type
+description: 'Critical writing publication types'
+weight: 0

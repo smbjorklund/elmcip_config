@@ -1,0 +1,23 @@
+uuid: 04360326-e7b1-4f01-b63c-8df24d8c2460
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract_lang_tax
+    - node.type.teaching_resource
+id: node.teaching_resource.field_abstract_lang_tax
+field_name: field_abstract_lang_tax
+entity_type: node
+bundle: teaching_resource
+label: 'Description in original language'
+description: 'If the work was produced in another language (for example French, German, etc.) add a description in the original language by first selecting the language and then adding the description in that language in the field that appears.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

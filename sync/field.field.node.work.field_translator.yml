@@ -1,0 +1,30 @@
+uuid: f0180955-064e-49da-81d4-1abca4e5d3ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_translator
+    - node.type.person
+    - node.type.work
+id: node.work.field_translator
+field_name: field_translator
+entity_type: node
+bundle: work
+label: Translator
+description: 'If this work is a translation, please use this field to indicate the translator. The author''s name will autocomplete if it is in the database. If the translator is not yet in the KB, <a href="/node/add/person" target="_blank">add the translator</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

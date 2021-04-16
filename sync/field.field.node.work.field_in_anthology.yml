@@ -1,0 +1,30 @@
+uuid: 10d292e7-7498-4327-83bf-c3e45acc5a10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_in_anthology
+    - node.type.critical_writing
+    - node.type.work
+id: node.work.field_in_anthology
+field_name: field_in_anthology
+entity_type: node
+bundle: work
+label: 'Appears in'
+description: 'If the work was published in an anthology, collection, or special issue of a journal reference that work here. The title of the other work will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the anthology</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 9fb8323c-4c72-4c37-a0d0-2dfc59358c5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_series
+    - node.type.event
+id: node.event.field_event_series
+field_name: field_event_series
+entity_type: node
+bundle: event
+label: 'Event series'
+description: 'If the event is part of a series, link to it by typing the name of the series. The name will autocomplete if it is in the database. If the series has not yet been added, first <a href="/node/add/event" target="_blank">create an event record for the series</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: _none
+      direction: ASC
+field_type: entity_reference

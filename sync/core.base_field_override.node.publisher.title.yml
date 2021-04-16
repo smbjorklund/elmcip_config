@@ -1,0 +1,18 @@
+uuid: aa1ee7b9-d9ed-4d7f-93ee-c933fbbc18a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.publisher
+id: node.publisher.title
+field_name: title
+entity_type: node
+bundle: publisher
+label: 'Name of publisher '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

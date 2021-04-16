@@ -1,0 +1,23 @@
+uuid: d640829c-08bc-4282-9315-8ffc69576eb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_tags
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_db_tags
+field_name: field_db_tags
+entity_type: node
+bundle: databases_and_archives
+label: Tags
+description: 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this database or archive. Some tags may be similar to the subject headings assigned by librarians. Example: digital poetry -- history and criticism, digital poetics, procedural poetics, generative, intentionality, materiality. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people''s names as tags.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 259ebf6e-3031-46ef-b01e-3e71579350ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - node
+id: node.field_residency
+field_name: field_residency
+entity_type: node
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

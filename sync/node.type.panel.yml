@@ -1,0 +1,16 @@
+uuid: 5cd67a0a-c77f-438a-988b-3a490f55f018
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'devel:0:'
+name: Panel
+type: panel
+description: 'A panel layout broken up into rows and columns.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

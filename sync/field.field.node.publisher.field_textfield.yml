@@ -1,0 +1,21 @@
+uuid: 223cfce4-6239-4634-8e01-6d8812acadf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textfield
+    - node.type.publisher
+  module:
+    - text
+id: node.publisher.field_textfield
+field_name: field_textfield
+entity_type: node
+bundle: publisher
+label: 'Short decription'
+description: 'Provide a brief description of the publisher in English. If you source the description from elsewhere, indicate the source in parentheses after the description.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

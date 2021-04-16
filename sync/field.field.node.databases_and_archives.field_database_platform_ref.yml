@@ -1,0 +1,30 @@
+uuid: 2e165694-d63b-4805-8e4c-b1035d208acd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_database_platform_ref
+    - node.type.databases_and_archives
+    - node.type.platform_software
+id: node.databases_and_archives.field_database_platform_ref
+field_name: field_database_platform_ref
+entity_type: node
+bundle: databases_and_archives
+label: Platform/Software
+description: 'Use this field to indicate what platforms and software are involved in the production of this database or archive (for example Drupal, Dspace, Drupal, etc.). The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      platform_software: platform_software
+field_type: entity_reference

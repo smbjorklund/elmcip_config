@@ -1,0 +1,23 @@
+uuid: 5f6894b8-a2cc-4e00-9482-f03943d98c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_abstract_lang_tax
+    - node.type.event
+id: node.event.field_event_abstract_lang_tax
+field_name: field_event_abstract_lang_tax
+entity_type: node
+bundle: event
+label: 'Description in original language'
+description: 'If the work was produced in another language (for example French, German, etc.) add a description in the original language by first selecting the language and then adding the description in that language in the field that appears.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

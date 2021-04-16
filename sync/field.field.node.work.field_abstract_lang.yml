@@ -1,0 +1,21 @@
+uuid: 2e065921-cfe2-4a6d-8a6b-86c5996a82d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract_lang
+    - node.type.work
+  module:
+    - text
+id: node.work.field_abstract_lang
+field_name: field_abstract_lang
+entity_type: node
+bundle: work
+label: 'Description (in original language)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

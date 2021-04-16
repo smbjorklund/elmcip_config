@@ -1,0 +1,81 @@
+uuid: 127f14ea-0764-4344-afe8-e8caa26de934
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.research_collection.field_collection_contributors
+    - field.field.node.research_collection.field_collection_curated_by
+    - field.field.node.research_collection.field_collection_platform_ref
+    - field.field.node.research_collection.field_creative_works
+    - field.field.node.research_collection.field_critical_writing
+    - field.field.node.research_collection.field_events
+    - field.field.node.research_collection.field_media
+    - field.field.node.research_collection.field_organizations
+    - field.field.node.research_collection.field_people
+    - field.field.node.research_collection.field_publishers
+    - field.field.node.research_collection.field_rc_db_archive
+    - field.field.node.research_collection.field_rc_description
+    - field.field.node.research_collection.field_teaching_resources
+    - node.type.research_collection
+  module:
+    - text
+    - user
+id: node.research_collection.default
+targetEntityType: node
+bundle: research_collection
+mode: default
+content:
+  field_collection_contributors:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_collection_curated_by:
+    label: above
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_collection_platform_ref:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_media:
+    label: hidden
+    weight: 5
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_rc_description:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_creative_works: true
+  field_critical_writing: true
+  field_events: true
+  field_organizations: true
+  field_people: true
+  field_publishers: true
+  field_rc_db_archive: true
+  field_teaching_resources: true

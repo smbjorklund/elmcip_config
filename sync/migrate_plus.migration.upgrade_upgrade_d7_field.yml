@@ -1,0 +1,84 @@
+uuid: 4e8cfa4f-036e-4ce5-a952-2fbb50aeb187
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_upgrade_d7_field
+class: Drupal\migrate_drupal\Plugin\migrate\FieldMigration
+field_plugin_method: alterFieldMigration
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Field configuration'
+source:
+  key: migrate
+  plugin: d7_field
+  constants:
+    status: true
+    langcode: und
+  mapMigrationProcessValueToMedia: true
+process:
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+    -
+      plugin: static_map
+      map:
+        file: media
+      bypass: true
+  status:
+    -
+      plugin: get
+      source: constants/status
+  langcode:
+    -
+      plugin: get
+      source: constants/langcode
+  field_name:
+    -
+      plugin: get
+      source: field_name
+  type:
+    -
+      plugin: process_field
+      source: type
+      method: getFieldType
+      map:
+        taxonomy_term_reference:
+          taxonomy_term_reference: taxonomy_term_reference
+        link_field:
+          link_field: link_field
+        d7_text:
+          d7_text: d7_text
+        datetime:
+          datetime: datetime
+        email:
+          email: email
+        file_entity:
+          file_entity: file_entity
+        media_image:
+          media_image: media_image
+        entityreference:
+          entityreference: entityreference
+        list:
+          list: list
+  cardinality:
+    -
+      plugin: get
+      source: cardinality
+  settings:
+    0:
+      plugin: d7_field_settings
+    file_entity:
+      plugin: file_entity_field_settings
+    media_image:
+      plugin: media_image_field_settings
+destination:
+  plugin: 'entity:field_storage_config'
+migration_dependencies:
+  required:
+    - upgrade_upgrade_d7_file_entity_type_audio
+    - upgrade_d7_file_entity_type_audio
+  optional: {  }

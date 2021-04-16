@@ -1,0 +1,30 @@
+uuid: 5e11f985-924c-48b5-a30f-2fb053df06a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_database_or_archive_refere
+    - node.type.critical_writing
+    - node.type.databases_and_archives
+id: node.critical_writing.field_database_or_archive_refere
+field_name: field_database_or_archive_refere
+entity_type: node
+bundle: critical_writing
+label: 'Database or Archive reference'
+description: 'If this critical writing references a database or archive, link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/databases-and-archives" target="_blank">add the database or archive</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      databases_and_archives: databases_and_archives
+field_type: entity_reference

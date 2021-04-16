@@ -1,0 +1,25 @@
+uuid: f39b46f1-4468-4379-879e-76785248249f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_residency
+    - node.type.person
+  module:
+    - address
+id: node.person.field_residency
+field_name: field_residency
+entity_type: node
+bundle: person
+label: Residency
+description: 'Enter information about the person’s location. Only city, state, and country will be publicly displayed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

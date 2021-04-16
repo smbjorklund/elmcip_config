@@ -1,0 +1,19 @@
+uuid: 305a60d4-cb46-4372-9e52-3fc4d043abf9
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_authoring_software_entry
+field_name: field_authoring_software_entry
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

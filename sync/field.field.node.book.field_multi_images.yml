@@ -1,0 +1,23 @@
+uuid: 7ec12909-1c20-4302-8723-1e9d4f7b39f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multi_images
+    - node.type.book
+id: node.book.field_multi_images
+field_name: field_multi_images
+entity_type: node
+bundle: book
+label: Screenshot
+description: 'Field to add screenshot to book pages.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

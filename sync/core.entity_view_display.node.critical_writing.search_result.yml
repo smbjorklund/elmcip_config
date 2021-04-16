@@ -1,0 +1,413 @@
+uuid: 6a8dd35f-a99d-475c-b632-54073b794f85
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.critical_writing.field_abstract
+    - field.field.node.critical_writing.field_abstract_lang
+    - field.field.node.critical_writing.field_abstract_lang_tax
+    - field.field.node.critical_writing.field_archiveurl
+    - field.field.node.critical_writing.field_author_name
+    - field.field.node.critical_writing.field_critical_writing_year
+    - field.field.node.critical_writing.field_criticalw_platform_ref
+    - field.field.node.critical_writing.field_cw_in_platform_software
+    - field.field.node.critical_writing.field_database_or_archive_refere
+    - field.field.node.critical_writing.field_doi
+    - field.field.node.critical_writing.field_edition
+    - field.field.node.critical_writing.field_editor_name
+    - field.field.node.critical_writing.field_editorial_notes
+    - field.field.node.critical_writing.field_eissn
+    - field.field.node.critical_writing.field_electronic_literature_dire
+    - field.field.node.critical_writing.field_files
+    - field.field.node.critical_writing.field_inbook
+    - field.field.node.critical_writing.field_isbn_text
+    - field.field.node.critical_writing.field_issn_text
+    - field.field.node.critical_writing.field_journalissue
+    - field.field.node.critical_writing.field_language_tax
+    - field.field.node.critical_writing.field_license
+    - field.field.node.critical_writing.field_media_asset
+    - field.field.node.critical_writing.field_multi_images
+    - field.field.node.critical_writing.field_node_ref
+    - field.field.node.critical_writing.field_node_ref_event
+    - field.field.node.critical_writing.field_node_ref_work
+    - field.field.node.critical_writing.field_organization_cw
+    - field.field.node.critical_writing.field_other_edition_link
+    - field.field.node.critical_writing.field_other_lang_ver_link
+    - field.field.node.critical_writing.field_pagenumbers
+    - field.field.node.critical_writing.field_po_ex_entry
+    - field.field.node.critical_writing.field_publisher_referenced
+    - field.field.node.critical_writing.field_pubtype_tax
+    - field.field.node.critical_writing.field_pullquote
+    - field.field.node.critical_writing.field_record_status_lib
+    - field.field.node.critical_writing.field_record_status_tax
+    - field.field.node.critical_writing.field_ref_about_event
+    - field.field.node.critical_writing.field_series_ref
+    - field.field.node.critical_writing.field_tr_critical
+    - field.field.node.critical_writing.field_translator
+    - field.field.node.critical_writing.field_university
+    - field.field.node.critical_writing.field_url
+    - field.field.node.critical_writing.field_worldcat_link
+    - field.field.node.critical_writing.taxonomy_vocabulary_1
+    - node.type.critical_writing
+  module:
+    - datetime
+    - link
+    - options
+    - text
+    - user
+id: node.critical_writing.search_result
+targetEntityType: node
+bundle: critical_writing
+mode: search_result
+content:
+  field_abstract:
+    label: above
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_abstract_lang:
+    label: above
+    weight: 24
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_abstract_lang_tax:
+    label: above
+    weight: 21
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_archiveurl:
+    label: above
+    weight: 10
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_author_name:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_critical_writing_year:
+    label: above
+    weight: 31
+    type: datetime_default
+    settings:
+      format_type: year
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_criticalw_platform_ref:
+    label: above
+    weight: 39
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_cw_in_platform_software:
+    label: above
+    weight: 40
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_database_or_archive_refere:
+    label: above
+    weight: 27
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_edition:
+    label: above
+    weight: 30
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_editor_name:
+    label: above
+    weight: 14
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_editorial_notes:
+    label: above
+    weight: 13
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_eissn:
+    label: above
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_electronic_literature_dire:
+    label: above
+    weight: 29
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 35
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_inbook:
+    label: above
+    weight: 12
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_isbn_text:
+    label: above
+    weight: 22
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_issn_text:
+    label: above
+    weight: 19
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_journalissue:
+    label: above
+    weight: 11
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_language_tax:
+    label: above
+    weight: 20
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_license:
+    label: above
+    weight: 3
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_multi_images:
+    label: above
+    weight: 37
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_node_ref:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_node_ref_event:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_organization_cw:
+    label: above
+    weight: 34
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_other_edition_link:
+    label: above
+    weight: 15
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_other_lang_ver_link:
+    label: above
+    weight: 28
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_pagenumbers:
+    label: above
+    weight: 16
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_po_ex_entry:
+    label: above
+    weight: 38
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_publisher_referenced:
+    label: above
+    weight: 36
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_pubtype_tax:
+    label: above
+    weight: 18
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_pullquote:
+    label: above
+    weight: 32
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_record_status_tax:
+    label: above
+    weight: 17
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_ref_about_event:
+    label: above
+    weight: 8
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_series_ref:
+    label: above
+    weight: 25
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_translator:
+    label: above
+    weight: 26
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_university:
+    label: above
+    weight: 33
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_worldcat_link:
+    label: above
+    weight: 23
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_1:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_doi: true
+  field_media_asset: true
+  field_node_ref_work: true
+  field_record_status_lib: true
+  field_tr_critical: true

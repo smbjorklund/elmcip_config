@@ -1,0 +1,21 @@
+uuid: 947894d4-c21a-4bc0-90a8-f3bc137c55a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contributors
+    - node.type.work
+  module:
+    - text
+id: node.work.field_contributors
+field_name: field_contributors
+entity_type: node
+bundle: work
+label: 'Contributors note'
+description: 'Please enter information about different author/contributor roles in this field (e.g. Sound designer: Mark Partridge, Programmer: Talan Memmott, etc.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

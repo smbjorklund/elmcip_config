@@ -1,0 +1,23 @@
+uuid: 314ad1ec-5c6c-4327-b45d-140bb97a3b2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_image
+field_name: field_image
+entity_type: node
+bundle: databases_and_archives
+label: 'Image (Screenshot)'
+description: 'Screenshots of the database or archive.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

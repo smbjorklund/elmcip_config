@@ -1,0 +1,21 @@
+uuid: a4af150a-ae94-45c5-9bda-2c27ee6a2e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tech_notes
+    - node.type.work
+  module:
+    - text
+id: node.work.field_tech_notes
+field_name: field_tech_notes
+entity_type: node
+bundle: work
+label: 'Technical notes'
+description: 'Enter technical information or instructions required for the user to access the work.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 76704ec8-08d0-4044-9bcf-08d88c6f0ca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_2
+    - node.type.event
+id: node.event.taxonomy_vocabulary_2
+field_name: taxonomy_vocabulary_2
+entity_type: node
+bundle: event
+label: 'Event type'
+description: 'Select the type of event.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: e01d9e85-9c0b-408c-a02c-9b2c754da8ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_events
+    - node.type.event
+    - node.type.publisher
+id: node.publisher.field_events
+field_name: field_events
+entity_type: node
+bundle: publisher
+label: Events
+description: 'Use this autocomplete field to indicate events where this publisher or journal was showcased or exhibited. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      event: event
+field_type: entity_reference

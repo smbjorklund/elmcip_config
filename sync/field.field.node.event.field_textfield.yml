@@ -1,0 +1,21 @@
+uuid: daf536c2-bb8d-48df-9cc1-d16e7507f546
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textfield
+    - node.type.event
+  module:
+    - text
+id: node.event.field_textfield
+field_name: field_textfield
+entity_type: node
+bundle: event
+label: 'Short description'
+description: 'Provide a brief description of the event in English. If you source the description from elsewhere, indicate the source in parentheses after the description.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

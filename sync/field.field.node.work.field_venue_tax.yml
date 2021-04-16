@@ -1,0 +1,23 @@
+uuid: 1dd53cfe-f8ed-4bbf-900d-bd75e7ae06e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_venue_tax
+    - node.type.work
+id: node.work.field_venue_tax
+field_name: field_venue_tax
+entity_type: node
+bundle: work
+label: 'Publication Type'
+description: 'Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

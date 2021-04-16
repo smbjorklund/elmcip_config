@@ -1,0 +1,30 @@
+uuid: 08a02cf9-9be7-495d-97a5-3730bcda1418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_cross_cw
+    - node.type.critical_writing
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_db_cross_cw
+field_name: field_db_cross_cw
+entity_type: node
+bundle: databases_and_archives
+label: 'Critical Writing'
+description: 'If the database was featured in a critical writing, link to it here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

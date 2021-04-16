@@ -1,0 +1,30 @@
+uuid: 85a62210-f9b7-4de7-b882-b3f02ddf4a8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_ref_event
+    - node.type.event
+    - node.type.work
+id: node.work.field_node_ref_event
+field_name: field_node_ref_event
+entity_type: node
+bundle: work
+label: Event
+description: 'Mark the event(s) where the work has been presented. The event’s name will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      event: event
+field_type: entity_reference

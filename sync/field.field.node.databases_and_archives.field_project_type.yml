@@ -1,0 +1,23 @@
+uuid: 265d0e01-8c95-4325-8d82-13e71a5dbed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_type
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_project_type
+field_name: field_project_type
+entity_type: node
+bundle: databases_and_archives
+label: 'Project Type'
+description: 'Select the type of database or archive.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

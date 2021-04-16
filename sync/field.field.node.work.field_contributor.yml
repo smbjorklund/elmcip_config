@@ -1,0 +1,30 @@
+uuid: f45170b8-5cf8-4eeb-a0b4-70ff61fc9ad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contributor
+    - node.type.person
+    - node.type.work
+id: node.work.field_contributor
+field_name: field_contributor
+entity_type: node
+bundle: work
+label: Contributor
+description: 'If a person''s role on the project is described in a way other than author or co-author (e.g. sound designer, illustrator, etc.) attribute the person here. The contributor’s name will autocomplete if it is in the database. If the contributor is not yet in the database, <a href="/node/add/person" target="_blank">add the contributor</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

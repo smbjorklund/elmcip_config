@@ -1,0 +1,30 @@
+uuid: ae569c5e-cec1-4774-a832-90d98c56b7aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notebok
+    - node.type.notebook
+    - node.type.notebook_entry
+id: node.notebook_entry.field_notebok
+field_name: field_notebok
+entity_type: node
+bundle: notebook_entry
+label: Notebook
+description: 'Select which of your notebooks you want the note to be attached to.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      notebook: notebook
+field_type: entity_reference

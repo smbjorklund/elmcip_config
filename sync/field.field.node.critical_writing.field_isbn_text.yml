@@ -1,0 +1,19 @@
+uuid: 6746e102-18b0-4b2c-b8fd-b36580b8e1c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isbn_text
+    - node.type.critical_writing
+id: node.critical_writing.field_isbn_text
+field_name: field_isbn_text
+entity_type: node
+bundle: critical_writing
+label: ISBN
+description: 'If the critical writing has an ISBN, add it here. Enter the ISBN-13 (preferred) or ISBN-10, including the hyphens, if listed. If a book is published in hardcover and paperback editions, enter the hardcover edition first.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

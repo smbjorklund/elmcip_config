@@ -1,0 +1,25 @@
+uuid: 48f01ad1-5b05-4372-8da3-c303dd842a36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.publisher
+  module:
+    - address
+id: node.publisher.field_address
+field_name: field_address
+entity_type: node
+bundle: publisher
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

@@ -1,0 +1,19 @@
+uuid: 5dd6fa1a-7639-4074-b598-5019f4533e59
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_curator
+field_name: field_curator
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

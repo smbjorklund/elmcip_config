@@ -1,0 +1,23 @@
+uuid: 0459516f-e4a3-4bcf-9290-a16985fc87dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_i_e_poetry_entry
+    - node.type.work
+  module:
+    - link
+id: node.work.field_i_e_poetry_entry
+field_name: field_i_e_poetry_entry
+entity_type: node
+bundle: work
+label: 'I ♥ E-Poetry entry'
+description: 'If there is a record for this work in the <a href="https://iloveepoetry.org/" target="_blank">I ♥ E-Poetry project</a>, enter the URL of the entry.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

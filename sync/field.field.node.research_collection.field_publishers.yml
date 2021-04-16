@@ -1,0 +1,30 @@
+uuid: eebbe27d-e19f-426b-8eb5-09798a9c0aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publishers
+    - node.type.publisher
+    - node.type.research_collection
+id: node.research_collection.field_publishers
+field_name: field_publishers
+entity_type: node
+bundle: research_collection
+label: Publishers
+description: 'Use this field to include publishers in this collection. The publisher will autocomplete if it is in the database. If the publisher is not in the database, <a href="/node/add/publisher" target="_target">add the publisher</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      publisher: publisher
+field_type: entity_reference

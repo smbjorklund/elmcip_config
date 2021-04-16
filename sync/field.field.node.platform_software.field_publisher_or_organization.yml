@@ -1,0 +1,32 @@
+uuid: ec25c9d8-2a5a-4acb-94f1-47c8a2348476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publisher_or_organization
+    - node.type.organization
+    - node.type.platform_software
+    - node.type.publisher
+id: node.platform_software.field_publisher_or_organization
+field_name: field_publisher_or_organization
+entity_type: node
+bundle: platform_software
+label: 'Publisher or organization'
+description: 'Enter the publisher or organization responsible for this platform/software.The publisher or organization will autocomplete if it is in the database. If the work is not yet in the database,  <a href="/node/add/organization" target="_blank">add the organization</a> or <a href="/node/add/organization" target="_blank">add the publisher</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+      publisher: publisher
+field_type: entity_reference

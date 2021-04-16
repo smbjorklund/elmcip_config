@@ -1,0 +1,30 @@
+uuid: 697aeba7-c115-4d54-aac1-009d566c4daa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_criticalw_platform_ref
+    - node.type.critical_writing
+    - node.type.platform_software
+id: node.critical_writing.field_criticalw_platform_ref
+field_name: field_criticalw_platform_ref
+entity_type: node
+bundle: critical_writing
+label: 'Platform referenced'
+description: 'If this critical writing references a platform/software, link to it here. The platform or software will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      platform_software: platform_software
+field_type: entity_reference

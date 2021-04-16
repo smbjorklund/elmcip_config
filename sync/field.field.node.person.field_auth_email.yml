@@ -1,0 +1,19 @@
+uuid: 588fd779-78e3-47d4-835b-891608f784c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_auth_email
+    - node.type.person
+id: node.person.field_auth_email
+field_name: field_auth_email
+entity_type: node
+bundle: person
+label: 'Author email'
+description: 'Enter the email address of the person. The author''s email will not be displayed publicly. ELMCIP editors and administrators may use this email to communicate with authors.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

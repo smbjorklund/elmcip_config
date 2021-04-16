@@ -1,0 +1,30 @@
+uuid: 14c52b4f-d0a4-4a30-a478-a9d17f6913df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_noted
+    - node.type.notebook_entry
+    - node.type.person
+id: node.notebook_entry.field_author_noted
+field_name: field_author_noted
+entity_type: node
+bundle: notebook_entry
+label: 'Author noted'
+description: 'Enter the name of the author discussed in this note. This is an autocomplete field that will only complete on authors that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/person" target="_blank">add the person</a>. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

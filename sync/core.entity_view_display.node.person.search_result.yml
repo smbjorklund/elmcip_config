@@ -1,0 +1,171 @@
+uuid: affe4bcc-012f-4e3b-b302-df0943dd06a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_alternative_spelling_of_na
+    - field.field.node.person.field_auth_email
+    - field.field.node.person.field_authorphoto
+    - field.field.node.person.field_editorial_notes
+    - field.field.node.person.field_files
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_gender_sel
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_nationality
+    - field.field.node.person.field_orcid
+    - field.field.node.person.field_record_status_tax
+    - field.field.node.person.field_residency
+    - field.field.node.person.field_textfield
+    - field.field.node.person.field_url
+    - field.field.node.person.field_userid_reference
+    - field.field.node.person.field_yearborn
+    - field.field.node.person.field_yeardied
+    - node.type.person
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.person.search_result
+targetEntityType: node
+bundle: person
+mode: search_result
+content:
+  field_affiliation:
+    label: above
+    weight: 14
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_alternative_spelling_of_na:
+    label: above
+    weight: 15
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_auth_email:
+    label: above
+    weight: 4
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_editorial_notes:
+    label: above
+    weight: 11
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 13
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_first_name:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_gender_sel:
+    label: above
+    weight: 16
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_last_name:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_middle_name:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_record_status_tax:
+    label: above
+    weight: 12
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_textfield:
+    label: above
+    weight: 9
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: above
+    weight: 10
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_userid_reference:
+    label: above
+    weight: 25
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_yearborn:
+    label: above
+    weight: 5
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_yeardied:
+    label: above
+    weight: 6
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_authorphoto: true
+  field_nationality: true
+  field_orcid: true
+  field_residency: true

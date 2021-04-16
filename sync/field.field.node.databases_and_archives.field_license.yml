@@ -1,0 +1,21 @@
+uuid: 883369bd-21aa-48a6-8cf1-947141c1810b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license
+    - node.type.databases_and_archives
+  module:
+    - options
+id: node.databases_and_archives.field_license
+field_name: field_license
+entity_type: node
+bundle: databases_and_archives
+label: License
+description: 'If the license of the work is known, select it from the pull-down menu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

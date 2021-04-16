@@ -1,0 +1,67 @@
+uuid: 8289505e-6dd3-4cfb-a124-a90bb91577bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.teaching_resource.field_abstract_lang
+    - field.field.node.teaching_resource.field_abstract_lang_tax
+    - field.field.node.teaching_resource.field_database_or_archive_refere
+    - field.field.node.teaching_resource.field_editorial_notes
+    - field.field.node.teaching_resource.field_files
+    - field.field.node.teaching_resource.field_image
+    - field.field.node.teaching_resource.field_language_tax
+    - field.field.node.teaching_resource.field_media_asset
+    - field.field.node.teaching_resource.field_platform_software_referenc
+    - field.field.node.teaching_resource.field_record_status_tax
+    - field.field.node.teaching_resource.field_tr_author
+    - field.field.node.teaching_resource.field_tr_critical
+    - field.field.node.teaching_resource.field_tr_description
+    - field.field.node.teaching_resource.field_tr_org
+    - field.field.node.teaching_resource.field_tr_tr
+    - field.field.node.teaching_resource.field_tr_work
+    - field.field.node.teaching_resource.field_tr_year
+    - field.field.node.teaching_resource.field_url
+    - field.field.node.teaching_resource.taxonomy_vocabulary_1
+    - field.field.node.teaching_resource.taxonomy_vocabulary_4
+    - node.type.teaching_resource
+  module:
+    - user
+id: node.teaching_resource.teaser
+targetEntityType: node
+bundle: teaching_resource
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  taxonomy_vocabulary_4:
+    label: inline
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_abstract_lang: true
+  field_abstract_lang_tax: true
+  field_database_or_archive_refere: true
+  field_editorial_notes: true
+  field_files: true
+  field_image: true
+  field_language_tax: true
+  field_media_asset: true
+  field_platform_software_referenc: true
+  field_record_status_tax: true
+  field_tr_author: true
+  field_tr_critical: true
+  field_tr_description: true
+  field_tr_org: true
+  field_tr_tr: true
+  field_tr_work: true
+  field_tr_year: true
+  field_url: true
+  taxonomy_vocabulary_1: true

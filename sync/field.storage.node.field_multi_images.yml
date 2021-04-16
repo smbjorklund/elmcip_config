@@ -1,0 +1,20 @@
+uuid: 79d83457-fce1-43e1-9283-b010c7c21ad0
+langcode: und
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_multi_images
+field_name: field_multi_images
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

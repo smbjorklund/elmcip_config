@@ -1,0 +1,19 @@
+uuid: e14a114e-863f-4729-b06b-bfb4962e5c2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pagenumbers
+    - node.type.critical_writing
+id: node.critical_writing.field_pagenumbers
+field_name: field_pagenumbers
+entity_type: node
+bundle: critical_writing
+label: Pages
+description: 'If the critical writing is published in a journal or book, enter the start and end page numbers, separated by a hyphen (e.g. 65-77). Use the complete number (e.g. 277-297). If the critical writing is a whole book, enter the total number of pages (e.g. 235).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

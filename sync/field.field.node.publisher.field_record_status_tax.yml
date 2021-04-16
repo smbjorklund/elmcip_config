@@ -1,0 +1,25 @@
+uuid: 15506a87-d831-4393-ad68-7c11f944f4a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_status_tax
+    - node.type.publisher
+id: node.publisher.field_record_status_tax
+field_name: field_record_status_tax
+entity_type: node
+bundle: publisher
+label: 'Record Status'
+description: 'Editorial status of record, as a taxonomy term. This field can only modified by editors.'
+required: false
+translatable: false
+default_value:
+  -
+    tid: 1489
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

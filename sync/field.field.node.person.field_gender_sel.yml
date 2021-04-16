@@ -1,0 +1,23 @@
+uuid: 0cb552dc-3c69-416d-941e-d11c168f7ef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gender_sel
+    - node.type.person
+id: node.person.field_gender_sel
+field_name: field_gender_sel
+entity_type: node
+bundle: person
+label: Gender
+description: 'Select the person’s gender. Note: this information will not be publicly displayed on the author page but may be used in faceted search for quantitative research.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

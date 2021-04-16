@@ -1,0 +1,29 @@
+uuid: d06df191-c507-459f-be8b-faa5bc7b39db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_edition_link
+    - node.type.critical_writing
+id: node.critical_writing.field_other_edition_link
+field_name: field_other_edition_link
+entity_type: node
+bundle: critical_writing
+label: 'Other edition'
+description: 'If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

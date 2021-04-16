@@ -1,0 +1,23 @@
+uuid: 21ef3c17-3af6-40d5-a9eb-2e14e0e3e455
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_asset
+    - node.type.critical_writing
+id: node.critical_writing.field_media_asset
+field_name: field_media_asset
+entity_type: node
+bundle: critical_writing
+label: Multimedia
+description: 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      video: video
+  handler: 'default:media'
+field_type: entity_reference

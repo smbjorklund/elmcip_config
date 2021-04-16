@@ -1,0 +1,30 @@
+uuid: d2fb8039-5d3e-4a66-8988-53e92c04386f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_org
+    - node.type.databases_and_archives
+    - node.type.organization
+id: node.databases_and_archives.field_db_org
+field_name: field_db_org
+entity_type: node
+bundle: databases_and_archives
+label: Organization
+description: 'If an organization is responsible for developing and maintaining this project, link to it here. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+field_type: entity_reference

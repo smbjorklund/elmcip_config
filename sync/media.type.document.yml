@@ -1,0 +1,14 @@
+uuid: d348148a-4ded-4132-b7ae-1cf0a7e6bac5
+langcode: en
+status: true
+dependencies: {  }
+id: document
+label: Document
+description: 'An uploaded file or document, such as a PDF.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

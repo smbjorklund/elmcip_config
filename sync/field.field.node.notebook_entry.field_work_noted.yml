@@ -1,0 +1,30 @@
+uuid: e8654c75-f377-42db-9e9d-01733ae19245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_noted
+    - node.type.notebook_entry
+    - node.type.work
+id: node.notebook_entry.field_work_noted
+field_name: field_work_noted
+entity_type: node
+bundle: notebook_entry
+label: 'Work noted'
+description: 'Enter the title of the creative work or works discussed in this note. This is an autocomplete field that will only complete on works that already have records in the knowledge base. If the work is not in the KB, first <a href="/node/add/work" target="_blank">add the creative work</a>. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      work: work
+field_type: entity_reference

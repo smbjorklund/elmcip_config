@@ -1,0 +1,30 @@
+uuid: f2340028-6011-4ed5-8b59-067dd5f88154
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizations
+    - node.type.organization
+    - node.type.research_collection
+id: node.research_collection.field_organizations
+field_name: field_organizations
+entity_type: node
+bundle: research_collection
+label: Organizations
+description: 'Use this field to include organizations in this collection. The organization will autocomplete if it is in the database. If the organization is not in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+field_type: entity_reference

@@ -1,0 +1,16 @@
+uuid: 31ce74ca-8b09-4691-adf2-ffd06eb18a57
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'features:0:'
+name: 'Teaching Resource'
+type: teaching_resource
+description: 'Teaching resources including syllabi, lesson plans, exercises, video tutorials, and other pedagogic aids.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

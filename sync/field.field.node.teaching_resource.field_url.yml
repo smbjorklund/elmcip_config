@@ -1,0 +1,23 @@
+uuid: 50b784fe-5294-48f2-bfe4-b320914d02c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.teaching_resource
+  module:
+    - link
+id: node.teaching_resource.field_url
+field_name: field_url
+entity_type: node
+bundle: teaching_resource
+label: URL
+description: 'Enter the link to the teaching resource. Indicate the nature of the link using the title field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

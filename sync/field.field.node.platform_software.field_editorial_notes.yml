@@ -1,0 +1,19 @@
+uuid: 7b93ebf4-0550-46f9-a851-7ce42f835f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_notes
+    - node.type.platform_software
+id: node.platform_software.field_editorial_notes
+field_name: field_editorial_notes
+entity_type: node
+bundle: platform_software
+label: 'KB Editor Notes'
+description: 'Add notes about editorial status here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

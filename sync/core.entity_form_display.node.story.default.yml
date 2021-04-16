@@ -1,0 +1,121 @@
+uuid: 60c39028-a960-4302-9d34-55c9ea3a0791
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.story.body
+    - field.field.node.story.field_files
+    - field.field.node.story.field_image
+    - field.field.node.story.field_media_asset
+    - field.field.node.story.field_multi_image
+    - field.field.node.story.field_news_tags
+    - node.type.story
+  module:
+    - media_library
+    - path
+    - text
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  body:
+    weight: 3
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_files:
+    weight: 5
+    type: media_library_widget
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    type: media_library_widget
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_asset:
+    weight: 7
+    type: media_library_widget
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_multi_image:
+    weight: 4
+    type: media_library_widget
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_news_tags:
+    weight: 1
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 228bf327-dbc1-41f1-ac3e-e6392c7a3651
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_status_tax
+    - node.type.teaching_resource
+id: node.teaching_resource.field_record_status_tax
+field_name: field_record_status_tax
+entity_type: node
+bundle: teaching_resource
+label: 'Record Status'
+description: 'Editorial status of the record. This field can only be modified by KB editors.'
+required: false
+translatable: false
+default_value:
+  -
+    tid: 1489
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

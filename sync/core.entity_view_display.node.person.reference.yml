@@ -1,0 +1,81 @@
+uuid: 445b00c7-ecd7-4d69-8cd8-6492184718e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.reference
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_alternative_spelling_of_na
+    - field.field.node.person.field_auth_email
+    - field.field.node.person.field_authorphoto
+    - field.field.node.person.field_editorial_notes
+    - field.field.node.person.field_files
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_gender_sel
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_nationality
+    - field.field.node.person.field_orcid
+    - field.field.node.person.field_record_status_tax
+    - field.field.node.person.field_residency
+    - field.field.node.person.field_textfield
+    - field.field.node.person.field_url
+    - field.field.node.person.field_userid_reference
+    - field.field.node.person.field_yearborn
+    - field.field.node.person.field_yeardied
+    - node.type.person
+  module:
+    - datetime
+    - user
+id: node.person.reference
+targetEntityType: node
+bundle: person
+mode: reference
+content:
+  field_auth_email:
+    label: hidden
+    weight: 1
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_yearborn:
+    label: hidden
+    weight: 11
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_yeardied:
+    label: hidden
+    weight: 12
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_affiliation: true
+  field_alternative_spelling_of_na: true
+  field_authorphoto: true
+  field_editorial_notes: true
+  field_files: true
+  field_first_name: true
+  field_gender_sel: true
+  field_last_name: true
+  field_middle_name: true
+  field_nationality: true
+  field_orcid: true
+  field_record_status_tax: true
+  field_residency: true
+  field_textfield: true
+  field_url: true
+  field_userid_reference: true

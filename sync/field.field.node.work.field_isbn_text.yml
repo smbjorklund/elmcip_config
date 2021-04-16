@@ -1,0 +1,19 @@
+uuid: 04bc7bd1-b134-41f4-9d31-c1eefbc068cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isbn_text
+    - node.type.work
+id: node.work.field_isbn_text
+field_name: field_isbn_text
+entity_type: node
+bundle: work
+label: ISBN
+description: 'If the creative work has an ISBN, add it here. If there are multiple ISBNs, indicate type after number e.g. 978-3-11-027239-0 (e-ISBN).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

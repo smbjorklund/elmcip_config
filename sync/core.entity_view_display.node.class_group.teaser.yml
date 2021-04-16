@@ -1,0 +1,47 @@
+uuid: e1bcf88c-b830-45d2-840f-bcca6f9a4220
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.class_group.field_students
+    - field.field.node.class_group.field_teacher_link
+    - field.field.node.class_group.field_tr_link
+    - node.type.class_group
+  module:
+    - user
+id: node.class_group.teaser
+targetEntityType: node
+bundle: class_group
+mode: teaser
+content:
+  field_students:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_teacher_link:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tr_link:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

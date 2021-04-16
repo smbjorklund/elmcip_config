@@ -1,0 +1,29 @@
+uuid: fac64abe-1481-48a2-91e9-a9db899f7093
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_part_of_another_work
+    - node.type.work
+id: node.work.field_part_of_another_work
+field_name: field_part_of_another_work
+entity_type: node
+bundle: work
+label: 'Part of another work'
+description: 'If this work is part of another creative work (e.g. one piece in a trilogy) reference that work here. The title of the other work will autocomplete if it is in the database.  If the work is not yet in the database,  <a href="/node/add/work" target="_blank">add the work</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      work: work
+field_type: entity_reference

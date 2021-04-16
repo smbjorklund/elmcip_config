@@ -1,0 +1,21 @@
+uuid: 365ad781-5e56-48b8-a5de-b6bafc3e104d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_description_english
+    - node.type.databases_and_archives
+  module:
+    - text
+id: node.databases_and_archives.field_db_description_english
+field_name: field_db_description_english
+entity_type: node
+bundle: databases_and_archives
+label: 'Description (English)'
+description: 'Provide a brief description of the work in English. If you source the description from elsewhere, indicate the source in parentheses after the description.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

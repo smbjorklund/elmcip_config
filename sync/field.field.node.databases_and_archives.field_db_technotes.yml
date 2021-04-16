@@ -1,0 +1,21 @@
+uuid: cdabfa7b-8709-4916-9bf4-b59580ee0641
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_technotes
+    - node.type.databases_and_archives
+  module:
+    - text
+id: node.databases_and_archives.field_db_technotes
+field_name: field_db_technotes
+entity_type: node
+bundle: databases_and_archives
+label: 'Technical Notes'
+description: 'Add important technical notes about the database or archive, such as software dependencies or necessary plug-ins.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

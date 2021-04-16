@@ -1,0 +1,24 @@
+uuid: fe17e1e4-3b46-4d4c-8a42-2d988e796bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_your_notes
+    - node.type.notebook_entry
+  module:
+    - text
+id: node.notebook_entry.field_your_notes
+field_name: field_your_notes
+entity_type: node
+bundle: notebook_entry
+label: 'Your notes'
+description: 'Enter your notes here.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+    format: '3'
+default_value_callback: ''
+settings: {  }
+field_type: text_long

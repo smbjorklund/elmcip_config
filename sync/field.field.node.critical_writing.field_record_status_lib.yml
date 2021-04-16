@@ -1,0 +1,21 @@
+uuid: c8eebf12-e82c-4d11-a8dd-69c3f6cfe8b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_status_lib
+    - node.type.critical_writing
+  module:
+    - options
+id: node.critical_writing.field_record_status_lib
+field_name: field_record_status_lib
+entity_type: node
+bundle: critical_writing
+label: 'Librarian status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,349 @@
+uuid: 109526d3-bc8a-401a-9c56-032124f3a794
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.work.field_abstract_lang
+    - field.field.node.work.field_abstract_lang_tax
+    - field.field.node.work.field_archiveurl
+    - field.field.node.work.field_author_name
+    - field.field.node.work.field_authoring_software_entry
+    - field.field.node.work.field_brown_digital_repository
+    - field.field.node.work.field_contributor
+    - field.field.node.work.field_contributors
+    - field.field.node.work.field_doi
+    - field.field.node.work.field_downloadurl
+    - field.field.node.work.field_editorial_notes
+    - field.field.node.work.field_electronic_literature_dire
+    - field.field.node.work.field_files
+    - field.field.node.work.field_i_e_poetry_entry
+    - field.field.node.work.field_in_anthology
+    - field.field.node.work.field_isbn_text
+    - field.field.node.work.field_language_tax
+    - field.field.node.work.field_license
+    - field.field.node.work.field_media_asset
+    - field.field.node.work.field_multi_image
+    - field.field.node.work.field_node_ref
+    - field.field.node.work.field_node_ref_event
+    - field.field.node.work.field_nt2_entry
+    - field.field.node.work.field_other_edition_work
+    - field.field.node.work.field_other_lang_ver_link
+    - field.field.node.work.field_part_of_another_work
+    - field.field.node.work.field_po_ex_entry
+    - field.field.node.work.field_pullquote
+    - field.field.node.work.field_record_status_lib
+    - field.field.node.work.field_record_status_tax
+    - field.field.node.work.field_repository
+    - field.field.node.work.field_series_ref
+    - field.field.node.work.field_tech_notes
+    - field.field.node.work.field_textfield
+    - field.field.node.work.field_translator
+    - field.field.node.work.field_url
+    - field.field.node.work.field_venue_tax
+    - field.field.node.work.field_work_platform_software
+    - field.field.node.work.field_work_year
+    - field.field.node.work.field_worldcat_link
+    - field.field.node.work.taxonomy_vocabulary_1
+    - node.type.work
+  module:
+    - datetime
+    - link
+    - options
+    - text
+    - user
+id: node.work.search_result
+targetEntityType: node
+bundle: work
+mode: search_result
+content:
+  field_abstract_lang:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_archiveurl:
+    label: above
+    weight: 8
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_author_name:
+    label: above
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_contributor:
+    label: above
+    weight: 18
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_contributors:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_downloadurl:
+    label: above
+    weight: 9
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_editorial_notes:
+    label: above
+    weight: 19
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_electronic_literature_dire:
+    label: above
+    weight: 28
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: above
+    weight: 15
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_i_e_poetry_entry:
+    label: above
+    weight: 29
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_in_anthology:
+    label: above
+    weight: 14
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_isbn_text:
+    label: above
+    weight: 26
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_license:
+    label: above
+    weight: 7
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_asset:
+    label: above
+    weight: 17
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_node_ref:
+    label: above
+    weight: 11
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_node_ref_event:
+    label: above
+    weight: 12
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_nt2_entry:
+    label: above
+    weight: 30
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_other_edition_work:
+    label: above
+    weight: 20
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_other_lang_ver_link:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_part_of_another_work:
+    label: above
+    weight: 31
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_po_ex_entry:
+    label: above
+    weight: 32
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_pullquote:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_repository:
+    label: above
+    weight: 33
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_tech_notes:
+    label: above
+    weight: 13
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_textfield:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_translator:
+    label: above
+    weight: 27
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: above
+    weight: 6
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_work_platform_software:
+    label: above
+    weight: 34
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_work_year:
+    label: above
+    weight: 35
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_worldcat_link:
+    label: above
+    weight: 25
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_abstract_lang_tax: true
+  field_authoring_software_entry: true
+  field_brown_digital_repository: true
+  field_doi: true
+  field_language_tax: true
+  field_multi_image: true
+  field_record_status_lib: true
+  field_record_status_tax: true
+  field_series_ref: true
+  field_venue_tax: true
+  taxonomy_vocabulary_1: true

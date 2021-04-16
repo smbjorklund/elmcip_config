@@ -1,0 +1,8 @@
+uuid: ef6e9f51-0922-4811-a0f9-194c6ef810a2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Project Type'
+vid: project_type
+description: 'Project type for databases and archives'
+weight: 0

@@ -1,0 +1,30 @@
+uuid: 94b1fe1a-d00b-46b9-8d22-f6039fe1bdea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publisher_referenced
+    - node.type.critical_writing
+    - node.type.publisher
+id: node.critical_writing.field_publisher_referenced
+field_name: field_publisher_referenced
+entity_type: node
+bundle: critical_writing
+label: 'Publisher Referenced'
+description: 'If the critical writing references a particular publisher or journal (for example, a conference paper about a particular online journal), link to it here. The publisher will autocomplete if it is in the database. If the work is not yet in the database, <a href="/node/add/publisher" target="_blank">add the publisher</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      publisher: publisher
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: 0255ef29-67ab-4dc8-82aa-84a337f70891
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affiliation
+    - node.type.organization
+    - node.type.person
+id: node.person.field_affiliation
+field_name: field_affiliation
+entity_type: node
+bundle: person
+label: 'Affiliations - Organizations'
+description: 'Enter the name of organizations this person is affiliated with. Examples include: artist-and-writer collectives, employers, nonprofit organizations, research groups, universities. The text in the short biography can elaborate and clarify the nature and duration of the person''s affiliation with this organization. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 3bc33c39-eb8d-49de-a745-f350c1cfe60b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.databases_and_archives
+id: node.databases_and_archives.title
+field_name: title
+entity_type: node
+bundle: databases_and_archives
+label: 'Name of resource'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

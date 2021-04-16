@@ -1,0 +1,23 @@
+uuid: 6a145f12-03c5-45be-9301-619834836c7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multi_images
+    - node.type.event
+id: node.event.field_multi_images
+field_name: field_multi_images
+entity_type: node
+bundle: event
+label: Images
+description: 'You may upload and attach individual images (20MB max) documenting the event here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

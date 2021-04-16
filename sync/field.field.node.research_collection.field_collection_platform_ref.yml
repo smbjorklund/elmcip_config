@@ -1,0 +1,30 @@
+uuid: dd1a30f6-f1ee-4960-a407-10a74140fbc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collection_platform_ref
+    - node.type.platform_software
+    - node.type.research_collection
+id: node.research_collection.field_collection_platform_ref
+field_name: field_collection_platform_ref
+entity_type: node
+bundle: research_collection
+label: 'Platform referenced'
+description: 'Use this field to include platforms/software in this collection. The platform/software will autocomplete if it is in the database. If the platform/software is not in the database, <a href="/node/add/platform-software" target="_blank">add the database/software</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      platform_software: platform_software
+field_type: entity_reference

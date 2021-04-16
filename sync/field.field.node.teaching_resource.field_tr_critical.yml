@@ -1,0 +1,30 @@
+uuid: 26868444-5680-449f-aa2c-ea8ff79c35f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_critical
+    - node.type.critical_writing
+    - node.type.teaching_resource
+id: node.teaching_resource.field_tr_critical
+field_name: field_tr_critical
+entity_type: node
+bundle: teaching_resource
+label: 'Critical Writing Referenced'
+description: 'If the teaching resource references a critical writing, link to it here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

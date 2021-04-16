@@ -1,0 +1,61 @@
+uuid: 911e2be8-a72c-41fc-9735-677a2800ca5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.format
+    - field.field.node.organization.field_address
+    - field.field.node.organization.field_editorial_notes
+    - field.field.node.organization.field_email
+    - field.field.node.organization.field_files
+    - field.field.node.organization.field_multi_images
+    - field.field.node.organization.field_record_status_tax
+    - field.field.node.organization.field_textfield
+    - field.field.node.organization.field_url
+    - node.type.organization
+  module:
+    - link
+    - text
+    - user
+id: node.organization.format
+targetEntityType: node
+bundle: organization
+mode: format
+content:
+  field_email:
+    label: hidden
+    weight: -2
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_textfield:
+    label: hidden
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: hidden
+    weight: -1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_editorial_notes: true
+  field_files: true
+  field_multi_images: true
+  field_record_status_tax: true

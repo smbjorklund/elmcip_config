@@ -1,0 +1,23 @@
+uuid: 06dd2e03-e54a-4e93-95f9-bb295bfdbf1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language_tax
+    - node.type.work
+id: node.work.field_language_tax
+field_name: field_language_tax
+entity_type: node
+bundle: work
+label: Language
+description: 'Select the human language the work was written in. Select multiple if the work includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

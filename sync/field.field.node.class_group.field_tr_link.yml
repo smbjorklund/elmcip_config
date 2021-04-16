@@ -1,0 +1,27 @@
+uuid: 2c74306d-8ded-4c68-8c35-72e0b96d2e69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_link
+    - node.type.class_group
+    - node.type.teaching_resource
+id: node.class_group.field_tr_link
+field_name: field_tr_link
+entity_type: node
+bundle: class_group
+label: 'Course Syllabus (Teaching Resource)'
+description: 'Use this field to link to your syllabus or other material you have created as a teaching resource in the Knowledge Base. The field will autocomplete. If the teaching resource is not yet in the Knowledge Base, first <a href="node/add/teaching-resource">add the teaching resource</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      teaching_resource: teaching_resource
+    sort:
+      field: _none
+      direction: ASC
+field_type: entity_reference

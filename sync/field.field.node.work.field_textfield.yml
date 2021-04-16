@@ -1,0 +1,21 @@
+uuid: 257b3056-4aad-4ecd-951f-2fb4849bd1b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textfield
+    - node.type.work
+  module:
+    - text
+id: node.work.field_textfield
+field_name: field_textfield
+entity_type: node
+bundle: work
+label: 'Description (in English)'
+description: 'Provide a brief description of the work in English, up to 350 words.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

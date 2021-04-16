@@ -1,0 +1,23 @@
+uuid: 6d692ced-94a8-4429-8057-ae06ab4facff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_worldcat_link
+    - node.type.critical_writing
+  module:
+    - link
+id: node.critical_writing.field_worldcat_link
+field_name: field_worldcat_link
+entity_type: node
+bundle: critical_writing
+label: 'WorldCat Permalink'
+description: 'If a record for this critical writing is available on the <a href="https://www.worldcat.org" target="_blank">WorldCat library database</a>, enter the Permalink here. Use the edition year field to indicate the edition year (e.g. 1996 ed.). '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

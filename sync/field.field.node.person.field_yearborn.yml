@@ -1,0 +1,21 @@
+uuid: 4c411352-c7a4-49fd-9e0c-68ce37cd43c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yearborn
+    - node.type.person
+  module:
+    - datetime
+id: node.person.field_yearborn
+field_name: field_yearborn
+entity_type: node
+bundle: person
+label: Born
+description: "Enter the year of birth.\n<br>Format: 2017"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

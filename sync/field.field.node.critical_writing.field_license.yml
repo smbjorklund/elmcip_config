@@ -1,0 +1,21 @@
+uuid: 6ac2bc37-709a-4670-985f-f4de52baf713
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license
+    - node.type.critical_writing
+  module:
+    - options
+id: node.critical_writing.field_license
+field_name: field_license
+entity_type: node
+bundle: critical_writing
+label: License
+description: 'If the license of the work is known, select it here. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

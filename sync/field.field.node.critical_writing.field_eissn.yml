@@ -1,0 +1,19 @@
+uuid: 53e6a449-4dd1-458c-9a47-1ffade976cda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eissn
+    - node.type.critical_writing
+id: node.critical_writing.field_eissn
+field_name: field_eissn
+entity_type: node
+bundle: critical_writing
+label: eISSN
+description: 'If the critical writing has an eISSN number, add it here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

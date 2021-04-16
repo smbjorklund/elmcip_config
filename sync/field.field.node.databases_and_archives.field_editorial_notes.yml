@@ -1,0 +1,19 @@
+uuid: 77486bbd-fc16-4696-9d69-717ddc586a22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_notes
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_editorial_notes
+field_name: field_editorial_notes
+entity_type: node
+bundle: databases_and_archives
+label: 'KB Editor Notes'
+description: 'Editors should use this field to provide short indications of revisions required. The field will only be visible to KB editors and to the original authors of the record. This field should be wiped once the record is marked as approved.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

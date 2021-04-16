@@ -1,0 +1,23 @@
+uuid: 5dfad2e8-e0de-468d-9190-19da860292fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - node.type.platform_software
+id: node.platform_software.field_media
+field_name: field_media
+entity_type: node
+bundle: platform_software
+label: Multimedia
+description: 'Use this field to display multimedia content, such as Vimeo and YouTube videos. You can also upload media files or select them from the media library.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

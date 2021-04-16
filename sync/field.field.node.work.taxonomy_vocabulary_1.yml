@@ -1,0 +1,23 @@
+uuid: 5566121d-d017-4a14-9110-635561769d39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_1
+    - node.type.work
+id: node.work.taxonomy_vocabulary_1
+field_name: taxonomy_vocabulary_1
+entity_type: node
+bundle: work
+label: Tags
+description: 'A comma-separated list of terms, keywords, or phrases that describe and/or contextualize this creative work. Tags should be used for aspects of the work such as technical platform, theme, and genre. Example: collaboration, comedy, death, hypertext fiction, network fiction, parody, pastiche, picaresque, satire. As a rule of thumb, use a singular noun rather than a plural for the tag. Also generally try to avoid using people''s names as tags.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

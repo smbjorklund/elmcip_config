@@ -1,0 +1,28 @@
+uuid: 4d75843c-77c9-474d-ac29-3a7014323d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_students
+    - node.type.class_group
+id: node.class_group.field_students
+field_name: field_students
+entity_type: node
+bundle: class_group
+label: Students
+description: 'Add the students to the class group, by entering their knowledge base usernames in this field. Add a new item for each student. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles: null
+field_type: entity_reference

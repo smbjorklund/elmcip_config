@@ -1,0 +1,30 @@
+uuid: 0a079ff5-1bc5-4a76-88ca-655f9f2aaca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_org
+    - node.type.organization
+    - node.type.teaching_resource
+id: node.teaching_resource.field_tr_org
+field_name: field_tr_org
+entity_type: node
+bundle: teaching_resource
+label: Organization
+description: 'If the resource was developed as part of a curriculum, enter the organization responsible (for example University of Bergen, program in Digital Culture). The field will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+field_type: entity_reference

@@ -1,0 +1,30 @@
+uuid: 7c4d9de0-6065-4f8c-84ac-eed339cf2d50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_ref_event
+    - node.type.critical_writing
+    - node.type.event
+id: node.critical_writing.field_node_ref_event
+field_name: field_node_ref_event
+entity_type: node
+bundle: critical_writing
+label: 'Presented at Event'
+description: 'If the critical writing was presented at a conference, select here. The event will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      event: event
+field_type: entity_reference

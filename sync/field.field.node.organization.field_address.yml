@@ -1,0 +1,25 @@
+uuid: fcc1552a-3259-49a8-8642-8d20c30eee9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.organization
+  module:
+    - address
+id: node.organization.field_address
+field_name: field_address
+entity_type: node
+bundle: organization
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

@@ -1,0 +1,29 @@
+uuid: 068cfda2-cdd4-4c63-8451-bcbcac38f7fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_tr
+    - node.type.teaching_resource
+id: node.teaching_resource.field_tr_tr
+field_name: field_tr_tr
+entity_type: node
+bundle: teaching_resource
+label: 'Teaching Resource Referenced'
+description: 'If the teaching resource references another teaching resource, link to it here. The teaching resource will autocomplete if it is in the database. If the teaching resource is not yet in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      teaching_resource: teaching_resource
+field_type: entity_reference

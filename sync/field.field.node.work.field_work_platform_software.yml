@@ -1,0 +1,30 @@
+uuid: 7032807a-8b8a-4351-aaf2-61678a7f9a80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_platform_software
+    - node.type.platform_software
+    - node.type.work
+id: node.work.field_work_platform_software
+field_name: field_work_platform_software
+entity_type: node
+bundle: work
+label: Platform/Software
+description: 'Use this field to indicate what platforms and software are involved in the production of this work (for example HTML, Flash, CAVE, iPad, etc.). The platform or software will autocomplete if it is in the database. If the platform or software is not yet in the database, <a target="_blank" href="/node/add/platform-software">add a record for the platform or software</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: title
+      direction: ASC
+    target_bundles:
+      platform_software: platform_software
+field_type: entity_reference

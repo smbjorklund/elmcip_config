@@ -1,0 +1,18 @@
+uuid: be4820e6-66b0-421e-9006-09ad96f8884b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teaching_resource
+id: node.teaching_resource.title
+field_name: title
+entity_type: node
+bundle: teaching_resource
+label: 'Title of Resource'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

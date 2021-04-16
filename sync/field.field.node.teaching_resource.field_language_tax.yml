@@ -1,0 +1,23 @@
+uuid: 052d068b-5bd5-4563-b4e1-e1f1a6b6f0d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language_tax
+    - node.type.teaching_resource
+id: node.teaching_resource.field_language_tax
+field_name: field_language_tax
+entity_type: node
+bundle: teaching_resource
+label: Language
+description: 'Select the human language of the teaching resource. Select multiple if the teaching resource includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

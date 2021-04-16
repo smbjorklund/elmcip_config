@@ -1,0 +1,25 @@
+uuid: bad324f6-ac01-404a-a4f6-32cc5a9d21ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.event
+  module:
+    - address
+id: node.event.field_address
+field_name: field_address
+entity_type: node
+bundle: event
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

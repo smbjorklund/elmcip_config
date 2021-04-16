@@ -1,0 +1,29 @@
+uuid: 8a607954-7364-4295-8c83-775eaa8e6ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_series_ref
+    - node.type.critical_writing
+id: node.critical_writing.field_series_ref
+field_name: field_series_ref
+entity_type: node
+bundle: critical_writing
+label: Series
+description: "If the critical work was published as part of a series, enter the series title here. The name will autocomplete if the series is already in the database. If the series is not yet in the database, <a href=\"/node/add/critical-writing\" target=\"_blank\">add the series</a>. <strong>Note:</strong> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</i>, are series).\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

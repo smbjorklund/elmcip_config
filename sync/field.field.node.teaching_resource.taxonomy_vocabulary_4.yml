@@ -1,0 +1,23 @@
+uuid: e726aad4-0f13-471d-836b-767d1bdfb559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.taxonomy_vocabulary_4
+    - node.type.teaching_resource
+id: node.teaching_resource.taxonomy_vocabulary_4
+field_name: taxonomy_vocabulary_4
+entity_type: node
+bundle: teaching_resource
+label: Type
+description: 'Select the type of the teaching resource.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

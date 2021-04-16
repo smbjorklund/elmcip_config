@@ -1,0 +1,25 @@
+uuid: 0539aedd-c6a6-4499-ba0d-99903e548e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_status_tax
+    - node.type.critical_writing
+id: node.critical_writing.field_record_status_tax
+field_name: field_record_status_tax
+entity_type: node
+bundle: critical_writing
+label: 'Record Status'
+description: 'Editorial status of record, as a taxonomy term. This field can only modified by editors. '
+required: false
+translatable: false
+default_value:
+  -
+    tid: 1489
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

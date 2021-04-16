@@ -1,0 +1,16 @@
+uuid: 22867676-1d6a-4c8b-a4df-a03b15904b05
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'features:0:'
+name: Person
+type: person
+description: 'Records for people, such as authors of electronic literature and critical writing, editors, and others. Records include name (required) and optional biographical and location information.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

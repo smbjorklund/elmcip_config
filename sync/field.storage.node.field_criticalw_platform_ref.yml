@@ -1,0 +1,19 @@
+uuid: ed31fec8-0aff-497d-a66d-1743795af8cc
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_criticalw_platform_ref
+field_name: field_criticalw_platform_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

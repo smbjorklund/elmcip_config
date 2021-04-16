@@ -1,0 +1,18 @@
+uuid: 61e8fa69-f5e0-4ef7-a617-6cc84b7ba858
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.critical_writing
+id: node.critical_writing.title
+field_name: title
+entity_type: node
+bundle: critical_writing
+label: 'Work title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

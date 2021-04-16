@@ -1,0 +1,8 @@
+uuid: e2aa9cf9-f7c1-4958-bca7-6186403f18c0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Publisher and Journal types'
+vid: publisher_and_journal_types
+description: ''
+weight: 0

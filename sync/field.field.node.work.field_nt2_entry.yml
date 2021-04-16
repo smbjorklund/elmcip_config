@@ -1,0 +1,23 @@
+uuid: dad851af-d64f-4264-8c33-e96af33ad325
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nt2_entry
+    - node.type.work
+  module:
+    - link
+id: node.work.field_nt2_entry
+field_name: field_nt2_entry
+entity_type: node
+bundle: work
+label: 'NT2 entry'
+description: 'If there is a record for this work in the <a href="http://nt2.uqam.ca/en/search/site/" target="_blank">NT2 Répertoire des arts et littératures hypermédiatiques</a>, enter the URL of the entry.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

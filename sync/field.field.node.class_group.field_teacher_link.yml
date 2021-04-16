@@ -1,0 +1,28 @@
+uuid: f03790d5-b6d0-43ed-bbcc-adffb1c97fb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teacher_link
+    - node.type.class_group
+id: node.class_group.field_teacher_link
+field_name: field_teacher_link
+entity_type: node
+bundle: class_group
+label: Teacher
+description: 'The teacher of the course. This is an autocomplete field. The teacher must be a Knowledge Base user who has been assigned "teacher" permissions by a KB administrator. Multiple teachers may be added to a class group.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles: null
+field_type: entity_reference

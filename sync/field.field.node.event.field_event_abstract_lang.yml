@@ -1,0 +1,19 @@
+uuid: e666c51b-faaf-4b29-8e64-763e95a9150b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_abstract_lang
+    - node.type.event
+id: node.event.field_event_abstract_lang
+field_name: field_event_abstract_lang
+entity_type: node
+bundle: event
+label: 'Description (in original language)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,30 @@
+uuid: 799efb06-a0ad-48b1-998c-0a5746e4dab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editor_name
+    - node.type.person
+    - node.type.publisher
+id: node.publisher.field_editor_name
+field_name: field_editor_name
+entity_type: node
+bundle: publisher
+label: Editors
+description: 'Enter editors if applicable. The name will autocomplete if the editor is in the database. If the editor is not yet in the database, <a href="/node/add/person" target="_blank">add the editor</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

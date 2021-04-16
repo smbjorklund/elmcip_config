@@ -1,0 +1,110 @@
+uuid: 24dc7a30-9848-4741-a298-f351be21976d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.sticky
+    - field.field.node.teaching_resource.field_abstract_lang
+    - field.field.node.teaching_resource.field_abstract_lang_tax
+    - field.field.node.teaching_resource.field_database_or_archive_refere
+    - field.field.node.teaching_resource.field_editorial_notes
+    - field.field.node.teaching_resource.field_files
+    - field.field.node.teaching_resource.field_image
+    - field.field.node.teaching_resource.field_language_tax
+    - field.field.node.teaching_resource.field_media_asset
+    - field.field.node.teaching_resource.field_platform_software_referenc
+    - field.field.node.teaching_resource.field_record_status_tax
+    - field.field.node.teaching_resource.field_tr_author
+    - field.field.node.teaching_resource.field_tr_critical
+    - field.field.node.teaching_resource.field_tr_description
+    - field.field.node.teaching_resource.field_tr_org
+    - field.field.node.teaching_resource.field_tr_tr
+    - field.field.node.teaching_resource.field_tr_work
+    - field.field.node.teaching_resource.field_tr_year
+    - field.field.node.teaching_resource.field_url
+    - field.field.node.teaching_resource.taxonomy_vocabulary_1
+    - field.field.node.teaching_resource.taxonomy_vocabulary_4
+    - node.type.teaching_resource
+  module:
+    - datetime
+    - text
+    - user
+id: node.teaching_resource.sticky
+targetEntityType: node
+bundle: teaching_resource
+mode: sticky
+content:
+  field_abstract_lang:
+    label: hidden
+    weight: 22
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tr_author:
+    label: hidden
+    weight: 19
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tr_critical:
+    label: hidden
+    weight: 26
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tr_description:
+    label: hidden
+    weight: 21
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tr_org:
+    label: hidden
+    weight: 20
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tr_work:
+    label: hidden
+    weight: 25
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tr_year:
+    label: hidden
+    weight: 21
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_abstract_lang_tax: true
+  field_database_or_archive_refere: true
+  field_editorial_notes: true
+  field_files: true
+  field_image: true
+  field_language_tax: true
+  field_media_asset: true
+  field_platform_software_referenc: true
+  field_record_status_tax: true
+  field_tr_tr: true
+  field_url: true
+  taxonomy_vocabulary_1: true
+  taxonomy_vocabulary_4: true

@@ -1,0 +1,29 @@
+uuid: 54f2aaf7-2ca3-4233-85da-9d9e9ec5332f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_edition_work
+    - node.type.work
+id: node.work.field_other_edition_work
+field_name: field_other_edition_work
+entity_type: node
+bundle: work
+label: 'Other edition'
+description: "If there is a record for another edition of this work in the knowledge base, link to it here.The other edition will autocomplete if it is in the database. If the work is not yet in the database,  <a href=\"/node/add/work\" target=\"_blank\">add the work</a>.\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      work: work
+field_type: entity_reference

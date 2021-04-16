@@ -1,0 +1,21 @@
+uuid: f60677be-1ee2-4b54-92a6-e467e018bb89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_year
+    - node.type.work
+  module:
+    - datetime
+id: node.work.field_work_year
+field_name: field_work_year
+entity_type: node
+bundle: work
+label: Year
+description: 'Indicate the year of first publication. If the work has been published in multiple venues, list the years of subsequent publication in the description field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

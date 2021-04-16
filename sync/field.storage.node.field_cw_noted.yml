@@ -1,0 +1,19 @@
+uuid: caad72b7-0707-45df-af33-b4a98b4ce1f7
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cw_noted
+field_name: field_cw_noted
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

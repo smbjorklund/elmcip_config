@@ -1,0 +1,30 @@
+uuid: 6f501e55-0e5b-4f86-b24a-6b25795facc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_platform_software_referenc
+    - node.type.platform_software
+    - node.type.teaching_resource
+id: node.teaching_resource.field_platform_software_referenc
+field_name: field_platform_software_referenc
+entity_type: node
+bundle: teaching_resource
+label: 'Platform/Software referenced'
+description: ' If the teaching resource references a platform/software, link to it here. The platform/software will autocomplete if it is in the database. If the platform/software is not yet in the database, <a href="/node/add/platform-software" target="_blank">add the platform/software</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      platform_software: platform_software
+field_type: entity_reference

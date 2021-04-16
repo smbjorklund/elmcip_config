@@ -1,0 +1,21 @@
+uuid: cff9310e-1b79-4578-8d3c-07be6acef188
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract_lang
+    - node.type.critical_writing
+  module:
+    - text
+id: node.critical_writing.field_abstract_lang
+field_name: field_abstract_lang
+entity_type: node
+bundle: critical_writing
+label: 'Abstract (in original language)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

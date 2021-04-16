@@ -1,0 +1,23 @@
+uuid: 3dfe0d3c-82da-4e20-8b68-044b8f198a71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multi_images
+    - node.type.critical_writing
+id: node.critical_writing.field_multi_images
+field_name: field_multi_images
+entity_type: node
+bundle: critical_writing
+label: Images
+description: 'Attach an image of the book cover or other images.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

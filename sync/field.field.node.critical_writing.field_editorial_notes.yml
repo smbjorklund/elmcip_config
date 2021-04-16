@@ -1,0 +1,19 @@
+uuid: 5a0c721d-5d09-45e9-99e2-c17b1c19645e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial_notes
+    - node.type.critical_writing
+id: node.critical_writing.field_editorial_notes
+field_name: field_editorial_notes
+entity_type: node
+bundle: critical_writing
+label: 'KB editor notes'
+description: 'KB editors should use this field to provide a brief indication of revisions required. This field will only be visible to KB editor and to original authors of the record. This field should be wiped when the record is marked as approved.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: ececef96-445b-4a0d-9edb-f83414b45e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_university
+    - node.type.critical_writing
+    - node.type.organization
+id: node.critical_writing.field_university
+field_name: field_university
+entity_type: node
+bundle: critical_writing
+label: University
+description: '<strong>For dissertations and theses only</strong>, indicate the university in which the thesis was produced.The university’s will autocomplete if it is in the database. If the university is not yet in the database, <a href="/node/add/organization" target="_blank">add the university as an organization</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+field_type: entity_reference

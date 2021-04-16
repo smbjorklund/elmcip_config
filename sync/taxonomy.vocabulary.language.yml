@@ -1,0 +1,8 @@
+uuid: 3313cad9-3b9e-4632-ab15-dfad72dfcfe2
+langcode: en
+status: true
+dependencies: {  }
+name: Language
+vid: language
+description: 'Human languages'
+weight: 0

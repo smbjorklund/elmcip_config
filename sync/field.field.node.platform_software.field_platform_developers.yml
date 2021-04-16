@@ -1,0 +1,30 @@
+uuid: c4bb0dd4-20b7-41f2-bc7a-0d9ee297c655
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_platform_developers
+    - node.type.person
+    - node.type.platform_software
+id: node.platform_software.field_platform_developers
+field_name: field_platform_developers
+entity_type: node
+bundle: platform_software
+label: Developers
+description: 'Enter the individuals who were key to the development of this platform/software, if applicable (e.g. Daniel Howe for RITA libraries). The person will autocomplete if they are in the database. If person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

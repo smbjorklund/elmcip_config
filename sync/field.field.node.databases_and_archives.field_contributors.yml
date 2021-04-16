@@ -1,0 +1,21 @@
+uuid: e7a1cbb1-1ca6-4c19-8987-be5d76aaff69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contributors
+    - node.type.databases_and_archives
+  module:
+    - text
+id: node.databases_and_archives.field_contributors
+field_name: field_contributors
+entity_type: node
+bundle: databases_and_archives
+label: 'Contributors'' notes'
+description: 'Please provide notes about the various roles key people (indicated above) played in this project.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

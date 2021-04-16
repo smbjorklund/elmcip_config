@@ -1,0 +1,23 @@
+uuid: cba7fd63-5d97-46a1-b583-f2d11434abf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archiveurl
+    - node.type.critical_writing
+  module:
+    - link
+id: node.critical_writing.field_archiveurl
+field_name: field_archiveurl
+entity_type: node
+bundle: critical_writing
+label: 'Archive URL'
+description: 'If the critical writing is available at a web-based archive, such as the Internet Archive, or a university open research archive, link here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

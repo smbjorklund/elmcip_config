@@ -1,0 +1,21 @@
+uuid: 0e258429-a4fe-4f13-838b-43ebd4b05a88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_initiated
+    - node.type.databases_and_archives
+  module:
+    - datetime
+id: node.databases_and_archives.field_year_initiated
+field_name: field_year_initiated
+entity_type: node
+bundle: databases_and_archives
+label: 'Year Initiated'
+description: 'Enter the year this database or archive was first made available. A more detailed chronology can be provided in the description.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

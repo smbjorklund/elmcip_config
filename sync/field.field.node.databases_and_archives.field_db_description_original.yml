@@ -1,0 +1,21 @@
+uuid: 6443ed3f-0733-4d1e-a841-bb0d50210615
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_description_original
+    - node.type.databases_and_archives
+  module:
+    - text
+id: node.databases_and_archives.field_db_description_original
+field_name: field_db_description_original
+entity_type: node
+bundle: databases_and_archives
+label: 'Description (Original Language)'
+description: '<strong>If the work is not written in English</strong>, write a brief description in the original language. If you source the description from elsewhere, indicate the source in parentheses after the description.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

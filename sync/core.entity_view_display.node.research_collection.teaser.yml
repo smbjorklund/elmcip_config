@@ -1,0 +1,67 @@
+uuid: b2ab5ac9-4565-4299-ac53-781c938e6fa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.research_collection.field_collection_contributors
+    - field.field.node.research_collection.field_collection_curated_by
+    - field.field.node.research_collection.field_collection_platform_ref
+    - field.field.node.research_collection.field_creative_works
+    - field.field.node.research_collection.field_critical_writing
+    - field.field.node.research_collection.field_events
+    - field.field.node.research_collection.field_media
+    - field.field.node.research_collection.field_organizations
+    - field.field.node.research_collection.field_people
+    - field.field.node.research_collection.field_publishers
+    - field.field.node.research_collection.field_rc_db_archive
+    - field.field.node.research_collection.field_rc_description
+    - field.field.node.research_collection.field_teaching_resources
+    - node.type.research_collection
+  module:
+    - text
+    - user
+id: node.research_collection.teaser
+targetEntityType: node
+bundle: research_collection
+mode: teaser
+content:
+  field_collection_curated_by:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_events:
+    label: above
+    weight: 0
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_rc_description:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_collection_contributors: true
+  field_collection_platform_ref: true
+  field_creative_works: true
+  field_critical_writing: true
+  field_media: true
+  field_organizations: true
+  field_people: true
+  field_publishers: true
+  field_rc_db_archive: true
+  field_teaching_resources: true

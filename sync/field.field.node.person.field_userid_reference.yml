@@ -1,0 +1,28 @@
+uuid: 5959a9a0-f414-4363-9851-fa966efeeb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_userid_reference
+    - node.type.person
+id: node.person.field_userid_reference
+field_name: field_userid_reference
+entity_type: node
+bundle: person
+label: 'KB User ID'
+description: 'If the author is a contributor to the ELMCIP Knowledge Base, enter the author''s KB username here, usually first and last name. The field will autocomplete.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles: null
+field_type: entity_reference

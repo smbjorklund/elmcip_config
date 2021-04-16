@@ -1,0 +1,120 @@
+uuid: dd46f2fa-25a9-4e6f-a7ac-97fa12c0d312
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.event.field_address
+    - field.field.node.event.field_archiveurl
+    - field.field.node.event.field_associated_event
+    - field.field.node.event.field_curator
+    - field.field.node.event.field_date
+    - field.field.node.event.field_editorial_notes
+    - field.field.node.event.field_email
+    - field.field.node.event.field_event_abstract_lang
+    - field.field.node.event.field_event_abstract_lang_tax
+    - field.field.node.event.field_event_series
+    - field.field.node.event.field_files
+    - field.field.node.event.field_individual_organizers
+    - field.field.node.event.field_media_asset
+    - field.field.node.event.field_multi_images
+    - field.field.node.event.field_node_ref
+    - field.field.node.event.field_record_status_tax
+    - field.field.node.event.field_textfield
+    - field.field.node.event.field_url
+    - field.field.node.event.taxonomy_vocabulary_1
+    - field.field.node.event.taxonomy_vocabulary_2
+    - node.type.event
+  module:
+    - datetime
+    - link
+    - text
+    - user
+id: node.event.token
+targetEntityType: node
+bundle: event
+mode: token
+content:
+  field_archiveurl:
+    label: hidden
+    weight: 5
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_date:
+    label: hidden
+    weight: 0
+    type: datetime_default
+    settings:
+      format_type: default
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_email:
+    label: hidden
+    weight: 2
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_files:
+    label: hidden
+    weight: 2
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_node_ref:
+    label: hidden
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_textfield:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_url:
+    label: hidden
+    weight: 4
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_associated_event: true
+  field_curator: true
+  field_editorial_notes: true
+  field_event_abstract_lang: true
+  field_event_abstract_lang_tax: true
+  field_event_series: true
+  field_individual_organizers: true
+  field_media_asset: true
+  field_multi_images: true
+  field_record_status_tax: true
+  taxonomy_vocabulary_1: true
+  taxonomy_vocabulary_2: true

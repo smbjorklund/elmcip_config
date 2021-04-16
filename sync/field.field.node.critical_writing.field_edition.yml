@@ -1,0 +1,19 @@
+uuid: e9d1190f-9c0c-49a0-a5b7-fcaf767d382a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition
+    - node.type.critical_writing
+id: node.critical_writing.field_edition
+field_name: field_edition
+entity_type: node
+bundle: critical_writing
+label: Edition
+description: 'If this critical writing has been published in multiple editions, enter information about this edition here (e.g. 2nd edition).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

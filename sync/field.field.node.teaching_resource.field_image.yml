@@ -1,0 +1,23 @@
+uuid: 4810291b-0152-49ea-a3a5-b45a54b9599f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.teaching_resource
+id: node.teaching_resource.field_image
+field_name: field_image
+entity_type: node
+bundle: teaching_resource
+label: Image
+description: 'Add any relevant image files.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

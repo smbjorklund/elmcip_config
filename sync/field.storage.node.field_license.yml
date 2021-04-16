@@ -1,0 +1,66 @@
+uuid: 28d090e3-05fe-4a34-b49a-cf2b8911e408
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_license
+field_name: field_license
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'Public Domain'
+    -
+      value: '1'
+      label: GPL
+    -
+      value: '14'
+      label: Apache
+    -
+      value: '2'
+      label: 'CC Attribution'
+    -
+      value: '3'
+      label: 'CC Attribution Share Alike'
+    -
+      value: '4'
+      label: 'CC Attribution No Derivatives'
+    -
+      value: '5'
+      label: 'CC Attribution Non-Commercial'
+    -
+      value: '6'
+      label: 'CC Attribution Non-Commercial Share Alike'
+    -
+      value: '7'
+      label: 'CC Attribution Non-Commercial No Derivatives'
+    -
+      value: '8'
+      label: 'All Rights reserved'
+    -
+      value: '9'
+      label: Other
+    -
+      value: '10'
+      label: MIT
+    -
+      value: '11'
+      label: PSFL
+    -
+      value: '12'
+      label: BSD
+    -
+      value: '13'
+      label: ODbL
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

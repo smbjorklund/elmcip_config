@@ -1,0 +1,29 @@
+uuid: 1d6dc3ec-f72c-46ed-abd4-7edcdcf5fbe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_event
+    - node.type.event
+id: node.event.field_associated_event
+field_name: field_associated_event
+entity_type: node
+bundle: event
+label: 'Associated with another event'
+description: 'If this event is associated with another event (for instance a night of readings presented at a conference), link to that event here. The event will autocomplete if it is database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      event: event
+field_type: entity_reference

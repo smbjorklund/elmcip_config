@@ -1,0 +1,21 @@
+uuid: f2f4c364-c1fd-43d6-b666-76b50cac24ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yeardied
+    - node.type.person
+  module:
+    - datetime
+id: node.person.field_yeardied
+field_name: field_yeardied
+entity_type: node
+bundle: person
+label: Died
+description: "If applicable, enter the year of death.\n<br>Format: 2017"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,19 @@
+uuid: 9e0ce135-f8f2-4e4b-931a-f17b130cc863
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.publisher
+id: node.publisher.field_email
+field_name: field_email
+entity_type: node
+bundle: publisher
+label: Email
+description: 'Provide the email address of the publisher.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

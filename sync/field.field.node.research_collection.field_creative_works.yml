@@ -1,0 +1,30 @@
+uuid: 89dbd1b9-a8c9-4606-b222-7f834ff8e222
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creative_works
+    - node.type.research_collection
+    - node.type.work
+id: node.research_collection.field_creative_works
+field_name: field_creative_works
+entity_type: node
+bundle: research_collection
+label: 'Creative works'
+description: 'Use this field to include creative works in this collection. The creative work will autocomplete if it is in the database. If the creative work is not in the database, <a href="/node/add/work" target="_blank">add the creative work</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      work: work
+field_type: entity_reference

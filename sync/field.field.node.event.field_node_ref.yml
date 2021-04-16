@@ -1,0 +1,32 @@
+uuid: 45e57629-ad47-4dce-a245-0e8ce2914bca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_ref
+    - node.type.event
+    - node.type.organization
+    - node.type.publisher
+id: node.event.field_node_ref
+field_name: field_node_ref
+entity_type: node
+bundle: event
+label: Organization
+description: 'Enter the name of the organization that arranged the event. The organization will autocomplete if it is in the database. If the organization is not yet in the database, <a href="/node/add/organization" target="_blank">add the organization</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      organization: organization
+      publisher: publisher
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 8d05f776-ed1e-4624-86fd-22a6124e23be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_language
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_db_language
+field_name: field_db_language
+entity_type: node
+bundle: databases_and_archives
+label: Language
+description: 'Select the primary human language(s) of the database or archive.  Select multiple if the database or archive includes multiple languages. CTRL-click or command-click (Apple) to select multiple languages.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

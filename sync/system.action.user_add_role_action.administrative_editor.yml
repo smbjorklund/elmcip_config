@@ -1,0 +1,14 @@
+uuid: 405e263f-7c47-4245-9742-621f8bfd91e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administrative_editor
+  module:
+    - user
+id: user_add_role_action.administrative_editor
+label: 'Add the administrative editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrative_editor

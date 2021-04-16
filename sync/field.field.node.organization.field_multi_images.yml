@@ -1,0 +1,23 @@
+uuid: af0c5cc6-ae8a-4d24-9e73-f454369f94cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multi_images
+    - node.type.organization
+id: node.organization.field_multi_images
+field_name: field_multi_images
+entity_type: node
+bundle: organization
+label: Images
+description: 'Upload screenshots or other images related to the organization.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

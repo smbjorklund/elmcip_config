@@ -1,0 +1,30 @@
+uuid: 7ad80235-abf2-44d5-9274-ad2a46b06890
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_individual_organizers
+    - node.type.event
+    - node.type.person
+id: node.event.field_individual_organizers
+field_name: field_individual_organizers
+entity_type: node
+bundle: event
+label: 'Individual Organizers'
+description: 'Use this field to indicate individual people who served as conference chairs or other principal roles in this event. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

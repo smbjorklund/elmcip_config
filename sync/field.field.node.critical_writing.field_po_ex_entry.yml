@@ -1,0 +1,23 @@
+uuid: 0e9c72fe-e67d-4ac1-9956-7e5db5e856c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_po_ex_entry
+    - node.type.critical_writing
+  module:
+    - link
+id: node.critical_writing.field_po_ex_entry
+field_name: field_po_ex_entry
+entity_type: node
+bundle: critical_writing
+label: 'PO.EX entry'
+description: 'If there is a record for this critical writing in the <a href="https://po-ex.net" target="_blank">PO.EX database</a>, enter the URL of the entry.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

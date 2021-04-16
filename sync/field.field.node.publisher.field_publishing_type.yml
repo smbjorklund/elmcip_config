@@ -1,0 +1,23 @@
+uuid: f65827eb-acfa-4bdc-9d1b-62d125985a03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publishing_type
+    - node.type.publisher
+id: node.publisher.field_publishing_type
+field_name: field_publishing_type
+entity_type: node
+bundle: publisher
+label: 'Publishing type'
+description: 'Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 34296890-588d-40f8-8c4c-d75ab32c164d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license
+    - node.type.platform_software
+  module:
+    - options
+id: node.platform_software.field_license
+field_name: field_license
+entity_type: node
+bundle: platform_software
+label: License
+description: 'Select the license that the platform is released under from the list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

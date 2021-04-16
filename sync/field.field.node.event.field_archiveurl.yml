@@ -1,0 +1,23 @@
+uuid: feda93f1-b890-45b1-8d5f-baea30039d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archiveurl
+    - node.type.event
+  module:
+    - link
+id: node.event.field_archiveurl
+field_name: field_archiveurl
+entity_type: node
+bundle: event
+label: 'Archive URL'
+description: 'If information about the event is available at a web-based archive, such as the Internet Archive, or a university open research archive, link here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

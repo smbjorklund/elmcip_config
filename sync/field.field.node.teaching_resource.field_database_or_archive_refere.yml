@@ -1,0 +1,30 @@
+uuid: afe3a6f7-6d59-45ee-8370-15612d401ee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_database_or_archive_refere
+    - node.type.databases_and_archives
+    - node.type.teaching_resource
+id: node.teaching_resource.field_database_or_archive_refere
+field_name: field_database_or_archive_refere
+entity_type: node
+bundle: teaching_resource
+label: 'Database or Archive Referenced'
+description: 'If the teaching resource references a database or archive, link to it here. The database or archive will autocomplete if it is in the database. If the database or archive is not yet in the database, <a href="/node/add/databases-and-archives">add the database or archive</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      databases_and_archives: databases_and_archives
+field_type: entity_reference

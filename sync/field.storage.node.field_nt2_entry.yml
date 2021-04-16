@@ -1,0 +1,19 @@
+uuid: be95c832-8703-409c-ab50-2f076ecc541a
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_nt2_entry
+field_name: field_nt2_entry
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

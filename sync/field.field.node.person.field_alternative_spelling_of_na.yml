@@ -1,0 +1,19 @@
+uuid: 2d730c1d-9661-46fd-a506-7a507b9bf976
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternative_spelling_of_na
+    - node.type.person
+id: node.person.field_alternative_spelling_of_na
+field_name: field_alternative_spelling_of_na
+entity_type: node
+bundle: person
+label: 'Alternative spelling of name in original language alphabet'
+description: 'If the author''s name has another spelling in the author''s native language (e.g. a Russian name in Cyrillic) enter it in this field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

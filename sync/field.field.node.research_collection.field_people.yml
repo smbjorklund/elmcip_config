@@ -1,0 +1,30 @@
+uuid: c31ecd51-d7a5-40f6-b5e9-b5af224932a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people
+    - node.type.person
+    - node.type.research_collection
+id: node.research_collection.field_people
+field_name: field_people
+entity_type: node
+bundle: research_collection
+label: People
+description: 'Use this field to include people in this collection. The person’s name will autocomplete if it is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

@@ -1,0 +1,42 @@
+uuid: 7635eb6b-dd1a-4c94-89e6-6dbbaddc3207
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publisher.field_address
+    - field.field.node.publisher.field_editor_name
+    - field.field.node.publisher.field_editorial_notes
+    - field.field.node.publisher.field_eissn
+    - field.field.node.publisher.field_email
+    - field.field.node.publisher.field_events
+    - field.field.node.publisher.field_issn_text
+    - field.field.node.publisher.field_publishing_type
+    - field.field.node.publisher.field_record_status_tax
+    - field.field.node.publisher.field_textfield
+    - field.field.node.publisher.field_url
+    - node.type.publisher
+  module:
+    - user
+id: node.publisher.teaser
+targetEntityType: node
+bundle: publisher
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_editor_name: true
+  field_editorial_notes: true
+  field_eissn: true
+  field_email: true
+  field_events: true
+  field_issn_text: true
+  field_publishing_type: true
+  field_record_status_tax: true
+  field_textfield: true
+  field_url: true

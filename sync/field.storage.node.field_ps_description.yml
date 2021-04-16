@@ -1,0 +1,19 @@
+uuid: 6c4a6ca0-b6a9-409c-98dd-28ed1ac6a3b8
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_ps_description
+field_name: field_ps_description
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

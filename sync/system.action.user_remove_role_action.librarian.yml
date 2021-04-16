@@ -1,0 +1,14 @@
+uuid: df1cde00-7cde-4bbc-9a75-54d708c69ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.librarian
+  module:
+    - user
+id: user_remove_role_action.librarian
+label: 'Remove the Librarian role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: librarian

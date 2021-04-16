@@ -1,0 +1,19 @@
+uuid: cae071c1-93d0-4e10-83e6-fe2d7f01bf07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_email
+    - node.type.databases_and_archives
+id: node.databases_and_archives.field_contact_email
+field_name: field_contact_email
+entity_type: node
+bundle: databases_and_archives
+label: 'Contact e-mail'
+description: 'Enter the resource''s primary e-mail address (often listed on an "about" page) or the email of an administrator or another person closely affiliated with the resource.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

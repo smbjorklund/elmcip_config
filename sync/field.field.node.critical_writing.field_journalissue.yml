@@ -1,0 +1,19 @@
+uuid: 14f35aed-eabe-49c5-aa26-21708f610c79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journalissue
+    - node.type.critical_writing
+id: node.critical_writing.field_journalissue
+field_name: field_journalissue
+entity_type: node
+bundle: critical_writing
+label: 'Journal volume and issue'
+description: "If an article appears in a numbered and/or dated serial, enter the volume number first, followed by a period and the issue number. For a publication paginated by issue, e.g. (volume 42, issue 1), simply enter: 42.1.\nFor an article published in a weekly or monthly periodical, enter the day first, then the month (abbreviated except for May, June, and July), e.g. 20 Oct. or 01 May. "
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

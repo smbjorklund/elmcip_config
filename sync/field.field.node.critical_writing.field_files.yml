@@ -1,0 +1,22 @@
+uuid: 75ae4d37-4f0a-4a3b-9cd0-a716266eaeb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.critical_writing
+id: node.critical_writing.field_files
+field_name: field_files
+entity_type: node
+bundle: critical_writing
+label: Attachment
+description: 'Attach relevant files here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles: {  }
+  handler: 'default:media'
+field_type: entity_reference

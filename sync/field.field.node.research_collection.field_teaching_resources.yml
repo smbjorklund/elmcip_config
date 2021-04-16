@@ -1,0 +1,30 @@
+uuid: c617e77a-9425-4e66-80c7-0c8599f33388
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaching_resources
+    - node.type.research_collection
+    - node.type.teaching_resource
+id: node.research_collection.field_teaching_resources
+field_name: field_teaching_resources
+entity_type: node
+bundle: research_collection
+label: 'Teaching Resources'
+description: 'Use this field to include teaching resources in this collection. The teaching resource will autocomplete if it is in the database. If the teaching resource is not in the database, <a href="/node/add/teaching-resource" target="_blank">add the teaching resource</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      teaching_resource: teaching_resource
+field_type: entity_reference

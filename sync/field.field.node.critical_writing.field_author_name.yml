@@ -1,0 +1,30 @@
+uuid: 29475b09-6331-4867-96b1-92c82112e3e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_name
+    - node.type.critical_writing
+    - node.type.person
+id: node.critical_writing.field_author_name
+field_name: field_author_name
+entity_type: node
+bundle: critical_writing
+label: Author
+description: 'Enter the name of the author. The author''s name will autocomplete if it is in the database. If the author is not yet in the database, <a href="/node/add/person" target="_blank">add the author</a>. Use additional fields for co-authors.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

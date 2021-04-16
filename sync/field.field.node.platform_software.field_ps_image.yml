@@ -1,0 +1,23 @@
+uuid: 131ed82a-d486-429d-bd60-ce05e9382392
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ps_image
+    - node.type.platform_software
+id: node.platform_software.field_ps_image
+field_name: field_ps_image
+entity_type: node
+bundle: platform_software
+label: Image
+description: 'Attach relevant images, such as screenshots of the development environment or other useful images.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    target_bundles:
+      image_flickr: image_flickr
+  handler: 'default:media'
+field_type: entity_reference

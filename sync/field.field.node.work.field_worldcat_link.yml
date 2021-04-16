@@ -1,0 +1,23 @@
+uuid: 2571a110-f733-43e9-8466-dc818083674a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_worldcat_link
+    - node.type.work
+  module:
+    - link
+id: node.work.field_worldcat_link
+field_name: field_worldcat_link
+entity_type: node
+bundle: work
+label: 'WorldCat Permalink'
+description: 'If there is a record for this work in the <a href="https://www.worldcat.org" target="_blank">WorldCat library database</a>, enter the Permalink here. Please indicate the year of publication in the year of publication field of the URL (e.g. 1996. ed.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

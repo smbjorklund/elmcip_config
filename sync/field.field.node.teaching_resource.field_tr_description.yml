@@ -1,0 +1,21 @@
+uuid: 048afd01-15b7-40b5-bd2a-786062eea20a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_description
+    - node.type.teaching_resource
+  module:
+    - text
+id: node.teaching_resource.field_tr_description
+field_name: field_tr_description
+entity_type: node
+bundle: teaching_resource
+label: 'Abstract (in English)'
+description: 'Provide a brief abstract of the teaching resource in English. If you source the abstract from elsewhere, indicate the source in parentheses after the abstract.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

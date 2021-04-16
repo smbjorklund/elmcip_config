@@ -1,0 +1,8 @@
+uuid: da63ea4c-c015-4822-8839-39e195a0b1f3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Record status'
+vid: record_status
+description: 'Editorial status of a record'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 70261eba-e99b-4b58-a148-b42578c01ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inbook
+    - node.type.critical_writing
+id: node.critical_writing.field_inbook
+field_name: field_inbook
+entity_type: node
+bundle: critical_writing
+label: 'Appears in'
+description: 'If the essay or article appears in a book, anthology, or special issue of a journal enter the title here. Also use this field to indicate that a conference paper appears in a particular panel session of a conference. The name will autocomplete if it is in the database. If the publication is not yet in the database <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 9dd01314-2a2e-48bf-9c58-d93f6680aa76
+langcode: en
+status: true
+dependencies: {  }
+name: 'Teaching Resource Type'
+vid: teaching_resource_type
+description: 'Teaching resource types'
+weight: 0

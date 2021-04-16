@@ -1,0 +1,10 @@
+uuid: 371323d8-835e-4a2d-ae77-96b19fc025cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.data_export
+label: data_export
+targetEntityType: node
+cache: true

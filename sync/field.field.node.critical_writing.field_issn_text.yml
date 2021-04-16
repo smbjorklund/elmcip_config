@@ -1,0 +1,19 @@
+uuid: c4ab0890-af2e-4881-b2fa-bbe82f9793ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_issn_text
+    - node.type.critical_writing
+id: node.critical_writing.field_issn_text
+field_name: field_issn_text
+entity_type: node
+bundle: critical_writing
+label: ISSN
+description: 'If the critical writing has an ISSN, add it here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

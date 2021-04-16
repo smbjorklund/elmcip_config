@@ -1,0 +1,19 @@
+uuid: b52f526d-ca34-4327-86aa-c66a441b07c5
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_node_ref_work
+field_name: field_node_ref_work
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

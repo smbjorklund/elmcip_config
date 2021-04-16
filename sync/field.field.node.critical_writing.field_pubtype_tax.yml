@@ -1,0 +1,23 @@
+uuid: 44c2c9a9-2073-4b46-8f77-c044535da2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pubtype_tax
+    - node.type.critical_writing
+id: node.critical_writing.field_pubtype_tax
+field_name: field_pubtype_tax
+entity_type: node
+bundle: critical_writing
+label: 'Publication Type'
+description: "Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.\n<br><strong>Note</strong>: Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

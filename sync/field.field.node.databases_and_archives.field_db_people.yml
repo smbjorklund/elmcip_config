@@ -1,0 +1,30 @@
+uuid: 6653dc7b-6908-41e5-8609-d8cf80147c3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_db_people
+    - node.type.databases_and_archives
+    - node.type.person
+id: node.databases_and_archives.field_db_people
+field_name: field_db_people
+entity_type: node
+bundle: databases_and_archives
+label: 'Key People'
+description: 'Enter the names of the people who have played key roles in designing and developing this digital-humanities resource (e.g. leaders, developers, editors). Enter the name of each person separately. The name will autocomplete if the person is in the database. If the person is not yet in the database, <a href="/node/add/person" target="_blank">add the person</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      person: person
+field_type: entity_reference

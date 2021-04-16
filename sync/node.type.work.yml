@@ -1,0 +1,16 @@
+uuid: 5299a165-a60d-4a54-8a2a-63b3991bfffc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'features:0:'
+name: 'Creative Work'
+type: work
+description: 'Works of electronic literature, digital literary art, and print antecedents.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: 38020830-efb9-434f-9ad2-d749d12c6401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_version_history
+    - node.type.platform_software
+  module:
+    - text
+id: node.platform_software.field_version_history
+field_name: field_version_history
+entity_type: node
+bundle: platform_software
+label: 'Version history (text)'
+description: 'Provide a brief version history of the platform if available. Indicate major changes in functionality over time. Note that specific versions of given platforms (e.g. HTML 2.0, HTML 5) should not have individual records, though tags can be used to indicate versions used on individual works. If you source the version history from elsewhere, indicate the source in parentheses after the version history.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

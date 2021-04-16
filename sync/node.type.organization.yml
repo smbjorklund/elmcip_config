@@ -1,0 +1,16 @@
+uuid: 8cd43fb5-06fb-4e6a-a670-762f6a02f3d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'features:0:'
+name: Organizations
+type: organization
+description: 'Institutional entities in which groups of persons collaborate for some end related to the field of electronic literature. Examples include: nonprofit organizations, arts organizations, research groups, academic consortia, academic departments, academic prgrams programs, etc. The record includes a descriptions, the location, and contact information about the organization. Note: Journals and presses are listed as Publishers, not as Organizations.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

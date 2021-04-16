@@ -1,0 +1,29 @@
+uuid: 9e1bf0b8-68b5-40b5-bf48-79c03debe4e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tr_critical
+    - node.type.critical_writing
+id: node.critical_writing.field_tr_critical
+field_name: field_tr_critical
+entity_type: node
+bundle: critical_writing
+label: 'Critical Writing referenced'
+description: 'If the critical writing references  other critical writing, cross-reference it with a  link  here. The critical writing will autocomplete if it is in the database. If the critical writing is not yet in the database,  <a href="/node/add/critical-writing" target="_blank">add the critical writing</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      critical_writing: critical_writing
+field_type: entity_reference

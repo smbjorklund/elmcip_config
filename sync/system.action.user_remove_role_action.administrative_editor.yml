@@ -1,0 +1,14 @@
+uuid: c56970e9-1f57-42e5-ab83-a5694917e8e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administrative_editor
+  module:
+    - user
+id: user_remove_role_action.administrative_editor
+label: 'Remove the administrative editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrative_editor
