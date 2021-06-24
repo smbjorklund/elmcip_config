@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d37411cd121e508fb4f1d8e8b030e915",
+    "content-hash": "8bb4b89cce0b10de664578c3f8637c19",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3279,6 +3279,54 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/rest_oai_pmh",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rest_oai_pmh.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rest_oai_pmh-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "48009314b15e69a2a0f5fafeb43fc6b4429d2f59"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1604676667",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "joecorall",
+                    "homepage": "https://www.drupal.org/user/1144790"
+                }
+            ],
+            "description": "Exposes entities as Dublin Core in an OAI-PMH endpoint using Views, REST, and a metadata mapping module of your choice",
+            "homepage": "https://www.drupal.org/project/rest_oai_pmh",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/rest_oai_pmh",
+                "issues": "https://www.drupal.org/project/issues/rest_oai_pmh"
             }
         },
         {
@@ -8080,7 +8128,8 @@
     "stability-flags": {
         "drupal/config_split": 10,
         "drupal/entity_export_csv": 10,
-        "drupal/media_migration": 20
+        "drupal/media_migration": 20,
+        "drupal/rest_oai_pmh": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
