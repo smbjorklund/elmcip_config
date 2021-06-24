@@ -10,7 +10,9 @@ field_name: field_doi
 entity_type: node
 bundle: work
 label: DOI
-description: "A digital object identifier <a target=\"_blank\" href=\"https://www.doi.org\">(DOI)</a> is a unique alphanumeric string assigned by a registration agency to identify content and provide a persistent link to its location on the Internet. The publisher assigns a DOI when your article is published and made available electronically.\nAll DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182"
+description: |-
+  A digital object identifier <a target="_blank" href="https://www.doi.org">(DOI)</a> is a unique alphanumeric string assigned by a registration agency to identify content and provide a persistent link to its location on the Internet. The publisher assigns a DOI when your article is published and made available electronically.
+  All DOI numbers begin with a 10 and contain a prefix and a suffix separated by a slash. Example: 10.1000/182
 required: false
 translatable: false
 default_value: {  }

@@ -12,7 +12,9 @@ field_name: field_yearborn
 entity_type: node
 bundle: person
 label: Born
-description: "Enter the year of birth.\n<br>Format: 2017"
+description: |-
+  Enter the year of birth.
+  <br>Format: 2017
 required: false
 translatable: false
 default_value: {  }

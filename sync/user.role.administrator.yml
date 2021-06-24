@@ -1,4 +1,4 @@
-uuid: 6b310c2c-82b0-420c-81b0-40259323172d
+uuid: 2cba5f20-e7ab-4d56-aa2a-413499f95acd
 langcode: en
 status: true
 dependencies: {  }
@@ -13,7 +13,6 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access dashboard'
-  - 'access devel information'
   - 'access display suite'
   - 'access library reports'
   - 'access private fields'
@@ -23,12 +22,8 @@ permissions:
   - 'access toolbar'
   - 'access user profiles'
   - 'add media from remote sources'
-  - admin_classes
   - admin_display_suite
-  - admin_fields
-  - admin_view_modes
   - 'administer CAPTCHA settings'
-  - 'administer RDF field mappings'
   - 'administer actions'
   - 'administer blocks'
   - 'administer contact forms'
@@ -286,7 +281,6 @@ permissions:
   - 'edit terms in 7'
   - 'edit terms in 8'
   - 'edit terms in 9'
-  - 'execute php code'
   - 'export and import settings'
   - 'flush imagecache'
   - 'import media'
@@ -319,7 +313,6 @@ permissions:
   - 'skip CAPTCHA'
   - 'submit latitude/longitude'
   - 'switch shortcut sets'
-  - 'switch users'
   - 'toggle multistep'
   - 'translate interface'
   - 'upload files'
@@ -332,15 +325,9 @@ permissions:
   - 'use text format 1'
   - 'use text format 2'
   - 'use text format 3'
-  - 'use text format basic_html'
   - 'use text format basic_text_editor'
   - 'use text format ds_code'
-  - 'use text format full_html'
-  - 'use text format restricted_html'
   - 'use views exporter'
-  - 'view advanced help index'
-  - 'view advanced help popup'
-  - 'view advanced help topic'
   - 'view all panes'
   - 'view date repeats'
   - 'view faq page'

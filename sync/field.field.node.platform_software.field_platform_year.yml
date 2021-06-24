@@ -12,7 +12,9 @@ field_name: field_platform_year
 entity_type: node
 bundle: platform_software
 label: 'Year initiated'
-description: "Indicate the year that this platform/software was first released.\n<br>Format: 2017"
+description: |-
+  Indicate the year that this platform/software was first released.
+  <br>Format: 2017
 required: false
 translatable: false
 default_value: {  }

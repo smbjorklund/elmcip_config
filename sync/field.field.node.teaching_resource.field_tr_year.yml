@@ -12,7 +12,9 @@ field_name: field_tr_year
 entity_type: node
 bundle: teaching_resource
 label: Year
-description: "Indicate the year the teaching resource was created.    \n<br>Format: 2017"
+description: |-
+  Indicate the year the teaching resource was created.    
+  <br>Format: 2017
 required: false
 translatable: false
 default_value: {  }

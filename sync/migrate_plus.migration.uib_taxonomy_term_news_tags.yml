@@ -1,7 +1,9 @@
-uuid: 89f5f511-7ce2-43f2-8f66-3ff9d38e9f38
+uuid: 43fecf56-7d70-48f1-9c26-7318a50e025d
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: MZnoaDWAtjEgRSYIwv7Zvp_pnxrHhjr_5Q1T341HOG0
 id: uib_taxonomy_term_news_tags
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

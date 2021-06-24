@@ -1,7 +1,9 @@
-uuid: a4fc8497-29cb-4ab2-87cf-caffb88d31e3
+uuid: dfff4142-5b4f-40cb-a4e9-85ffc0c75bdd
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: G38z96PjuF3lRG8A9E8QmzMHMNwstmA-GIg2YFsZ4rA
 id: uib_taxonomy_term_publisher_and_journal_types
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

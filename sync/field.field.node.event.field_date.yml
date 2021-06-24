@@ -12,7 +12,9 @@ field_name: field_date
 entity_type: node
 bundle: event
 label: Date
-description: "Enter or select the (starting) date of the event.\n<br>E.g., 2017-02-18"
+description: |-
+  Enter or select the (starting) date of the event.
+  <br>E.g., 2017-02-18
 required: false
 translatable: false
 default_value: {  }

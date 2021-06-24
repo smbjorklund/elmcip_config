@@ -1,7 +1,9 @@
-uuid: 426dd887-c631-43fc-9d9f-49eb622c9a9e
+uuid: 669e2956-360d-4923-9370-45db047555d9
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: yGU_m7gcSkCEeT-AIiRlfE6LuYHZKrlrWwKY3LmMtJ8
 id: uib_node_complete_critical_writing
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null

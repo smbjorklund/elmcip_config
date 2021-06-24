@@ -12,7 +12,9 @@ field_name: field_yeardied
 entity_type: node
 bundle: person
 label: Died
-description: "If applicable, enter the year of death.\n<br>Format: 2017"
+description: |-
+  If applicable, enter the year of death.
+  <br>Format: 2017
 required: false
 translatable: false
 default_value: {  }

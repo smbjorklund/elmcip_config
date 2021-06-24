@@ -1,12 +1,12 @@
-uuid: e5f4739f-28c1-4712-bd2d-37092537196a
+uuid: 245ab026-7ca2-4cba-b3d9-9c31c0ac0182
 langcode: en
 status: true
 dependencies:
-  module:
-    - uib_humanists
   enforced:
     module:
       - uib_humanists
+_core:
+  default_config_hash: JWcBs46EjSIfZOBF-XpQP1Jwop1JKsvRaJr2cu7mHaw
 id: uib_files
 label: 'UiB files'
 description: 'UiB humanists migrate files, images, documents, videos'

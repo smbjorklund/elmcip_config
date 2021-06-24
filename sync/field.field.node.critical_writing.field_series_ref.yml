@@ -10,7 +10,8 @@ field_name: field_series_ref
 entity_type: node
 bundle: critical_writing
 label: Series
-description: "If the critical work was published as part of a series, enter the series title here. The name will autocomplete if the series is already in the database. If the series is not yet in the database, <a href=\"/node/add/critical-writing\" target=\"_blank\">add the series</a>. <strong>Note:</strong> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</i>, are series).\n"
+description: |
+  If the critical work was published as part of a series, enter the series title here. The name will autocomplete if the series is already in the database. If the series is not yet in the database, <a href="/node/add/critical-writing" target="_blank">add the series</a>. <strong>Note:</strong> Typically, you will be entering the name of book series (e.g. <i>Electronic Mediations</i> on the University of Minnesota Press), though there are a few exceptions (e.g. <i>ebr</i> threads, such as <i>electropoetics</i> and <i>critical ecologies</i>, are series).
 required: false
 translatable: false
 default_value: {  }

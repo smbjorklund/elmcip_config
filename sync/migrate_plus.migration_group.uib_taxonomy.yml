@@ -1,12 +1,12 @@
-uuid: 7577b72f-fe3d-45c6-a37d-c3702fc93b29
+uuid: d89c3890-8cdf-4f94-bb3d-1e99986bc04c
 langcode: en
 status: true
 dependencies:
-  module:
-    - uib_humanists
   enforced:
     module:
       - uib_humanists
+_core:
+  default_config_hash: wY0Dq5IgHJDHc0KJpFxRkON_OPVi0kRANGri__awvGk
 id: uib_taxonomy
 label: 'UiB taxonomy'
 description: 'UiB humanists taxonomy migration'

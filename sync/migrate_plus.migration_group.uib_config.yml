@@ -1,12 +1,12 @@
-uuid: 793d048a-3cca-408f-b5ec-2b7bbcd6ab10
+uuid: fbd0628c-b8cd-4791-a0a6-350facf520aa
 langcode: en
 status: true
 dependencies:
-  module:
-    - uib_humanists
   enforced:
     module:
       - uib_humanists
+_core:
+  default_config_hash: mZbW28AOJ_HGqH7axKFvwANLTFWZZ0J_k9uw_KJSe-Q
 id: uib_config
 label: 'UiB config'
 description: 'UiB humanists config migration from Drupal 7'
