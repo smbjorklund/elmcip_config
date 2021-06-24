@@ -59,11 +59,19 @@ mode: default
 content:
   field_abstract_lang:
     label: above
-    weight: 23
+    weight: 24
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_abstract_lang_tax:
+    type: entity_reference_label
+    weight: 23
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_archiveurl:
     label: above
     weight: 7
@@ -86,7 +94,7 @@ content:
     region: content
   field_authoring_software_entry:
     label: inline
-    weight: 27
+    weight: 29
     type: link
     settings:
       trim_length: 80
@@ -98,7 +106,7 @@ content:
     region: content
   field_brown_digital_repository:
     label: above
-    weight: 35
+    weight: 37
     type: link
     settings:
       trim_length: 80
@@ -118,11 +126,19 @@ content:
     region: content
   field_contributors:
     label: above
-    weight: 36
+    weight: 38
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_doi:
+    type: string
+    weight: 31
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_downloadurl:
     label: above
     weight: 9
@@ -145,7 +161,7 @@ content:
     region: content
   field_electronic_literature_dire:
     label: inline
-    weight: 24
+    weight: 26
     type: link
     settings:
       trim_length: 80
@@ -157,7 +173,7 @@ content:
     region: content
   field_files:
     label: above
-    weight: 38
+    weight: 41
     type: entity_reference_entity_view
     settings:
       view_mode: default
@@ -166,7 +182,7 @@ content:
     region: content
   field_i_e_poetry_entry:
     label: inline
-    weight: 25
+    weight: 27
     type: link
     settings:
       trim_length: 80
@@ -209,13 +225,22 @@ content:
     region: content
   field_media_asset:
     label: above
-    weight: 37
+    weight: 39
     type: entity_reference_entity_view
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
+  field_multi_image:
+    type: entity_reference_entity_view
+    weight: 40
+    region: content
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
   field_node_ref:
     label: above
     weight: 5
@@ -234,7 +259,7 @@ content:
     region: content
   field_nt2_entry:
     label: inline
-    weight: 26
+    weight: 28
     type: link
     settings:
       trim_length: 80
@@ -246,7 +271,7 @@ content:
     region: content
   field_other_edition_work:
     label: above
-    weight: 32
+    weight: 34
     type: entity_reference_label
     settings:
       link: true
@@ -254,7 +279,7 @@ content:
     region: content
   field_other_lang_ver_link:
     label: above
-    weight: 30
+    weight: 25
     type: entity_reference_label
     settings:
       link: true
@@ -262,7 +287,7 @@ content:
     region: content
   field_part_of_another_work:
     label: above
-    weight: 31
+    weight: 33
     type: entity_reference_label
     settings:
       link: true
@@ -270,7 +295,7 @@ content:
     region: content
   field_po_ex_entry:
     label: inline
-    weight: 28
+    weight: 30
     type: link
     settings:
       trim_length: 80
@@ -282,7 +307,7 @@ content:
     region: content
   field_pullquote:
     label: above
-    weight: 33
+    weight: 35
     type: text_default
     settings: {  }
     third_party_settings: {  }
@@ -324,7 +349,7 @@ content:
     region: content
   field_tech_notes:
     label: above
-    weight: 34
+    weight: 36
     type: text_default
     settings: {  }
     third_party_settings: {  }
@@ -337,7 +362,7 @@ content:
     third_party_settings: {  }
     region: content
   field_the_next:
-    weight: 29
+    weight: 32
     label: above
     settings:
       trim_length: 80
@@ -389,8 +414,8 @@ content:
     weight: 3
     type: datetime_default
     settings:
-      format_type: year
       timezone_override: ''
+      format_type: html_year
     third_party_settings: {  }
     region: content
   field_worldcat_link:
@@ -406,7 +431,7 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 39
+    weight: 42
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -418,7 +443,4 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-hidden:
-  field_abstract_lang_tax: true
-  field_doi: true
-  field_multi_image: true
+hidden: {  }

@@ -1,6 +1,6 @@
 uuid: 4de91955-5d15-4165-94f5-12458e1df584
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.sticky

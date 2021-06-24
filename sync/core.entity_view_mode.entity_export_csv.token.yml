@@ -1,0 +1,10 @@
+uuid: 8e504da1-ae05-4058-9338-bfae3adbe502
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_export_csv
+id: entity_export_csv.token
+label: Token
+targetEntityType: entity_export_csv
+cache: true

@@ -1,6 +1,6 @@
 uuid: 4de96135-6275-4ca6-a565-532487b9dc33
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.data_export

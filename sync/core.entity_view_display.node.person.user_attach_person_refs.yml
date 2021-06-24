@@ -1,6 +1,6 @@
 uuid: 0c9bc2dd-aa8c-41cf-b894-1e730eca7d16
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.user_attach_person_refs

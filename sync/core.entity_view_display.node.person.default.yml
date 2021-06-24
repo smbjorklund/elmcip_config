@@ -26,17 +26,30 @@ dependencies:
   module:
     - address
     - datetime
+    - layout_builder
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.person.default
 targetEntityType: node
 bundle: person
 mode: default
 content:
+  field_affiliation:
+    type: entity_reference_label
+    weight: 15
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_alternative_spelling_of_na:
     label: above
-    weight: 1
+    weight: 0
     type: string
     settings:
       link_to_entity: false
@@ -44,14 +57,22 @@ content:
     region: content
   field_auth_email:
     label: above
-    weight: 3
+    weight: 2
     type: email_mailto
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_authorphoto:
+    type: entity_reference_label
+    weight: 16
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_editorial_notes:
     label: above
-    weight: 8
+    weight: 6
     type: string
     settings:
       link_to_entity: false
@@ -59,23 +80,47 @@ content:
     region: content
   field_files:
     label: above
-    weight: 26
+    weight: 10
     type: entity_reference_entity_view
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
+  field_first_name:
+    type: string
+    weight: 17
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_gender_sel:
     label: above
-    weight: 6
+    weight: 4
     type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
     region: content
+  field_last_name:
+    type: string
+    weight: 18
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_middle_name:
+    type: string
+    weight: 19
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_nationality:
-    weight: 101
+    weight: 13
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -83,7 +128,7 @@ content:
     region: content
   field_orcid:
     label: above
-    weight: 4
+    weight: 3
     type: link
     settings:
       trim_length: 80
@@ -95,14 +140,14 @@ content:
     region: content
   field_record_status_tax:
     label: above
-    weight: 7
+    weight: 5
     type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
     region: content
   field_residency:
-    weight: 102
+    weight: 14
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -110,14 +155,14 @@ content:
     region: content
   field_textfield:
     label: above
-    weight: 12
+    weight: 9
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_url:
     label: above
-    weight: 2
+    weight: 1
     type: link
     settings:
       trim_length: 80
@@ -129,7 +174,7 @@ content:
     region: content
   field_userid_reference:
     label: above
-    weight: 39
+    weight: 11
     type: entity_reference_label
     settings:
       link: true
@@ -137,7 +182,7 @@ content:
     region: content
   field_yearborn:
     label: inline
-    weight: 10
+    weight: 7
     type: datetime_default
     settings:
       format_type: long
@@ -146,7 +191,7 @@ content:
     region: content
   field_yeardied:
     label: inline
-    weight: 11
+    weight: 8
     type: datetime_default
     settings:
       format_type: long
@@ -154,13 +199,8 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 12
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden:
-  field_affiliation: true
-  field_authorphoto: true
-  field_first_name: true
-  field_last_name: true
-  field_middle_name: true
+hidden: {  }
