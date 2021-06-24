@@ -28,6 +28,7 @@
         "drupal/media_migration": "1.x-dev@dev",
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_upgrade": "^3",
+        "drupal/pathauto": "^1.8",
         "drush/drush": "^10.3"
     },
     "conflict": {
