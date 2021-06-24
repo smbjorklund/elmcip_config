@@ -1,6 +1,6 @@
 uuid: cf0ac339-cf79-4f78-8670-7f9611341a5e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.4
@@ -43,6 +43,7 @@ dependencies:
     - field.field.node.critical_writing.field_record_status_tax
     - field.field.node.critical_writing.field_ref_about_event
     - field.field.node.critical_writing.field_series_ref
+    - field.field.node.critical_writing.field_the_next
     - field.field.node.critical_writing.field_tr_critical
     - field.field.node.critical_writing.field_translator
     - field.field.node.critical_writing.field_university
@@ -273,6 +274,7 @@ hidden:
   field_record_status_lib: true
   field_record_status_tax: true
   field_series_ref: true
+  field_the_next: true
   field_translator: true
   field_university: true
   field_worldcat_link: true

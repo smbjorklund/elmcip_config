@@ -38,6 +38,7 @@ dependencies:
     - field.field.node.work.field_series_ref
     - field.field.node.work.field_tech_notes
     - field.field.node.work.field_textfield
+    - field.field.node.work.field_the_next
     - field.field.node.work.field_translator
     - field.field.node.work.field_url
     - field.field.node.work.field_venue_tax
@@ -345,5 +346,6 @@ hidden:
   field_record_status_lib: true
   field_record_status_tax: true
   field_series_ref: true
+  field_the_next: true
   field_venue_tax: true
   taxonomy_vocabulary_1: true

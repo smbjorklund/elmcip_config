@@ -2,11 +2,11 @@ uuid: f4f06dbe-7ee4-40df-b22d-22a374f0b079
 langcode: en
 status: true
 dependencies:
+  module:
+    - uib_humanists
   enforced:
     module:
       - uib_humanists
-_core:
-  default_config_hash: r-oDMMgR6pokk0msUn2JVR9US5bdJ5Ml2Ves3y4AHr0
 id: uib_users
 label: 'UiB Users'
 description: 'UiB humanists user migration from Drupal 7'

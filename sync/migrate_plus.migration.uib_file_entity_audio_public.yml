@@ -2,8 +2,6 @@ uuid: 60cfd9b2-1afa-4588-9d14-0d633e3b5f8e
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: tni3DOimLY2EL-LaJol0erfr7YtOmS65cmH2Pqjp9UI
 id: uib_file_entity_audio_public
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

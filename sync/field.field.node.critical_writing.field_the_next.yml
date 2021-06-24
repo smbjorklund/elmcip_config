@@ -1,0 +1,23 @@
+uuid: 14e068f4-a7be-40d4-b59e-d91609163ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_the_next
+    - node.type.critical_writing
+  module:
+    - link
+id: node.critical_writing.field_the_next
+field_name: field_the_next
+entity_type: node
+bundle: critical_writing
+label: 'The NEXT'
+description: 'If there is a record for this work in the <a href="https://the-next.eliterature.org/" target="_blank">The NEXT</a>, enter the URL of the entry.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

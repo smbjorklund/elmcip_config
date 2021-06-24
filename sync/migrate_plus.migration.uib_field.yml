@@ -2,8 +2,6 @@ uuid: 7cd30705-2a5b-4dd3-9424-0021d6a823a5
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: ViI6rOutarQ1H3gr5avvDNRJwcdFAbUCHTAFZxP-HYY
 id: uib_field
 class: Drupal\migrate_drupal\Plugin\migrate\FieldMigration
 field_plugin_method: alterFieldMigration

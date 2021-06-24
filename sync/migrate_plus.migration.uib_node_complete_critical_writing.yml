@@ -2,8 +2,6 @@ uuid: 669e2956-360d-4923-9370-45db047555d9
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: yGU_m7gcSkCEeT-AIiRlfE6LuYHZKrlrWwKY3LmMtJ8
 id: uib_node_complete_critical_writing
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
@@ -96,7 +94,7 @@ process:
   field_abstract:
     -
       plugin: sub_process
-      source: field_abstract_lang
+      source: field_abstract
       process:
         value:
           plugin: get
@@ -240,6 +238,10 @@ process:
     -
       plugin: field_link
       source: field_po_ex_entry
+  field_the_next:
+    -
+      plugin: field_link
+      source: field_the_next
   field_node_ref:
     -
       plugin: get

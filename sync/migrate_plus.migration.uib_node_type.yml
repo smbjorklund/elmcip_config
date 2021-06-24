@@ -2,8 +2,6 @@ uuid: ba25f03d-f8e1-4998-a344-e6c3fb468872
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: cAXYJMHXuu9cpPGF9m1fFrBlf51Ca5Gqevok2svNRU4
 id: uib_node_type
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

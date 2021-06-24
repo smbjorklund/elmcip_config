@@ -2,8 +2,6 @@ uuid: 3435f4e5-2f46-449d-a3d8-da52826397b8
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: XI-zkLyc74NA8fy2Hxq_NSaiZnhPp528PbJP5IIkacA
 id: uib_file_entity_video_youtube
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

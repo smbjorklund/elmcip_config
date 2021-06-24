@@ -2,8 +2,6 @@ uuid: b06ef250-c968-4f98-b160-579c0fa8907f
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: qvA5tKDuQBmojgju2MS7KMCptmE5l1wE3tSc3fHGrMI
 id: uib_node_complete_teaching_resource
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null

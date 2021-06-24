@@ -37,6 +37,7 @@ dependencies:
     - field.field.node.work.field_series_ref
     - field.field.node.work.field_tech_notes
     - field.field.node.work.field_textfield
+    - field.field.node.work.field_the_next
     - field.field.node.work.field_translator
     - field.field.node.work.field_url
     - field.field.node.work.field_venue_tax
@@ -58,7 +59,7 @@ mode: default
 content:
   field_abstract_lang:
     label: above
-    weight: 22
+    weight: 23
     type: text_default
     settings: {  }
     third_party_settings: {  }
@@ -77,7 +78,7 @@ content:
     region: content
   field_author_name:
     label: above
-    weight: 1
+    weight: 0
     type: entity_reference_label
     settings:
       link: true
@@ -85,7 +86,7 @@ content:
     region: content
   field_authoring_software_entry:
     label: inline
-    weight: 26
+    weight: 27
     type: link
     settings:
       trim_length: 80
@@ -97,7 +98,7 @@ content:
     region: content
   field_brown_digital_repository:
     label: above
-    weight: 32
+    weight: 35
     type: link
     settings:
       trim_length: 80
@@ -109,7 +110,7 @@ content:
     region: content
   field_contributor:
     label: above
-    weight: 3
+    weight: 2
     type: entity_reference_label
     settings:
       link: true
@@ -117,7 +118,7 @@ content:
     region: content
   field_contributors:
     label: above
-    weight: 33
+    weight: 36
     type: text_default
     settings: {  }
     third_party_settings: {  }
@@ -144,7 +145,7 @@ content:
     region: content
   field_electronic_literature_dire:
     label: inline
-    weight: 23
+    weight: 24
     type: link
     settings:
       trim_length: 80
@@ -156,7 +157,7 @@ content:
     region: content
   field_files:
     label: above
-    weight: 39
+    weight: 38
     type: entity_reference_entity_view
     settings:
       view_mode: default
@@ -165,7 +166,7 @@ content:
     region: content
   field_i_e_poetry_entry:
     label: inline
-    weight: 24
+    weight: 25
     type: link
     settings:
       trim_length: 80
@@ -177,7 +178,7 @@ content:
     region: content
   field_in_anthology:
     label: above
-    weight: 5
+    weight: 4
     type: entity_reference_label
     settings:
       link: true
@@ -208,7 +209,7 @@ content:
     region: content
   field_media_asset:
     label: above
-    weight: 38
+    weight: 37
     type: entity_reference_entity_view
     settings:
       view_mode: default
@@ -217,7 +218,7 @@ content:
     region: content
   field_node_ref:
     label: above
-    weight: 6
+    weight: 5
     type: entity_reference_label
     settings:
       link: true
@@ -233,7 +234,7 @@ content:
     region: content
   field_nt2_entry:
     label: inline
-    weight: 25
+    weight: 26
     type: link
     settings:
       trim_length: 80
@@ -245,7 +246,7 @@ content:
     region: content
   field_other_edition_work:
     label: above
-    weight: 30
+    weight: 32
     type: entity_reference_label
     settings:
       link: true
@@ -253,7 +254,7 @@ content:
     region: content
   field_other_lang_ver_link:
     label: above
-    weight: 28
+    weight: 30
     type: entity_reference_label
     settings:
       link: true
@@ -261,7 +262,7 @@ content:
     region: content
   field_part_of_another_work:
     label: above
-    weight: 29
+    weight: 31
     type: entity_reference_label
     settings:
       link: true
@@ -269,7 +270,7 @@ content:
     region: content
   field_po_ex_entry:
     label: inline
-    weight: 27
+    weight: 28
     type: link
     settings:
       trim_length: 80
@@ -281,7 +282,7 @@ content:
     region: content
   field_pullquote:
     label: above
-    weight: 31
+    weight: 33
     type: text_default
     settings: {  }
     third_party_settings: {  }
@@ -315,7 +316,7 @@ content:
     region: content
   field_series_ref:
     label: above
-    weight: 7
+    weight: 6
     type: entity_reference_label
     settings:
       link: true
@@ -323,21 +324,33 @@ content:
     region: content
   field_tech_notes:
     label: above
-    weight: 32
+    weight: 34
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_textfield:
     label: above
-    weight: 21
+    weight: 22
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_the_next:
+    weight: 29
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_translator:
     label: above
-    weight: 2
+    weight: 1
     type: entity_reference_label
     settings:
       link: true
@@ -373,7 +386,7 @@ content:
     region: content
   field_work_year:
     label: above
-    weight: 4
+    weight: 3
     type: datetime_default
     settings:
       format_type: year
@@ -393,10 +406,10 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 39
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   taxonomy_vocabulary_1:
     label: above
     weight: 20

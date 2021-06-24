@@ -2,8 +2,6 @@ uuid: 5063e5c2-7b24-4919-b5c7-f18c67b89a01
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: ADJzg6QkSdDLTPv7FNEijZSMSUkWRG96OnoL33kjZQE
 id: uib_file_entity_video_vimeo
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

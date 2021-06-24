@@ -2,8 +2,6 @@ uuid: 18d45221-9b65-4755-aa7b-c9257a269b1c
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: SdMJWQ-1LIEsYbD3nWZpTFzGXuJhSplD2jjWAB6RJ6M
 id: uib_node_complete_work
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
@@ -225,6 +223,10 @@ process:
     -
       plugin: field_link
       source: field_po_ex_entry
+  field_the_next:
+    -
+      plugin: field_link
+      source: field_the_next
   field_repository:
     -
       plugin: field_link

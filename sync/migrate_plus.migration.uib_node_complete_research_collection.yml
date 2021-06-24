@@ -2,8 +2,6 @@ uuid: cf083108-0702-416c-a908-78d96d80c773
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: wdtcb6JSqeiFwvEcUEC0dI8i1Qk2iVXSU2PHkkNaxHs
 id: uib_node_complete_research_collection
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null

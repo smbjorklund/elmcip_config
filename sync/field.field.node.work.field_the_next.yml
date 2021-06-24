@@ -1,0 +1,23 @@
+uuid: da66a057-2419-4c66-a18a-98d862967111
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_the_next
+    - node.type.work
+  module:
+    - link
+id: node.work.field_the_next
+field_name: field_the_next
+entity_type: node
+bundle: work
+label: 'The NEXT'
+description: 'If there is a record for this work in the <a href="https://the-next.eliterature.org/" target="_blank">The NEXT</a>, enter the URL of the entry.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
