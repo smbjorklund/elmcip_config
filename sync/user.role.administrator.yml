@@ -54,6 +54,7 @@ permissions:
   - 'administer pathauto'
   - 'administer rdf'
   - 'administer recaptcha'
+  - 'administer rest resources'
   - 'administer search_api'
   - 'administer shortcuts'
   - 'administer site configuration'

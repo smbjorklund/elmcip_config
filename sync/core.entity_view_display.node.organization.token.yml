@@ -1,6 +1,6 @@
 uuid: c013c3b4-3467-465b-a2fd-cd2364ecd0a9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.token

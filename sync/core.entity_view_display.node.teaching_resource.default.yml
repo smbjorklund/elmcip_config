@@ -36,11 +36,27 @@ mode: default
 content:
   field_abstract_lang:
     label: above
-    weight: 11
+    weight: 12
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_abstract_lang_tax:
+    type: entity_reference_label
+    weight: 11
+    region: content
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_database_or_archive_refere:
+    type: entity_reference_label
+    weight: 16
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_editorial_notes:
     label: above
     weight: 8
@@ -51,13 +67,22 @@ content:
     region: content
   field_files:
     label: above
-    weight: 20
+    weight: 15
     type: entity_reference_entity_view
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 13
+    region: content
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
   field_language_tax:
     label: above
     weight: 2
@@ -68,13 +93,21 @@ content:
     region: content
   field_media_asset:
     label: above
-    weight: 19
+    weight: 14
     type: entity_reference_entity_view
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
+  field_platform_software_referenc:
+    type: entity_reference_label
+    weight: 17
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_record_status_tax:
     label: above
     weight: 7
@@ -91,6 +124,14 @@ content:
       link: true
     third_party_settings: {  }
     region: content
+  field_tr_critical:
+    type: entity_reference_label
+    weight: 18
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_tr_description:
     label: above
     weight: 10
@@ -106,13 +147,29 @@ content:
       link: true
     third_party_settings: {  }
     region: content
+  field_tr_tr:
+    type: entity_reference_label
+    weight: 19
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_tr_work:
+    type: entity_reference_label
+    weight: 20
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_tr_year:
     label: above
     weight: 6
     type: datetime_default
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: html_year
     third_party_settings: {  }
     region: content
   field_url:
@@ -128,10 +185,10 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   taxonomy_vocabulary_1:
     label: above
     weight: 9
@@ -141,18 +198,11 @@ content:
     third_party_settings: {  }
     region: content
   taxonomy_vocabulary_4:
-    label: hidden
+    label: above
     weight: 1
     type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
     region: content
-hidden:
-  field_abstract_lang_tax: true
-  field_database_or_archive_refere: true
-  field_image: true
-  field_platform_software_referenc: true
-  field_tr_critical: true
-  field_tr_tr: true
-  field_tr_work: true
+hidden: {  }

@@ -15,6 +15,7 @@ permissions:
   - 'collapse format fieldset by default'
   - 'collapsible format selection'
   - 'diff view changes'
+  - 'restful get oai_pmh'
   - 'show format selection for blocks'
   - 'show format selection for comments'
   - 'show format selection for nodes'

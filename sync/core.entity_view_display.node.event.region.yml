@@ -1,6 +1,6 @@
 uuid: 22edc9f4-4856-4bac-a369-e2f1e29a5783
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.region

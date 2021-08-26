@@ -1,6 +1,6 @@
 uuid: b1bcbf76-50ab-447e-bc39-b7e94856a26d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.ds_weight

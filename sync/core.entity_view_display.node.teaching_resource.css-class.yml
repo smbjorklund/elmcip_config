@@ -1,6 +1,6 @@
 uuid: 1b0480d6-f7b2-44b0-8d6d-765cd7b128fb
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.css-class

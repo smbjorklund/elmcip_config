@@ -27,7 +27,7 @@ mode: default
 content:
   field_collection_contributors:
     label: above
-    weight: 2
+    weight: 1
     type: entity_reference_label
     settings:
       link: true
@@ -35,7 +35,7 @@ content:
     region: content
   field_collection_curated_by:
     label: above
-    weight: 1
+    weight: 0
     type: entity_reference_label
     settings:
       link: true
@@ -43,39 +43,95 @@ content:
     region: content
   field_collection_platform_ref:
     label: above
-    weight: 3
+    weight: 2
     type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
     region: content
+  field_creative_works:
+    type: entity_reference_label
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_critical_writing:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_events:
+    type: entity_reference_label
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_media:
     label: hidden
-    weight: 5
+    weight: 4
     type: entity_reference_entity_view
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
+  field_organizations:
+    type: entity_reference_label
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_people:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_publishers:
+    type: entity_reference_label
+    weight: 11
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_rc_db_archive:
+    type: entity_reference_label
+    weight: 12
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_rc_description:
     label: above
-    weight: 4
+    weight: 3
     type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_teaching_resources:
+    type: entity_reference_label
+    weight: 13
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden:
-  field_creative_works: true
-  field_critical_writing: true
-  field_events: true
-  field_organizations: true
-  field_people: true
-  field_publishers: true
-  field_rc_db_archive: true
-  field_teaching_resources: true
+hidden: {  }

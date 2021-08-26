@@ -1,0 +1,15 @@
+rest_oai_pmh:
+  entity_type: node
+_core:
+  default_config_hash: aJbCDXJg1plAZOBvfb4BMjYJ7hiJbTHKxeCAvDrBiSQ
+repository_path: /oai/request
+view_displays:
+  'cw_phm:entity_reference_1': 'cw_phm:entity_reference_1'
+support_sets: 1
+metadata_map_plugins:
+  oai_dc: dublin_core_rdf
+  oai_raw: ''
+repository_name: ELMCIP
+repository_email: a@a.b
+expiration: '3600'
+cache_technique: liberal_cache

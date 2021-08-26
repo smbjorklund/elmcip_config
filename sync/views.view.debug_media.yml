@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - media
+    - node
     - user
 id: debug_media
 label: 'Debug media'
@@ -375,6 +376,258 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: reverse__node__field_media
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        title_1:
+          id: title_1
+          table: node_field_data
+          field: title
+          relationship: reverse__node__field_media_asset
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        title_2:
+          id: title_2
+          table: node_field_data
+          field: title
+          relationship: reverse__node__field_image
+          group_type: group
+          admin_label: ''
+          label: image
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+        id:
+          id: id
+          table: file_usage
+          field: id
+          relationship: reverse__node__field_image
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          plugin_id: numeric
       filters:
         status:
           value: '1'
@@ -507,7 +760,87 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        reverse__node__field_files:
+          id: reverse__node__field_files
+          table: media_field_data
+          field: reverse__node__field_files
+          relationship: none
+          group_type: group
+          admin_label: field_files
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
+        reverse__node__field_image:
+          id: reverse__node__field_image
+          table: media_field_data
+          field: reverse__node__field_image
+          relationship: none
+          group_type: group
+          admin_label: field_image
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
+        reverse__node__field_media:
+          id: reverse__node__field_media
+          table: media_field_data
+          field: reverse__node__field_media
+          relationship: none
+          group_type: group
+          admin_label: field_media
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
+        reverse__node__field_media_asset:
+          id: reverse__node__field_media_asset
+          table: media_field_data
+          field: reverse__node__field_media_asset
+          relationship: none
+          group_type: group
+          admin_label: field_media_asset
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
+        reverse__node__field_multi_image:
+          id: reverse__node__field_multi_image
+          table: media_field_data
+          field: reverse__node__field_multi_image
+          relationship: none
+          group_type: group
+          admin_label: field_multi_image
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
+        reverse__node__field_multi_images:
+          id: reverse__node__field_multi_images
+          table: media_field_data
+          field: reverse__node__field_multi_images
+          relationship: none
+          group_type: group
+          admin_label: field_multi_images
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
+        reverse__node__field_ps_attachment:
+          id: reverse__node__field_ps_attachment
+          table: media_field_data
+          field: reverse__node__field_ps_attachment
+          relationship: none
+          group_type: group
+          admin_label: field_ps_attachment
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
+        reverse__node__field_ps_image:
+          id: reverse__node__field_ps_image
+          table: media_field_data
+          field: reverse__node__field_ps_image
+          relationship: none
+          group_type: group
+          admin_label: field_ps_image
+          required: false
+          entity_type: media
+          plugin_id: entity_reverse
       arguments: {  }
       display_extenders: {  }
     cache_metadata:

@@ -1,6 +1,6 @@
 uuid: 24dc7a30-9848-4741-a298-f351be21976d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.sticky

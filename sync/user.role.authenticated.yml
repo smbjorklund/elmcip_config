@@ -44,6 +44,7 @@ permissions:
   - 'edit own image files'
   - 'edit own video files'
   - 'edit terms in 1'
+  - 'restful post oai_pmh'
   - 'show format selection for blocks'
   - 'show format selection for comments'
   - 'show format selection for nodes'
