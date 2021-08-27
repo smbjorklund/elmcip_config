@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bb4b89cce0b10de664578c3f8637c19",
+    "content-hash": "0ff937ad19786b4b4daf8016d63f3e6c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3163,6 +3163,57 @@
                 "source": "https://git.drupalcode.org/project/migrate_upgrade",
                 "issues": "https://www.drupal.org/project/issues/migrate_upgrade",
                 "slack": "#migrate"
+            }
+        },
+        {
+            "name": "drupal/oembed_providers",
+            "version": "2.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/oembed_providers.git",
+                "reference": "2.0.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/oembed_providers-2.0.0-rc3.zip",
+                "reference": "2.0.0-rc3",
+                "shasum": "0db4239924e35e0edc34fff6e9282c0c832a954c"
+            },
+            "require": {
+                "drupal/core": "^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-rc3",
+                    "datestamp": "1629317315",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Burge",
+                    "homepage": "https://www.drupal.org/u/chris-burge",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows site builders and developers to manage oEmbed providers.",
+            "homepage": "https://drupal.org/project/oembed_providers",
+            "keywords": [
+                "Drupal",
+                "Media",
+                "oEmbed"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/oembed_providers",
+                "issues": "https://www.drupal.org/project/issues/oembed_providers"
             }
         },
         {
@@ -8135,6 +8186,7 @@
         "drupal/config_split": 10,
         "drupal/entity_export_csv": 10,
         "drupal/media_migration": 20,
+        "drupal/oembed_providers": 5,
         "drupal/rest_oai_pmh": 10
     },
     "prefer-stable": true,
