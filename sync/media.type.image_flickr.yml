@@ -1,0 +1,13 @@
+uuid: 33f81594-12eb-4a5b-bee4-4de194f40f2d
+langcode: en
+status: true
+dependencies: {  }
+id: image_flickr
+label: Flickr
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

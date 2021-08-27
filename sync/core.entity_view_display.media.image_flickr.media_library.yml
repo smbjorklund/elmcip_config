@@ -1,0 +1,30 @@
+uuid: 8af006a7-cca9-4241-9b11-73e5a8cdf7dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.image_flickr.field_media_image_1
+    - image.style.medium
+    - media.type.image_flickr
+  module:
+    - image
+id: media.image_flickr.media_library
+targetEntityType: media
+bundle: image_flickr
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_image_1: true
+  name: true
+  uid: true
