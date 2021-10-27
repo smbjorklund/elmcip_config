@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/smbjorklund/uib_humanists"
         }
     ],
     "require": {
@@ -35,7 +39,8 @@
         "drupal/rest_oai_pmh": "^1.0@beta",
         "drupal/search_api": "^1.20",
         "drupal/search_api_solr": "^4.2",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+        "smbjorklund/uib_humanists": "dev-elmcip"
     },
     "conflict": {
         "drupal/drupal": "*"
