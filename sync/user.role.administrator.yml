@@ -50,6 +50,7 @@ permissions:
   - 'administer nd'
   - 'administer nd_switch_bm'
   - 'administer nodes'
+  - 'administer oembed providers'
   - 'administer pane visibility'
   - 'administer pathauto'
   - 'administer rdf'

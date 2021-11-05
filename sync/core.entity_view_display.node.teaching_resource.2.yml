@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.teaching_resource.field_abstract_lang_tax
     - field.field.node.teaching_resource.field_database_or_archive_refere
     - field.field.node.teaching_resource.field_editorial_notes
-    - field.field.node.teaching_resource.field_files
     - field.field.node.teaching_resource.field_image
     - field.field.node.teaching_resource.field_language_tax
     - field.field.node.teaching_resource.field_media_asset
@@ -39,15 +38,6 @@ content:
     weight: 22
     type: text_default
     settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_files:
-    label: hidden
-    weight: 28
-    type: entity_reference_entity_view
-    settings:
-      view_mode: default
-      link: false
     third_party_settings: {  }
     region: content
   field_image:
@@ -122,5 +112,7 @@ hidden:
   field_record_status_tax: true
   field_tr_tr: true
   field_url: true
+  langcode: true
+  search_api_excerpt: true
   taxonomy_vocabulary_1: true
   taxonomy_vocabulary_4: true

@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.page.field_files
     - node.type.page
   module:
-    - media_library
     - path
     - text
 id: node.page.default
@@ -32,12 +31,22 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_files:
-    weight: 32
-    type: media_library_widget
+    weight: 121
     settings:
-      media_types: {  }
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -83,4 +92,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

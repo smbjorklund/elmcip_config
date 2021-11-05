@@ -108,4 +108,6 @@ hidden:
   field_record_status_tax: true
   field_textfield: true
   field_url: true
+  langcode: true
+  search_api_excerpt: true
   taxonomy_vocabulary_1: true

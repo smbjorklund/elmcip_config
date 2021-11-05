@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.person.field_auth_email
     - field.field.node.person.field_authorphoto
     - field.field.node.person.field_editorial_notes
-    - field.field.node.person.field_files
     - field.field.node.person.field_first_name
     - field.field.node.person.field_gender_sel
     - field.field.node.person.field_last_name
@@ -63,15 +62,6 @@ content:
     type: string
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    region: content
-  field_files:
-    label: above
-    weight: 13
-    type: entity_reference_entity_view
-    settings:
-      view_mode: default
-      link: false
     third_party_settings: {  }
     region: content
   field_first_name:
@@ -169,3 +159,5 @@ hidden:
   field_nationality: true
   field_orcid: true
   field_residency: true
+  langcode: true
+  search_api_excerpt: true

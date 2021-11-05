@@ -1,9 +1,13 @@
-uuid: f65626d7-849d-4849-b367-5ae9d3a742fc
+uuid: 8c377412-b13c-4b66-b311-fe6a7efebccf
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_files
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
     - node.type.page
 id: node.page.field_files
 field_name: field_files
@@ -12,11 +16,20 @@ bundle: page
 label: Attachment
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler_settings:
-    target_bundles: {  }
   handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
 field_type: entity_reference

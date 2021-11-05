@@ -43,6 +43,7 @@ dependencies:
     - field.field.node.critical_writing.field_record_status_tax
     - field.field.node.critical_writing.field_ref_about_event
     - field.field.node.critical_writing.field_series_ref
+    - field.field.node.critical_writing.field_testmedia
     - field.field.node.critical_writing.field_the_next
     - field.field.node.critical_writing.field_tr_critical
     - field.field.node.critical_writing.field_translator
@@ -116,15 +117,6 @@ content:
     type: string
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    region: content
-  field_files:
-    label: hidden
-    weight: 46
-    type: entity_reference_entity_view
-    settings:
-      view_mode: default
-      link: false
     third_party_settings: {  }
     region: content
   field_inbook:
@@ -264,6 +256,7 @@ hidden:
   field_doi: true
   field_editorial_notes: true
   field_electronic_literature_dire: true
+  field_files: true
   field_language_tax: true
   field_media_asset: true
   field_organization_cw: true
@@ -274,8 +267,11 @@ hidden:
   field_record_status_lib: true
   field_record_status_tax: true
   field_series_ref: true
+  field_testmedia: true
   field_the_next: true
   field_translator: true
   field_university: true
   field_worldcat_link: true
+  langcode: true
+  search_api_excerpt: true
   taxonomy_vocabulary_1: true

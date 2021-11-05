@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.work.field_downloadurl
     - field.field.node.work.field_editorial_notes
     - field.field.node.work.field_electronic_literature_dire
-    - field.field.node.work.field_files
     - field.field.node.work.field_i_e_poetry_entry
     - field.field.node.work.field_in_anthology
     - field.field.node.work.field_isbn_text
@@ -169,15 +168,6 @@ content:
       url_plain: false
       rel: ''
       target: ''
-    third_party_settings: {  }
-    region: content
-  field_files:
-    label: above
-    weight: 41
-    type: entity_reference_entity_view
-    settings:
-      view_mode: default
-      link: false
     third_party_settings: {  }
     region: content
   field_i_e_poetry_entry:
@@ -443,4 +433,6 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

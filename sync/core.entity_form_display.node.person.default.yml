@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.person.field_auth_email
     - field.field.node.person.field_authorphoto
     - field.field.node.person.field_editorial_notes
-    - field.field.node.person.field_files
     - field.field.node.person.field_first_name
     - field.field.node.person.field_gender_sel
     - field.field.node.person.field_last_name
@@ -80,13 +79,6 @@ content:
     settings:
       size: 200
       placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_files:
-    weight: 13
-    type: media_library_widget
-    settings:
-      media_types: {  }
     third_party_settings: {  }
     region: content
   field_first_name:
@@ -183,6 +175,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 22
@@ -228,4 +227,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

@@ -129,3 +129,5 @@ hidden:
   field_project_type: true
   field_record_status_tax: true
   field_year_initiated: true
+  langcode: true
+  search_api_excerpt: true

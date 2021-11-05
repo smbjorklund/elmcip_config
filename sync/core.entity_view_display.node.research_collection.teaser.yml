@@ -65,3 +65,5 @@ hidden:
   field_publishers: true
   field_rc_db_archive: true
   field_teaching_resources: true
+  langcode: true
+  search_api_excerpt: true

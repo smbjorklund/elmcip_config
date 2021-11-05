@@ -42,6 +42,7 @@ dependencies:
     - field.field.node.critical_writing.field_record_status_tax
     - field.field.node.critical_writing.field_ref_about_event
     - field.field.node.critical_writing.field_series_ref
+    - field.field.node.critical_writing.field_testmedia
     - field.field.node.critical_writing.field_the_next
     - field.field.node.critical_writing.field_tr_critical
     - field.field.node.critical_writing.field_translator
@@ -53,6 +54,7 @@ dependencies:
   module:
     - datetime
     - layout_builder
+    - layout_discovery
     - link
     - options
     - text
@@ -1236,4 +1238,7 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_testmedia: true
+  langcode: true
+  search_api_excerpt: true

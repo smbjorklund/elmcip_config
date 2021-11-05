@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.organization.field_address
     - field.field.node.organization.field_editorial_notes
     - field.field.node.organization.field_email
-    - field.field.node.organization.field_files
     - field.field.node.organization.field_multi_images
     - field.field.node.organization.field_record_status_tax
     - field.field.node.organization.field_textfield
@@ -42,15 +41,6 @@ content:
     weight: 2
     type: email_mailto
     settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_files:
-    label: above
-    weight: 6
-    type: entity_reference_entity_view
-    settings:
-      view_mode: default
-      link: false
     third_party_settings: {  }
     region: content
   field_multi_images:
@@ -94,4 +84,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

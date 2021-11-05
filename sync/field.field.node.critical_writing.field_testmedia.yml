@@ -1,0 +1,39 @@
+uuid: 10bab19d-635b-407a-ab16-98475e931136
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testmedia
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.image_flickr
+    - media.type.remote_video
+    - media.type.video
+    - node.type.critical_writing
+id: node.critical_writing.field_testmedia
+field_name: field_testmedia
+entity_type: node
+bundle: critical_writing
+label: testmedia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image_flickr: image_flickr
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

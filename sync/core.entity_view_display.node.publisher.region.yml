@@ -86,3 +86,5 @@ hidden:
   field_events: true
   field_publishing_type: true
   field_record_status_tax: true
+  langcode: true
+  search_api_excerpt: true

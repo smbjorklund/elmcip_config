@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.teaching_resource.field_abstract_lang_tax
     - field.field.node.teaching_resource.field_database_or_archive_refere
     - field.field.node.teaching_resource.field_editorial_notes
-    - field.field.node.teaching_resource.field_files
     - field.field.node.teaching_resource.field_image
     - field.field.node.teaching_resource.field_language_tax
     - field.field.node.teaching_resource.field_media_asset
@@ -98,7 +97,6 @@ hidden:
   field_abstract_lang_tax: true
   field_database_or_archive_refere: true
   field_editorial_notes: true
-  field_files: true
   field_image: true
   field_language_tax: true
   field_media_asset: true
@@ -106,5 +104,7 @@ hidden:
   field_record_status_tax: true
   field_tr_tr: true
   field_url: true
+  langcode: true
+  search_api_excerpt: true
   taxonomy_vocabulary_1: true
   taxonomy_vocabulary_4: true

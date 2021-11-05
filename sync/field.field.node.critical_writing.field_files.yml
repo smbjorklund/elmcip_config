@@ -1,9 +1,13 @@
-uuid: 75ae4d37-4f0a-4a3b-9cd0-a716266eaeb3
+uuid: 80f72929-f2df-4c5a-baf3-6496ef772753
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_files
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
     - node.type.critical_writing
 id: node.critical_writing.field_files
 field_name: field_files
@@ -12,11 +16,20 @@ bundle: critical_writing
 label: Attachment
 description: 'Attach relevant files here.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler_settings:
-    target_bundles: {  }
   handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
 field_type: entity_reference

@@ -16,7 +16,6 @@ dependencies:
     - field.field.node.work.field_downloadurl
     - field.field.node.work.field_editorial_notes
     - field.field.node.work.field_electronic_literature_dire
-    - field.field.node.work.field_files
     - field.field.node.work.field_i_e_poetry_entry
     - field.field.node.work.field_in_anthology
     - field.field.node.work.field_isbn_text
@@ -89,7 +88,6 @@ hidden:
   field_downloadurl: true
   field_editorial_notes: true
   field_electronic_literature_dire: true
-  field_files: true
   field_i_e_poetry_entry: true
   field_in_anthology: true
   field_isbn_text: true
@@ -117,4 +115,6 @@ hidden:
   field_venue_tax: true
   field_work_platform_software: true
   field_worldcat_link: true
+  langcode: true
+  search_api_excerpt: true
   taxonomy_vocabulary_1: true

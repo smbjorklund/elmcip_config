@@ -30,3 +30,5 @@ hidden:
   field_media_asset: true
   field_multi_image: true
   field_news_tags: true
+  langcode: true
+  search_api_excerpt: true

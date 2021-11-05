@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.teaching_resource.field_abstract_lang_tax
     - field.field.node.teaching_resource.field_database_or_archive_refere
     - field.field.node.teaching_resource.field_editorial_notes
-    - field.field.node.teaching_resource.field_files
     - field.field.node.teaching_resource.field_image
     - field.field.node.teaching_resource.field_language_tax
     - field.field.node.teaching_resource.field_media_asset
@@ -63,15 +62,6 @@ content:
     type: string
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    region: content
-  field_files:
-    label: above
-    weight: 15
-    type: entity_reference_entity_view
-    settings:
-      view_mode: default
-      link: false
     third_party_settings: {  }
     region: content
   field_image:
@@ -205,4 +195,6 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

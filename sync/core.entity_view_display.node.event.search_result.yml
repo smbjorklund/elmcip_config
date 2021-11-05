@@ -95,15 +95,6 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-  field_files:
-    label: above
-    weight: 10
-    type: entity_reference_entity_view
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
   field_individual_organizers:
     label: above
     weight: 5
@@ -181,4 +172,7 @@ hidden:
   field_address: true
   field_event_abstract_lang: true
   field_event_abstract_lang_tax: true
+  field_files: true
   field_media_asset: true
+  langcode: true
+  search_api_excerpt: true

@@ -46,3 +46,5 @@ hidden:
   field_repository: true
   field_url: true
   field_version_history: true
+  langcode: true
+  search_api_excerpt: true

@@ -192,3 +192,5 @@ hidden:
   field_db_description_org_lang: true
   field_editorial_notes: true
   field_image: true
+  langcode: true
+  search_api_excerpt: true

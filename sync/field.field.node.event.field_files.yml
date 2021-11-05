@@ -1,9 +1,13 @@
-uuid: ef7246d7-971e-47ac-8d73-2c1acf319b12
+uuid: 3750c3ae-cac3-4b21-a292-109d28040070
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_files
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.video
     - node.type.event
 id: node.event.field_files
 field_name: field_files
@@ -12,11 +16,20 @@ bundle: event
 label: Attachment
 description: 'Attach relevant files from the event, such as .pdfs of printed program or posters, or audio recordings in mp3 format.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler_settings:
-    target_bundles: {  }
   handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: audio
 field_type: entity_reference

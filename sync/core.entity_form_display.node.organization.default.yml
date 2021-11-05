@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.organization.field_address
     - field.field.node.organization.field_editorial_notes
     - field.field.node.organization.field_email
-    - field.field.node.organization.field_files
     - field.field.node.organization.field_multi_images
     - field.field.node.organization.field_record_status_tax
     - field.field.node.organization.field_textfield
@@ -51,13 +50,6 @@ content:
       size: 60
     third_party_settings: {  }
     region: content
-  field_files:
-    weight: 8
-    type: media_library_widget
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
   field_multi_images:
     weight: 7
     type: media_library_widget
@@ -87,6 +79,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -132,4 +131,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }
