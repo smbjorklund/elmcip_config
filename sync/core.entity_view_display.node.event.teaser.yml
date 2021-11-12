@@ -26,7 +26,6 @@ dependencies:
     - field.field.node.event.taxonomy_vocabulary_2
     - node.type.event
   module:
-    - datetime
     - user
 id: node.event.teaser
 targetEntityType: node
@@ -47,15 +46,6 @@ content:
     type: entity_reference_label
     settings:
       link: true
-    third_party_settings: {  }
-    region: content
-  field_date:
-    label: inline
-    weight: 8
-    type: datetime_default
-    settings:
-      format_type: hidden
-      timezone_override: ''
     third_party_settings: {  }
     region: content
   field_event_series:
@@ -98,6 +88,7 @@ content:
 hidden:
   field_address: true
   field_archiveurl: true
+  field_date: true
   field_editorial_notes: true
   field_email: true
   field_event_abstract_lang: true

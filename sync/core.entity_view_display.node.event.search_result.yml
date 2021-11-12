@@ -26,7 +26,6 @@ dependencies:
     - field.field.node.event.taxonomy_vocabulary_2
     - node.type.event
   module:
-    - datetime
     - link
     - text
     - user
@@ -61,15 +60,6 @@ content:
     type: entity_reference_label
     settings:
       link: true
-    third_party_settings: {  }
-    region: content
-  field_date:
-    label: above
-    weight: 1
-    type: datetime_default
-    settings:
-      format_type: long
-      timezone_override: ''
     third_party_settings: {  }
     region: content
   field_editorial_notes:
@@ -170,6 +160,7 @@ content:
     region: content
 hidden:
   field_address: true
+  field_date: true
   field_event_abstract_lang: true
   field_event_abstract_lang_tax: true
   field_files: true

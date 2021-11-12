@@ -123,7 +123,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d\TH:i:s'
-          to_format: Y-m-d
+          to_format: 'Y-m-d\TH:i:s'
           source: value
   field_location:
     -

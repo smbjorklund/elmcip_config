@@ -26,7 +26,6 @@ dependencies:
     - field.field.node.event.taxonomy_vocabulary_2
     - node.type.event
   module:
-    - datetime
     - link
     - text
     - user
@@ -45,15 +44,6 @@ content:
       url_plain: false
       rel: ''
       target: ''
-    third_party_settings: {  }
-    region: content
-  field_date:
-    label: hidden
-    weight: 0
-    type: datetime_default
-    settings:
-      format_type: ''
-      timezone_override: ''
     third_party_settings: {  }
     region: content
   field_email:
@@ -99,6 +89,7 @@ hidden:
   field_address: true
   field_associated_event: true
   field_curator: true
+  field_date: true
   field_editorial_notes: true
   field_event_abstract_lang: true
   field_event_abstract_lang_tax: true

@@ -26,7 +26,7 @@ dependencies:
     - node.type.event
   module:
     - address
-    - datetime
+    - datetime_range
     - layout_builder
     - layout_discovery
     - link
@@ -60,23 +60,6 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 11
-          9d38bf9c-6517-46bd-9770-e464e7e14e42:
-            uuid: 9d38bf9c-6517-46bd-9770-e464e7e14e42
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:event:field_date'
-              formatter:
-                label: above
-                type: datetime_default
-                settings:
-                  format_type: long
-                  timezone_override: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 10
           d2031868-3988-4447-8b78-d9cf99b0e0f0:
             uuid: d2031868-3988-4447-8b78-d9cf99b0e0f0
             region: first
@@ -352,6 +335,24 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 7
+          b6a1172a-e634-4885-8286-f4c87f4060c0:
+            uuid: b6a1172a-e634-4885-8286-f4c87f4060c0
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:event:field_date'
+              formatter:
+                label: above
+                settings:
+                  separator: '-'
+                  format_type: medium
+                  timezone_override: ''
+                third_party_settings: {  }
+                type: daterange_default
+            additional: {  }
+            weight: 12
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -432,14 +433,15 @@ content:
     third_party_settings: {  }
     region: content
   field_date:
+    weight: 22
     label: above
-    weight: 2
-    type: datetime_default
     settings:
-      format_type: long
+      separator: '-'
+      format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-    region: content
+    type: daterange_default
+    region: first
   field_editorial_notes:
     label: above
     weight: 19

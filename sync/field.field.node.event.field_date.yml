@@ -1,4 +1,4 @@
-uuid: 04fa4156-7184-4ba3-a0fe-18cf7902bd9e
+uuid: dda9a7cf-f737-4a3f-85aa-d9572d40382e
 langcode: en
 status: true
 dependencies:
@@ -6,18 +6,16 @@ dependencies:
     - field.storage.node.field_date
     - node.type.event
   module:
-    - datetime
+    - datetime_range
 id: node.event.field_date
 field_name: field_date
 entity_type: node
 bundle: event
 label: Date
-description: |-
-  Enter or select the (starting) date of the event.
-  <br>E.g., 2017-02-18
+description: "Enter or select the (starting) date of the event.\r\n<br>E.g., 2017-02-18"
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: daterange
