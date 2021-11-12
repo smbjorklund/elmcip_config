@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_gender_sel
     - node.type.person
+    - taxonomy.vocabulary.gender
 id: node.person.field_gender_sel
 field_name: field_gender_sel
 entity_type: node
@@ -16,8 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      gender: gender
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

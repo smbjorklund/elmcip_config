@@ -44,22 +44,6 @@ third_party_settings:
           column_widths: 33-67
           context_mapping: {  }
         components:
-          4a59534a-43da-4b15-a7aa-0ed3a6f932cf:
-            uuid: 4a59534a-43da-4b15-a7aa-0ed3a6f932cf
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:event:taxonomy_vocabulary_2'
-              formatter:
-                label: hidden
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 11
           d2031868-3988-4447-8b78-d9cf99b0e0f0:
             uuid: d2031868-3988-4447-8b78-d9cf99b0e0f0
             region: first
@@ -69,27 +53,7 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:event:links'
             additional: {  }
-            weight: 9
-          7aa5d036-a4e3-470a-b356-15eaf12f9f9b:
-            uuid: 7aa5d036-a4e3-470a-b356-15eaf12f9f9b
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:event:field_url'
-              formatter:
-                label: above
-                type: link
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 8
+            weight: 11
           d523ed44-2e9e-4bdc-8a0e-6ed6e0794954:
             uuid: d523ed44-2e9e-4bdc-8a0e-6ed6e0794954
             region: first
@@ -109,23 +73,7 @@ third_party_settings:
                   target: ''
                 third_party_settings: {  }
             additional: {  }
-            weight: 7
-          68bce709-621f-495a-a52f-dc02a4a0a69f:
-            uuid: 68bce709-621f-495a-a52f-dc02a4a0a69f
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:event:field_node_ref'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 6
+            weight: 10
           a96b11a4-8766-40e7-b9ff-64da8b47e70a:
             uuid: a96b11a4-8766-40e7-b9ff-64da8b47e70a
             region: first
@@ -141,7 +89,7 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 5
+            weight: 9
           12a68984-d048-4dde-849b-f69994b949ba:
             uuid: 12a68984-d048-4dde-849b-f69994b949ba
             region: first
@@ -156,7 +104,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: address_default
             additional: {  }
-            weight: 4
+            weight: 8
           3343670d-fb89-415b-8606-c62b43074686:
             uuid: 3343670d-fb89-415b-8606-c62b43074686
             region: second
@@ -219,7 +167,7 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 3
+            weight: 7
           086606e9-dbcb-40f0-af01-ef534b2ac092:
             uuid: 086606e9-dbcb-40f0-af01-ef534b2ac092
             region: second
@@ -250,23 +198,7 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 2
-          28a6f81a-64e5-446c-8939-7323f71b27fe:
-            uuid: 28a6f81a-64e5-446c-8939-7323f71b27fe
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:event:field_individual_organizers'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 1
+            weight: 6
           7054a70d-1d18-4ecc-a34a-b91232b8c080:
             uuid: 7054a70d-1d18-4ecc-a34a-b91232b8c080
             region: first
@@ -282,7 +214,7 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 0
+            weight: 5
           187d2b0d-fec5-40a6-8bb0-59734756ffb5:
             uuid: 187d2b0d-fec5-40a6-8bb0-59734756ffb5
             region: second
@@ -339,20 +271,94 @@ third_party_settings:
             uuid: b6a1172a-e634-4885-8286-f4c87f4060c0
             region: first
             configuration:
+              id: 'field_block:node:event:field_date'
+              label: Date
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: daterange_default
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                  separator: '-'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          4a59534a-43da-4b15-a7aa-0ed3a6f932cf:
+            uuid: 4a59534a-43da-4b15-a7aa-0ed3a6f932cf
+            region: first
+            configuration:
+              id: 'field_block:node:event:taxonomy_vocabulary_2'
+              label: 'Event type'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          68bce709-621f-495a-a52f-dc02a4a0a69f:
+            uuid: 68bce709-621f-495a-a52f-dc02a4a0a69f
+            region: first
+            configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:event:field_date'
+              id: 'field_block:node:event:field_node_ref'
               formatter:
                 label: above
+                type: entity_reference_label
                 settings:
-                  separator: '-'
-                  format_type: medium
-                  timezone_override: ''
+                  link: true
                 third_party_settings: {  }
-                type: daterange_default
             additional: {  }
-            weight: 12
+            weight: 3
+          28a6f81a-64e5-446c-8939-7323f71b27fe:
+            uuid: 28a6f81a-64e5-446c-8939-7323f71b27fe
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:event:field_individual_organizers'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          7aa5d036-a4e3-470a-b356-15eaf12f9f9b:
+            uuid: 7aa5d036-a4e3-470a-b356-15eaf12f9f9b
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:event:field_url'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol

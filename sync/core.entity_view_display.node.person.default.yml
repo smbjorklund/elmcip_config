@@ -26,13 +26,318 @@ dependencies:
     - address
     - datetime
     - layout_builder
+    - layout_discovery
     - link
     - text
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
-    enabled: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 33-67
+          context_mapping: {  }
+        components:
+          2742387a-7825-4d83-a9aa-0280a73d5114:
+            uuid: 2742387a-7825-4d83-a9aa-0280a73d5114
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_middle_name'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          a2998f84-26c5-4099-b4ec-8ab7c1962a5a:
+            uuid: a2998f84-26c5-4099-b4ec-8ab7c1962a5a
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_authorphoto'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  link: true
+                  view_mode: default
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          25adf5fa-a4de-4c29-b0fb-40e16def7696:
+            uuid: 25adf5fa-a4de-4c29-b0fb-40e16def7696
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_textfield'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          1a66bd6c-527f-4e78-aa7b-5399e7930d20:
+            uuid: 1a66bd6c-527f-4e78-aa7b-5399e7930d20
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_last_name'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          3337baa7-e104-4607-84ba-b849730ae51c:
+            uuid: 3337baa7-e104-4607-84ba-b849730ae51c
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_first_name'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          3141ecde-ce0f-4e55-9494-06fdfb587370:
+            uuid: 3141ecde-ce0f-4e55-9494-06fdfb587370
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_url'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 6
+          aadf1068-78ff-4cbc-a34f-b3bdb694cb99:
+            uuid: aadf1068-78ff-4cbc-a34f-b3bdb694cb99
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_auth_email'
+              formatter:
+                label: above
+                type: email_mailto
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 7
+          71be7d0b-a356-4c35-a927-560a1b56797d:
+            uuid: 71be7d0b-a356-4c35-a927-560a1b56797d
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_orcid'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 11
+          48b3312a-cb9a-4c16-a35b-ea054a269855:
+            uuid: 48b3312a-cb9a-4c16-a35b-ea054a269855
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_nationality'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: address_country_default
+            additional: {  }
+            weight: 12
+          01333765-f693-4ed4-839b-27bc9a67470a:
+            uuid: 01333765-f693-4ed4-839b-27bc9a67470a
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_yearborn'
+              formatter:
+                label: inline
+                type: datetime_default
+                settings:
+                  timezone_override: ''
+                  format_type: html_year
+                third_party_settings: {  }
+            additional: {  }
+            weight: 8
+          81674ec5-6fdc-41f1-9fc0-88c77017389a:
+            uuid: 81674ec5-6fdc-41f1-9fc0-88c77017389a
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_yeardied'
+              formatter:
+                label: inline
+                type: datetime_default
+                settings:
+                  timezone_override: ''
+                  format_type: html_year
+                third_party_settings: {  }
+            additional: {  }
+            weight: 9
+          2efb0c23-02e7-4f5d-a203-fec7b29e7860:
+            uuid: 2efb0c23-02e7-4f5d-a203-fec7b29e7860
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_residency'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: address_default
+            additional: {  }
+            weight: 13
+          c5176e9c-2c77-4ef1-a4ed-72a15856938b:
+            uuid: c5176e9c-2c77-4ef1-a4ed-72a15856938b
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_alternative_spelling_of_na'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+          0f45de03-27d7-42da-8dfa-81493d397dc8:
+            uuid: 0f45de03-27d7-42da-8dfa-81493d397dc8
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_affiliation'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          0ec26c3f-a74b-465e-b820-0807c5c1701c:
+            uuid: 0ec26c3f-a74b-465e-b820-0807c5c1701c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_userid_reference'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 12
+          9e7a20ad-b237-4756-a24c-23b9f80e5317:
+            uuid: 9e7a20ad-b237-4756-a24c-23b9f80e5317
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:person:links'
+            additional: {  }
+            weight: 13
+          af7a607d-0dee-4f7a-a063-56d6ba73ba1e:
+            uuid: af7a607d-0dee-4f7a-a063-56d6ba73ba1e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_editorial_notes'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 17
+          91e9d15a-d86f-4983-bcd0-14d1c8b41d7a:
+            uuid: 91e9d15a-d86f-4983-bcd0-14d1c8b41d7a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_record_status_tax'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 18
+        third_party_settings: {  }
 id: node.person.default
 targetEntityType: node
 bundle: person
