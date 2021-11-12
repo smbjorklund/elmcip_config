@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a3af9824c027032b8fcefc4ce09414d",
+    "content-hash": "b9c4485af4627bd0b9202ef565d8d45d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2973,6 +2973,70 @@
             }
         },
         {
+            "name": "drupal/field_permissions",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_permissions.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_permissions-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "11e31db94999e6871ad7633455315bc27989a7ea"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1598646882",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "mariacha1",
+                    "homepage": "https://www.drupal.org/user/2210776"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                }
+            ],
+            "description": "The Field Permissions module allows site administrators to set field-level permissions to edit, view and create fields on any entity.",
+            "homepage": "https://www.drupal.org/project/field_permissions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_permissions",
+                "issues": "https://www.drupal.org/project/issues/field_permissions"
+            }
+        },
+        {
             "name": "drupal/media_migration",
             "version": "dev-1.x",
             "source": {
@@ -5818,12 +5882,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smbjorklund/uib_humanists.git",
-                "reference": "0dabf7c202e0edfa0df88f42b949e9237c65db60"
+                "reference": "e9a3619e5ac431a7851914878ca869cb41733252"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smbjorklund/uib_humanists/zipball/0dabf7c202e0edfa0df88f42b949e9237c65db60",
-                "reference": "0dabf7c202e0edfa0df88f42b949e9237c65db60",
+                "url": "https://api.github.com/repos/smbjorklund/uib_humanists/zipball/e9a3619e5ac431a7851914878ca869cb41733252",
+                "reference": "e9a3619e5ac431a7851914878ca869cb41733252",
                 "shasum": ""
             },
             "require": {
@@ -5838,7 +5902,7 @@
             "support": {
                 "source": "https://github.com/smbjorklund/uib_humanists/tree/elmcip"
             },
-            "time": "2021-10-27T15:21:29+00:00"
+            "time": "2021-11-12T11:59:13+00:00"
         },
         {
             "name": "solarium/solarium",
