@@ -23,6 +23,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  geolocation: 0
   image: 0
   inline_form_errors: 0
   jsonapi: 0
@@ -30,6 +31,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  location_migration: 0
   media: 0
   media_library: 0
   media_migration: 0
