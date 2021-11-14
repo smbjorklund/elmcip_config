@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_record_status_tax
     - node.type.person
+    - taxonomy.vocabulary.record_status
 id: node.person.field_record_status_tax
 field_name: field_record_status_tax
 entity_type: node
@@ -13,13 +14,16 @@ label: 'Record Status'
 description: 'Editorial status of record, as a taxonomy term. This field can only modified by editors. '
 required: false
 translatable: false
-default_value:
-  -
-    tid: 1489
+default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      record_status: record_status
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

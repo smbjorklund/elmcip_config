@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.person.field_auth_email
     - field.field.node.person.field_authorphoto
     - field.field.node.person.field_editorial_notes
+    - field.field.node.person.field_files
     - field.field.node.person.field_first_name
     - field.field.node.person.field_gender_sel
     - field.field.node.person.field_last_name
@@ -156,6 +157,7 @@ content:
     region: content
 hidden:
   field_authorphoto: true
+  field_files: true
   field_nationality: true
   field_orcid: true
   field_residency: true

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.person.field_auth_email
     - field.field.node.person.field_authorphoto
     - field.field.node.person.field_editorial_notes
+    - field.field.node.person.field_files
     - field.field.node.person.field_first_name
     - field.field.node.person.field_gender_sel
     - field.field.node.person.field_last_name
@@ -111,6 +112,7 @@ hidden:
   field_alternative_spelling_of_na: true
   field_authorphoto: true
   field_editorial_notes: true
+  field_files: true
   field_gender_sel: true
   field_nationality: true
   field_orcid: true

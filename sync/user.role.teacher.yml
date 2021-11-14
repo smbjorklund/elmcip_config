@@ -13,7 +13,6 @@ permissions:
   - 'create field_students'
   - 'create field_teacher_link'
   - 'delete own class_group content'
-  - 'edit field_record_status_tax'
   - 'edit field_students'
   - 'edit field_teacher_link'
   - 'edit own class_group content'
