@@ -43,7 +43,6 @@ permissions:
   - 'view field_location'
   - 'view field_middle_name'
   - 'view field_multi_image'
-  - 'view field_multi_images'
   - 'view field_nationality'
   - 'view field_node_ref'
   - 'view field_node_ref_event'

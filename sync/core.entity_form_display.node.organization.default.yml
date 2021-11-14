@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.organization.field_address
     - field.field.node.organization.field_editorial_notes
     - field.field.node.organization.field_email
+    - field.field.node.organization.field_files
     - field.field.node.organization.field_multi_images
     - field.field.node.organization.field_record_status_tax
     - field.field.node.organization.field_textfield
@@ -49,6 +50,16 @@ content:
       placeholder: ''
       size: 60
     third_party_settings: {  }
+    region: content
+  field_files:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_multi_images:
     weight: 7

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.organization.field_address
     - field.field.node.organization.field_editorial_notes
     - field.field.node.organization.field_email
+    - field.field.node.organization.field_files
     - field.field.node.organization.field_multi_images
     - field.field.node.organization.field_record_status_tax
     - field.field.node.organization.field_textfield
@@ -55,6 +56,7 @@ content:
 hidden:
   field_address: true
   field_editorial_notes: true
+  field_files: true
   field_multi_images: true
   field_record_status_tax: true
   langcode: true

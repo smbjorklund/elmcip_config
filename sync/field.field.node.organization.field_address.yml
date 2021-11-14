@@ -20,6 +20,18 @@ default_value_callback: ''
 settings:
   available_countries: {  }
   langcode_override: ''
-  field_overrides: {  }
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    addressLine1:
+      override: optional
+    addressLine2:
+      override: optional
+    postalCode:
+      override: optional
   fields: {  }
 field_type: address
