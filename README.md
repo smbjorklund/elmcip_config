@@ -12,10 +12,10 @@ Electronic Literature as a Model of Creativity and Innovation in Practice (ELMCI
 
 ## Repositories Drupal 9
 
-* [Drupal 9 config](https://github.com/smbjorklund/elmcip_config)
+* [Drupal 9 config](https://github.com/smbjorklund/elmcip_config) This is where most of the work and issues are tracked and solved.
 * [Drupal 9 custom migrations](https://github.com/smbjorklund/uib_humanists/tree/elmcip) ELMCIP uses the git branch named, `ELMCIP`.
 
-## Data end point
+## Data end-points and exports
 
 * [ELMCIP Drupal 7 CELL OAI-PMH](https://elmcip.net/data/work/oai-pmh)
-* [ELMCIP CLARINO test end point](https://beta.elmcip.net/data/cw/oai/request)
+* [ELMCIP Drupal 9 CLARINO OAI-PMH](https://beta.elmcip.net/oai/request)
