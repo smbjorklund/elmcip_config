@@ -1,0 +1,823 @@
+uuid: 8b691ad5-eb6a-40b5-ada7-1ec49cea2fde
+langcode: en
+status: true
+dependencies: {  }
+id: creative_work
+label: 'Creative work'
+entity_type_id: node
+bundle: work
+fields:
+  nid:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  uuid:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  vid:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  langcode:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  type:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  revision_timestamp:
+    enable: true
+    order: 0
+    exporter: timestamp_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        custom_date_format: ''
+  revision_uid:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  revision_log:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  status:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  uid:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  title:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  created:
+    enable: true
+    order: 0
+    exporter: timestamp_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        custom_date_format: ''
+  changed:
+    enable: true
+    order: 0
+    exporter: timestamp_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        custom_date_format: ''
+  promote:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  sticky:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  default_langcode:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  revision_default:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  revision_translation_affected:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  path:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          alias: alias
+          pid: '0'
+          langcode: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  menu_link:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_abstract_lang:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+          format: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_abstract_lang_tax:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_archiveurl:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_author_name:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_authoring_software_entry:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_brown_digital_repository:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_contributor:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_contributors:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+          format: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_doi:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_downloadurl:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_editorial_notes:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_electronic_literature_dire:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_i_e_poetry_entry:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_in_anthology:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_isbn_text:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_language_tax:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_license:
+    enable: true
+    order: 0
+    exporter: list_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_media_asset:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_multi_image:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_node_ref:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_node_ref_event:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_nt2_entry:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_other_edition_work:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_other_lang_ver_link:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_part_of_another_work:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_po_ex_entry:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_pullquote:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+          format: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_record_status_lib:
+    enable: true
+    order: 0
+    exporter: list_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_record_status_tax:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_repository:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_series_ref:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_tech_notes:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+          format: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_textfield:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+          format: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_the_next:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  field_translator:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_url:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_venue_tax:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_work_platform_software:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  field_work_year:
+    enable: true
+    order: 0
+    exporter: datetime_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        custom_date_format: ''
+  field_worldcat_link:
+    enable: true
+    order: 0
+    exporter: link_export
+    form:
+      options:
+        header: label
+        property:
+          uri: uri
+          title: '0'
+          options: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+  taxonomy_vocabulary_1:
+    enable: true
+    order: 0
+    exporter: entity_reference_export
+    form:
+      options:
+        header: label
+        property:
+          target_id: target_id
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+        explode: ''
+        separator: '|'
+delimiter: ','

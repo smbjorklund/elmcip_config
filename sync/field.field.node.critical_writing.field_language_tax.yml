@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_language_tax
     - node.type.critical_writing
+    - taxonomy.vocabulary.language
 id: node.critical_writing.field_language_tax
 field_name: field_language_tax
 entity_type: node
@@ -16,8 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      language: language
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

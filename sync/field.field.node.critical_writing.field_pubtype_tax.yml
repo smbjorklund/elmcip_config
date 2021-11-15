@@ -5,21 +5,25 @@ dependencies:
   config:
     - field.storage.node.field_pubtype_tax
     - node.type.critical_writing
+    - taxonomy.vocabulary.critical_writing_type
 id: node.critical_writing.field_pubtype_tax
 field_name: field_pubtype_tax
 entity_type: node
 bundle: critical_writing
 label: 'Publication Type'
-description: |-
-  Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.
-  <br><strong>Note</strong>: Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself.
+description: "Indicate the types of publication. CTRL-click or command-click (Apple) to select multiple publication types.\r\n<br><strong>Note</strong>: Only select the term that describes the specific record type. For instance, a review is a review no matter where it is published. An article in a special issue of a print journal is an article in a print publication. The special issue as a whole that contains the article is the special issue, and has a separate record from the article itself."
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      critical_writing_type: critical_writing_type
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

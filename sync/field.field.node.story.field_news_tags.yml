@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_news_tags
     - node.type.story
+    - taxonomy.vocabulary.news_tags
 id: node.story.field_news_tags
 field_name: field_news_tags
 entity_type: node
@@ -16,8 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      news_tags: news_tags
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_record_status_tax
     - node.type.databases_and_archives
+    - taxonomy.vocabulary.record_status
 id: node.databases_and_archives.field_record_status_tax
 field_name: field_record_status_tax
 entity_type: node
@@ -13,13 +14,16 @@ label: 'Record Status'
 description: 'This is the editorial status of a record, now a taxonomy. This value can only be changed by KB editors. '
 required: false
 translatable: false
-default_value:
-  -
-    tid: 1490
+default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      record_status: record_status
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

@@ -1,9 +1,39 @@
 entity_types:
-  node:
-    enable: true
+  block_content:
+    enable: 0
     limit_per_bundle: {  }
-    bundles: {  }
+  comment:
+    enable: 0
+    limit_per_bundle: {  }
+  contact_message:
+    enable: 0
+    limit_per_bundle: {  }
+  file:
+    enable: 0
+    limit_per_bundle: {  }
+  media:
+    enable: 0
+    limit_per_bundle: {  }
+  menu_link_content:
+    enable: 0
+    limit_per_bundle: {  }
+  node:
+    enable: 1
+    limit_per_bundle: {  }
+  path_alias:
+    enable: 0
+    limit_per_bundle: {  }
+  redirect:
+    enable: 0
+    limit_per_bundle: {  }
+  search_api_task:
+    enable: 0
+    limit_per_bundle: {  }
+  taxonomy_term:
+    enable: 0
+    limit_per_bundle: {  }
+  user:
+    enable: 0
+    limit_per_bundle: {  }
 multiple:
   columns: '3'
-_core:
-  default_config_hash: OLsQ9awT8w1v1Kx6OKAoPbiWhQrPFMRDT6uW-S38JKI

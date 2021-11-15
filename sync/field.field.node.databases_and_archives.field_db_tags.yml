@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_db_tags
     - node.type.databases_and_archives
+    - taxonomy.vocabulary.tags
 id: node.databases_and_archives.field_db_tags
 field_name: field_db_tags
 entity_type: node
@@ -16,8 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      tags: tags
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_venue_tax
     - node.type.work
+    - taxonomy.vocabulary.creative_work_type
 id: node.work.field_venue_tax
 field_name: field_venue_tax
 entity_type: node
@@ -16,8 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      creative_work_type: creative_work_type
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.taxonomy_vocabulary_4
     - node.type.teaching_resource
+    - taxonomy.vocabulary.teaching_resource_type
 id: node.teaching_resource.taxonomy_vocabulary_4
 field_name: taxonomy_vocabulary_4
 entity_type: node
@@ -16,8 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      teaching_resource_type: teaching_resource_type
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference
