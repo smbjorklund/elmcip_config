@@ -1,0 +1,22 @@
+uuid: 603c78c9-9662-4d3c-ad7d-7ddea5b53611
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.databases_and_archives
+id: node.databases_and_archives.promote
+field_name: promote
+entity_type: node
+bundle: databases_and_archives
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

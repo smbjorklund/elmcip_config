@@ -5,8 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_files
     - media.type.document
-    - media.type.remote_video
-    - media.type.video
+    - media.type.pdf_file
     - node.type.databases_and_archives
 id: node.databases_and_archives.field_files
 field_name: field_files
@@ -23,8 +22,7 @@ settings:
   handler_settings:
     target_bundles:
       document: document
-      remote_video: remote_video
-      video: video
+      pdf_file: pdf_file
     sort:
       field: _none
       direction: ASC

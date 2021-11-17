@@ -1,0 +1,11 @@
+uuid: 47ed18fd-2ed5-48c6-a2d1-7f3356a8f7e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.databases_and_archives
+id: node.databases_and_archives
+target_entity_type_id: node
+target_bundle: databases_and_archives
+default_langcode: site_default
+language_alterable: false
