@@ -10,7 +10,7 @@ id: node.databases_and_archives.field_db_cross_event
 field_name: field_db_cross_event
 entity_type: node
 bundle: databases_and_archives
-label: Events
+label: 'Exhibited at'
 description: 'If the database or archive has been featured at an event, link to it here. The event will autocomplete if it is in the database. If the event is not yet in the database, <a href="/node/add/event" target="_blank">add the event</a>.'
 required: false
 translatable: false
@@ -19,12 +19,11 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    behaviors:
-      views-select-list:
-        status: 0
+    target_bundles:
+      event: event
     sort:
       field: _none
       direction: ASC
-    target_bundles:
-      event: event
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference
