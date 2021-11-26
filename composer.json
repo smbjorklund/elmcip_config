@@ -44,7 +44,6 @@
         "drupal/restui": "^1.20",
         "drupal/search_api": "^1.20",
         "drupal/search_api_solr": "^4.2",
-        "drush/drush": "^10.3",
         "smbjorklund/uib_humanists": "dev-elmcip"
     },
     "conflict": {
@@ -108,5 +107,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9"
     }
 }
