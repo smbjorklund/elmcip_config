@@ -1,0 +1,29 @@
+uuid: 2046af6e-6356-4e4d-a322-96ba6b0209b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - media.type.document
+    - node.type.work
+id: node.work.field_files
+field_name: field_files
+entity_type: node
+bundle: work
+label: Attachment
+description: 'Attach relevant files here, such as collateral materials or source code.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

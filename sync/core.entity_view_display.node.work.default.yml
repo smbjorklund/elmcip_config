@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.work.field_downloadurl
     - field.field.node.work.field_editorial_notes
     - field.field.node.work.field_electronic_literature_dire
+    - field.field.node.work.field_files
     - field.field.node.work.field_i_e_poetry_entry
     - field.field.node.work.field_in_anthology
     - field.field.node.work.field_isbn_text
@@ -717,7 +718,7 @@ third_party_settings:
                   link: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 16
+            weight: 17
           ef3d33d1-32b6-4db7-b756-f4b0d835109c:
             uuid: ef3d33d1-32b6-4db7-b756-f4b0d835109c
             region: second
@@ -734,22 +735,7 @@ third_party_settings:
                   view_mode: default
                 third_party_settings: {  }
             additional: {  }
-            weight: 15
-          27a4e594-e430-4559-bc94-e2b21551f979:
-            uuid: 27a4e594-e430-4559-bc94-e2b21551f979
-            region: second
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:work:field_tech_notes'
-              formatter:
-                label: above
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-            additional: {  }
-            weight: 17
+            weight: 16
           1f8616f6-a930-476b-984c-e2bb6ee76be6:
             uuid: 1f8616f6-a930-476b-984c-e2bb6ee76be6
             region: second
@@ -764,7 +750,7 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 18
+            weight: 19
           db81c7a9-fa61-4e23-9ea1-027d83916df3:
             uuid: db81c7a9-fa61-4e23-9ea1-027d83916df3
             region: first
@@ -784,6 +770,37 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 1
+          27a4e594-e430-4559-bc94-e2b21551f979:
+            uuid: 27a4e594-e430-4559-bc94-e2b21551f979
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:work:field_tech_notes'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 15
+          dc077d32-c402-4ef1-b09d-97c6013f3f6a:
+            uuid: dc077d32-c402-4ef1-b09d-97c6013f3f6a
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:work:field_files'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 18
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -920,6 +937,14 @@ content:
       target: ''
     third_party_settings: {  }
     region: content
+  field_files:
+    weight: 43
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: first
   field_i_e_poetry_entry:
     label: inline
     weight: 27

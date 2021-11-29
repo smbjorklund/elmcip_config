@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_media_asset
+    - media.type.audio
+    - media.type.image
+    - media.type.video
     - node.type.work
 id: node.work.field_media_asset
 field_name: field_media_asset
@@ -16,8 +19,15 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:media'
   handler_settings:
     target_bundles:
+      audio: audio
+      image: image
       video: video
-  handler: 'default:media'
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
 field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: bc71e524-3d6c-4f67-9dea-68bc4d07c305
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.knowledge_base
+label: 'Knowledge base'
+targetEntityType: node
+cache: true

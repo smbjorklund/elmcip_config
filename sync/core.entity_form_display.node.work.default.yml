@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.work.field_downloadurl
     - field.field.node.work.field_editorial_notes
     - field.field.node.work.field_electronic_literature_dire
+    - field.field.node.work.field_files
     - field.field.node.work.field_i_e_poetry_entry
     - field.field.node.work.field_in_anthology
     - field.field.node.work.field_isbn_text
@@ -58,12 +59,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_abstract_lang:
-    weight: 38
+    weight: 39
     type: text_textarea
     settings:
       rows: 5
@@ -71,13 +72,13 @@ content:
     third_party_settings: {  }
     region: content
   field_abstract_lang_tax:
-    weight: 37
+    weight: 38
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_archiveurl:
-    weight: 11
+    weight: 12
     type: link_default
     settings:
       placeholder_url: ''
@@ -95,14 +96,6 @@ content:
     third_party_settings: {  }
     region: content
   field_authoring_software_entry:
-    weight: 33
-    type: link_default
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    region: content
-  field_brown_digital_repository:
     weight: 34
     type: link_default
     settings:
@@ -110,237 +103,15 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     region: content
+  field_brown_digital_repository:
+    weight: 35
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
   field_contributor:
-    weight: 2
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_contributors:
-    weight: 41
-    type: text_textarea
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_doi:
-    weight: 19
-    type: string_textfield
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_downloadurl:
-    weight: 10
-    type: link_default
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    region: content
-  field_editorial_notes:
-    weight: 18
-    type: string_textfield
-    settings:
-      size: 200
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_electronic_literature_dire:
-    weight: 22
-    type: link_default
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    region: content
-  field_i_e_poetry_entry:
-    weight: 25
-    type: link_default
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    region: content
-  field_in_anthology:
-    weight: 44
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_isbn_text:
-    weight: 21
-    type: string_textfield
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_language_tax:
-    weight: 23
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_license:
-    weight: 24
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_media_asset:
-    weight: 17
-    type: media_library_widget
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
-  field_multi_image:
-    weight: 14
-    type: media_library_widget
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
-  field_node_ref:
-    weight: 5
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_node_ref_event:
-    weight: 27
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_nt2_entry:
-    weight: 28
-    type: link_default
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    region: content
-  field_other_edition_work:
-    weight: 42
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_other_lang_ver_link:
-    weight: 39
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_part_of_another_work:
-    weight: 45
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_po_ex_entry:
-    weight: 30
-    type: link_default
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    region: content
-  field_pullquote:
-    weight: 46
-    type: text_textarea
-    settings:
-      rows: 2
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_record_status_lib:
-    weight: 15
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_record_status_tax:
-    weight: 13
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_repository:
-    weight: 32
-    type: link_default
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    region: content
-  field_series_ref:
-    weight: 43
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_tech_notes:
-    weight: 47
-    type: text_textarea
-    settings:
-      rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_textfield:
-    weight: 36
-    type: text_textarea
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_the_next:
-    weight: 31
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_translator:
     weight: 3
     type: entity_reference_autocomplete
     settings:
@@ -350,8 +121,245 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_contributors:
+    weight: 42
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_doi:
+    weight: 21
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_downloadurl:
+    weight: 11
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_editorial_notes:
+    weight: 20
+    type: string_textfield
+    settings:
+      size: 200
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_electronic_literature_dire:
+    weight: 23
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_files:
+    weight: 17
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_i_e_poetry_entry:
+    weight: 26
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_in_anthology:
+    weight: 45
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_isbn_text:
+    weight: 22
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_language_tax:
+    weight: 24
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_license:
+    weight: 25
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_media_asset:
+    weight: 16
+    type: media_library_widget
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_multi_image:
+    weight: 15
+    type: media_library_widget
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_node_ref:
+    weight: 6
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_node_ref_event:
+    weight: 28
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_nt2_entry:
+    weight: 29
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_other_edition_work:
+    weight: 43
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_other_lang_ver_link:
+    weight: 40
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_part_of_another_work:
+    weight: 46
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_po_ex_entry:
+    weight: 31
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_pullquote:
+    weight: 47
+    type: text_textarea
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_record_status_lib:
+    weight: 18
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_record_status_tax:
+    weight: 14
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_repository:
+    weight: 33
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_series_ref:
+    weight: 44
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_tech_notes:
+    weight: 48
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_textfield:
+    weight: 37
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_the_next:
+    weight: 32
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_translator:
+    weight: 4
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_url:
-    weight: 9
+    weight: 10
     type: link_default
     settings:
       placeholder_url: ''
@@ -359,13 +367,13 @@ content:
     third_party_settings: {  }
     region: content
   field_venue_tax:
-    weight: 7
+    weight: 8
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_work_platform_software:
-    weight: 8
+    weight: 9
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -375,13 +383,13 @@ content:
     third_party_settings: {  }
     region: content
   field_work_year:
-    weight: 4
+    weight: 5
     type: datetime_default
     settings: {  }
     third_party_settings: {  }
     region: content
   field_worldcat_link:
-    weight: 16
+    weight: 19
     type: link_default
     settings:
       placeholder_url: ''
@@ -397,7 +405,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 40
+    weight: 41
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -405,25 +413,25 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 26
+    weight: 27
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 48
+    weight: 49
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 29
+    weight: 30
     region: content
     third_party_settings: {  }
   taxonomy_vocabulary_1:
-    weight: 35
+    weight: 36
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS
@@ -442,7 +450,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -452,7 +460,7 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

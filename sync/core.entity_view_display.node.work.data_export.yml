@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.work.field_downloadurl
     - field.field.node.work.field_editorial_notes
     - field.field.node.work.field_electronic_literature_dire
+    - field.field.node.work.field_files
     - field.field.node.work.field_i_e_poetry_entry
     - field.field.node.work.field_in_anthology
     - field.field.node.work.field_isbn_text
@@ -220,6 +221,7 @@ hidden:
   field_doi: true
   field_editorial_notes: true
   field_electronic_literature_dire: true
+  field_files: true
   field_i_e_poetry_entry: true
   field_isbn_text: true
   field_media_asset: true

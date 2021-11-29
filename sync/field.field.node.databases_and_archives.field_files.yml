@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_files
-    - media.type.document
     - media.type.pdf_file
     - node.type.databases_and_archives
 id: node.databases_and_archives.field_files
@@ -21,7 +20,6 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      document: document
       pdf_file: pdf_file
     sort:
       field: _none
