@@ -1,0 +1,22 @@
+uuid: cdc51196-586f-4109-a224-8dc5126f18e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.critical_writing
+id: node.critical_writing.promote
+field_name: promote
+entity_type: node
+bundle: critical_writing
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

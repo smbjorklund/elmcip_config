@@ -6,11 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'features:0:'
+    parent: ''
+    available_menus: {  }
 name: 'Critical Writing'
 type: critical_writing
 description: "Critical writing, includes monographs, book chapters, journal articles, reviews etc. written about electronic literature or referenced in electronic literature criticism, as well as non-traditional forms of schoarly discourse, such as video interviews, documentaries and webtexts about electronic literature. The title entered should be the name of the specific work described in the record (e.g. the title of an article if the record is for an article in a journal or a book).\r\n\r\nIf you are creating a record for a chapter or article published in a book, first create the record for the book before creating the specific record for the article."
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

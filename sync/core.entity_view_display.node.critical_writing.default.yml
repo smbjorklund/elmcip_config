@@ -65,45 +65,34 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
           label: ''
+          column_widths: 33-67
+          context_mapping: {  }
         components:
-          9936dcd9-7b6a-47be-81d6-e139961eeb03:
-            uuid: 9936dcd9-7b6a-47be-81d6-e139961eeb03
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_author_name'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 0
           9e51e6d0-6285-4469-903e-0186f3129761:
             uuid: 9e51e6d0-6285-4469-903e-0186f3129761
-            region: content
+            region: first
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:critical_writing:field_pubtype_tax'
+              label: 'Publication Type'
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: above
                 type: entity_reference_label
                 settings:
                   link: true
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
-            weight: 1
+            weight: 3
           774d5cef-7aeb-4d2c-89ad-3a97fa7540c1:
             uuid: 774d5cef-7aeb-4d2c-89ad-3a97fa7540c1
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -116,10 +105,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 2
+            weight: 4
           c3274464-337c-4c37-ae58-7144d40f3bc2:
             uuid: c3274464-337c-4c37-ae58-7144d40f3bc2
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -132,10 +121,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 3
+            weight: 5
           f0db0698-0026-4ee8-893a-df029f1040d5:
             uuid: f0db0698-0026-4ee8-893a-df029f1040d5
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -148,10 +137,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 4
+            weight: 6
           10226f37-b19a-497e-9182-989d9da824e9:
             uuid: 10226f37-b19a-497e-9182-989d9da824e9
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -165,10 +154,10 @@ third_party_settings:
                   format_type: html_year
                 third_party_settings: {  }
             additional: {  }
-            weight: 5
+            weight: 7
           bbdc0f81-136c-45b8-9824-25cf099b7cbb:
             uuid: bbdc0f81-136c-45b8-9824-25cf099b7cbb
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -181,10 +170,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 6
+            weight: 8
           a43a8265-3fd2-4397-9da8-ef42ad80fe98:
             uuid: a43a8265-3fd2-4397-9da8-ef42ad80fe98
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -197,10 +186,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 7
+            weight: 9
           b2876980-4b20-4085-be4c-1b3a5d23ab1d:
             uuid: b2876980-4b20-4085-be4c-1b3a5d23ab1d
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -213,10 +202,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 8
+            weight: 10
           178dd049-ceb6-4f71-bb51-e800b443f80c:
             uuid: 178dd049-ceb6-4f71-bb51-e800b443f80c
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -229,10 +218,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 9
+            weight: 11
           d6a0bece-4fa5-4a98-b3ec-030157dcc284:
             uuid: d6a0bece-4fa5-4a98-b3ec-030157dcc284
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -249,10 +238,10 @@ third_party_settings:
                   target: ''
                 third_party_settings: {  }
             additional: {  }
-            weight: 10
+            weight: 12
           6174283d-770e-44d3-b42a-f8ffcc4ff27e:
             uuid: 6174283d-770e-44d3-b42a-f8ffcc4ff27e
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -269,30 +258,33 @@ third_party_settings:
                   target: ''
                 third_party_settings: {  }
             additional: {  }
-            weight: 11
+            weight: 13
           11082fb5-a2e1-4c5c-88a7-dc3825f0db5f:
             uuid: 11082fb5-a2e1-4c5c-88a7-dc3825f0db5f
-            region: content
+            region: first
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:critical_writing:field_worldcat_link'
+              label: 'WorldCat Permalink'
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: above
-                type: link_separate
+                type: link
                 settings:
                   trim_length: 80
-                  rel: ''
-                  target: ''
                   url_only: false
                   url_plain: false
+                  rel: '0'
+                  target: '0'
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
-            weight: 12
+            weight: 14
           9b597428-8835-4865-98d2-68df1e211757:
             uuid: 9b597428-8835-4865-98d2-68df1e211757
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -305,10 +297,10 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 13
+            weight: 16
           9f1c9b49-d80a-496a-a9da-24a2e4a4da02:
             uuid: 9f1c9b49-d80a-496a-a9da-24a2e4a4da02
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -321,10 +313,10 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 14
+            weight: 17
           230c9cd5-2bc1-4411-bbc4-5861a3b6b0b8:
             uuid: 230c9cd5-2bc1-4411-bbc4-5861a3b6b0b8
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -337,10 +329,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 15
+            weight: 18
           304c4d1a-1f4b-4126-b921-177b3d92db88:
             uuid: 304c4d1a-1f4b-4126-b921-177b3d92db88
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -353,10 +345,10 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 16
+            weight: 19
           0ef60d7c-4035-4e4d-8d1b-e5c02b98c906:
             uuid: 0ef60d7c-4035-4e4d-8d1b-e5c02b98c906
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -369,10 +361,10 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 17
+            weight: 20
           8b06ca86-af09-4b0d-a7f8-c546d097354e:
             uuid: 8b06ca86-af09-4b0d-a7f8-c546d097354e
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -385,10 +377,10 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 18
+            weight: 21
           bd9a8c87-7dac-4b61-8120-3a1fba1fada2:
             uuid: bd9a8c87-7dac-4b61-8120-3a1fba1fada2
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -401,10 +393,10 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 19
+            weight: 22
           0f6ffa24-b0cb-4087-94e4-05477cad3593:
             uuid: 0f6ffa24-b0cb-4087-94e4-05477cad3593
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -417,10 +409,10 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 20
+            weight: 23
           5744964b-a97c-4008-9199-9339ee792988:
             uuid: 5744964b-a97c-4008-9199-9339ee792988
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -432,10 +424,10 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 21
+            weight: 24
           190f8018-74b4-414b-b144-219253394370:
             uuid: 190f8018-74b4-414b-b144-219253394370
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -448,10 +440,25 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 22
+            weight: 25
+          e1cbad2c-a9c5-48ad-b9a8-03264533f3ea:
+            uuid: e1cbad2c-a9c5-48ad-b9a8-03264533f3ea
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_record_status_lib'
+              formatter:
+                label: above
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 26
           c098e7b1-db0d-4313-ae32-55f8051b5fd8:
             uuid: c098e7b1-db0d-4313-ae32-55f8051b5fd8
-            region: content
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
@@ -464,143 +471,41 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 23
-          e1cbad2c-a9c5-48ad-b9a8-03264533f3ea:
-            uuid: e1cbad2c-a9c5-48ad-b9a8-03264533f3ea
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_record_status_lib'
-              formatter:
-                label: above
-                type: list_default
-                settings: {  }
-                third_party_settings: {  }
-            additional: {  }
-            weight: 24
-          171e99ea-e40c-4644-a38b-0256878320a5:
-            uuid: 171e99ea-e40c-4644-a38b-0256878320a5
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:taxonomy_vocabulary_1'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 25
-          32d2f7bc-35eb-41c6-8b34-06fd92e6fd73:
-            uuid: 32d2f7bc-35eb-41c6-8b34-06fd92e6fd73
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_abstract'
-              formatter:
-                label: above
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-            additional: {  }
-            weight: 26
-          8b6b134f-1207-41e6-a79f-732fae841e78:
-            uuid: 8b6b134f-1207-41e6-a79f-732fae841e78
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_abstract_lang_tax'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
             weight: 27
-          6bbba280-8325-4dac-acf3-1c6b7bc8a1e0:
-            uuid: 6bbba280-8325-4dac-acf3-1c6b7bc8a1e0
-            region: content
+          ebc8d686-11b9-4bd1-9afa-a9288a3d09ee:
+            uuid: ebc8d686-11b9-4bd1-9afa-a9288a3d09ee
+            region: first
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_abstract_lang'
+              id: 'field_block:node:critical_writing:field_doi'
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 15
+          67eb3839-a8c4-4541-a65d-22ccdd0c94a0:
+            uuid: 67eb3839-a8c4-4541-a65d-22ccdd0c94a0
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_pullquote'
               formatter:
                 label: above
                 type: text_default
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 28
-          f845ce65-8cc8-4466-be4e-c62b9d9c4ab8:
-            uuid: f845ce65-8cc8-4466-be4e-c62b9d9c4ab8
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_other_lang_ver_link'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 29
-          517c6be5-f6c8-43b8-b785-4b7d527ec782:
-            uuid: 517c6be5-f6c8-43b8-b785-4b7d527ec782
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_po_ex_entry'
-              formatter:
-                label: above
-                type: link
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 30
-          1af07060-3a34-4b25-9a78-1be03e70cedc:
-            uuid: 1af07060-3a34-4b25-9a78-1be03e70cedc
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_the_next'
-              formatter:
-                label: above
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-                type: link
-            additional: {  }
-            weight: 31
+            weight: 8
           ee0b3f05-41b5-4b0a-b090-71f8f8393d8d:
             uuid: ee0b3f05-41b5-4b0a-b090-71f8f8393d8d
-            region: content
+            region: second
             configuration:
               label_display: '0'
               context_mapping:
@@ -617,25 +522,112 @@ third_party_settings:
                   target: ''
                 third_party_settings: {  }
             additional: {  }
-            weight: 32
-          67eb3839-a8c4-4541-a65d-22ccdd0c94a0:
-            uuid: 67eb3839-a8c4-4541-a65d-22ccdd0c94a0
-            region: content
+            weight: 6
+          171e99ea-e40c-4644-a38b-0256878320a5:
+            uuid: 171e99ea-e40c-4644-a38b-0256878320a5
+            region: second
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_pullquote'
+              id: 'field_block:node:critical_writing:taxonomy_vocabulary_1'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          6bbba280-8325-4dac-acf3-1c6b7bc8a1e0:
+            uuid: 6bbba280-8325-4dac-acf3-1c6b7bc8a1e0
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_abstract_lang'
               formatter:
                 label: above
                 type: text_default
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 33
+            weight: 2
+          517c6be5-f6c8-43b8-b785-4b7d527ec782:
+            uuid: 517c6be5-f6c8-43b8-b785-4b7d527ec782
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_po_ex_entry'
+              formatter:
+                label: above
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          1af07060-3a34-4b25-9a78-1be03e70cedc:
+            uuid: 1af07060-3a34-4b25-9a78-1be03e70cedc
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_the_next'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 5
+          f845ce65-8cc8-4466-be4e-c62b9d9c4ab8:
+            uuid: f845ce65-8cc8-4466-be4e-c62b9d9c4ab8
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_other_lang_ver_link'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 7
+          32d2f7bc-35eb-41c6-8b34-06fd92e6fd73:
+            uuid: 32d2f7bc-35eb-41c6-8b34-06fd92e6fd73
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_abstract'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
           0c1c9824-b751-4791-a189-acb3e4335b52:
             uuid: 0c1c9824-b751-4791-a189-acb3e4335b52
-            region: content
+            region: second
             configuration:
               label_display: '0'
               context_mapping:
@@ -649,10 +641,10 @@ third_party_settings:
                   link: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 34
+            weight: 10
           899badc4-3950-4135-99a6-ea3d0baed92d:
             uuid: 899badc4-3950-4135-99a6-ea3d0baed92d
-            region: content
+            region: second
             configuration:
               label_display: '0'
               context_mapping:
@@ -666,68 +658,10 @@ third_party_settings:
                   link: false
                 third_party_settings: {  }
             additional: {  }
-            weight: 35
-          4b91e41e-5e6f-42f5-ac3c-2678c68cbe43:
-            uuid: 4b91e41e-5e6f-42f5-ac3c-2678c68cbe43
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:critical_writing:links'
-            additional: {  }
-            weight: 36
-          85b5d008-7ad0-432a-9bc2-a0b298510ed8:
-            uuid: 85b5d008-7ad0-432a-9bc2-a0b298510ed8
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_criticalw_platform_ref'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 37
-          961bc6a1-a0ef-4b3c-9700-93c15f3792cc:
-            uuid: 961bc6a1-a0ef-4b3c-9700-93c15f3792cc
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_database_or_archive_refere'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 38
-          ebc8d686-11b9-4bd1-9afa-a9288a3d09ee:
-            uuid: ebc8d686-11b9-4bd1-9afa-a9288a3d09ee
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_doi'
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            additional: {  }
-            weight: 39
+            weight: 11
           2ea0ded6-5d1e-4dc4-a8bf-83421e25d161:
             uuid: 2ea0ded6-5d1e-4dc4-a8bf-83421e25d161
-            region: content
+            region: second
             configuration:
               label_display: '0'
               context_mapping:
@@ -740,103 +674,58 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
-            weight: 40
-          2d058f59-d511-4f90-b260-e414928c5f0b:
-            uuid: 2d058f59-d511-4f90-b260-e414928c5f0b
+            weight: 9
+          9936dcd9-7b6a-47be-81d6-e139961eeb03:
+            uuid: 9936dcd9-7b6a-47be-81d6-e139961eeb03
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:critical_writing:field_author_name'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          5772520a-58ad-4382-bf3a-c13974501949:
+            uuid: 5772520a-58ad-4382-bf3a-c13974501949
+            region: first
+            configuration:
+              id: 'field_block:node:critical_writing:type'
+              label: 'Content type'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4b91e41e-5e6f-42f5-ac3c-2678c68cbe43:
+            uuid: 4b91e41e-5e6f-42f5-ac3c-2678c68cbe43
             region: content
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_node_ref_work'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
+              id: 'extra_field_block:node:critical_writing:links'
             additional: {  }
-            weight: 41
-          28fc6eb1-25e9-448c-80a7-816d4bf28c41:
-            uuid: 28fc6eb1-25e9-448c-80a7-816d4bf28c41
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_organization_cw'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 42
-          64cab9fc-b422-4ecf-a161-ad3c581af746:
-            uuid: 64cab9fc-b422-4ecf-a161-ad3c581af746
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_other_edition_link'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 43
-          9a59d2c6-c287-4092-a505-5344b3543cbb:
-            uuid: 9a59d2c6-c287-4092-a505-5344b3543cbb
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_publisher_referenced'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 44
-          0f151e56-082a-465a-a618-b1b5ee953cf3:
-            uuid: 0f151e56-082a-465a-a618-b1b5ee953cf3
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_ref_about_event'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 45
-          e5ad44f6-e284-4676-8b13-a51caefb357f:
-            uuid: e5ad44f6-e284-4676-8b13-a51caefb357f
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_tr_critical'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 46
+            weight: 36
         third_party_settings: {  }
 id: node.critical_writing.default
 targetEntityType: node

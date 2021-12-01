@@ -1,0 +1,11 @@
+uuid: 580bf98b-d1bc-4a28-a435-ebd31da8c075
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.critical_writing
+id: node.critical_writing
+target_entity_type_id: node
+target_bundle: critical_writing
+default_langcode: site_default
+language_alterable: false
