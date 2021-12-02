@@ -6,7 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'features:0:'
+    parent: ''
+    available_menus: {  }
 name: 'Creative Work'
 type: work
 description: 'Works of electronic literature, digital literary art, and print antecedents.'

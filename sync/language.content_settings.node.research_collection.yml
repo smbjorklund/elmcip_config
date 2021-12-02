@@ -1,0 +1,11 @@
+uuid: 0a28e58e-57c0-486a-8e89-613381b79ad1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.research_collection
+id: node.research_collection
+target_entity_type_id: node
+target_bundle: research_collection
+default_langcode: site_default
+language_alterable: false

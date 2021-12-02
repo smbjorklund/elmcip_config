@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_record_status_tax
     - node.type.teaching_resource
+    - taxonomy.vocabulary.record_status
 id: node.teaching_resource.field_record_status_tax
 field_name: field_record_status_tax
 entity_type: node
@@ -13,13 +14,16 @@ label: 'Record Status'
 description: 'Editorial status of the record. This field can only be modified by KB editors.'
 required: false
 translatable: false
-default_value:
-  -
-    tid: 1489
+default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      record_status: record_status
     sort:
       field: _none
-  handler: 'default:taxonomy_term'
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

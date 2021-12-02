@@ -6,9 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main:'
-    available_menus:
-      - main
+    parent: ''
+    available_menus: {  }
 name: 'Databases and Archives'
 type: databases_and_archives
 description: 'Databases that document electronic literature and its cultural context, and archives or repositories that preserve and make available related materials.'

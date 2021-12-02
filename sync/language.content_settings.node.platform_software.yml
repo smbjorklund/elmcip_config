@@ -1,0 +1,11 @@
+uuid: c6040747-efa9-4bde-9917-53a4565cfe21
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.platform_software
+id: node.platform_software
+target_entity_type_id: node
+target_bundle: platform_software
+default_langcode: site_default
+language_alterable: false

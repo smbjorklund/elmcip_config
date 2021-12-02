@@ -1,0 +1,22 @@
+uuid: ed4fde6f-ef6a-4773-b5a0-2b7b42da2171
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teaching_resource
+id: node.teaching_resource.promote
+field_name: promote
+entity_type: node
+bundle: teaching_resource
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

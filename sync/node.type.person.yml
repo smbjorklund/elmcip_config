@@ -6,7 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'features:0:'
+    parent: ''
+    available_menus: {  }
 name: Person
 type: person
 description: 'Records for people, such as authors of electronic literature and critical writing, editors, and others. Records include name (required) and optional biographical and location information.'

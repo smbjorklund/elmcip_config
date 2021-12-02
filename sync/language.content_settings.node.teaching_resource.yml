@@ -1,0 +1,11 @@
+uuid: a3dceebf-b9d1-4769-b191-9f2683c41134
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.teaching_resource
+id: node.teaching_resource
+target_entity_type_id: node
+target_bundle: teaching_resource
+default_langcode: site_default
+language_alterable: false

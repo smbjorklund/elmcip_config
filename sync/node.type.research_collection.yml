@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+    available_menus: {  }
+    parent: ''
 name: 'Research Collection'
 type: research_collection
 description: 'A research collection is an aggregation of records in the Knowledge Base that is produced for a particular research project -- for example Luciana Gattass''s Brazilian electronic literature collection.'
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false
