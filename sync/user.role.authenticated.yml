@@ -55,6 +55,7 @@ permissions:
   - 'use text format 2'
   - 'use text format 3'
   - 'use text format basic_html'
+  - 'view class_group revisions'
   - 'view field_abstract'
   - 'view field_abstract_lang'
   - 'view field_author_name'
