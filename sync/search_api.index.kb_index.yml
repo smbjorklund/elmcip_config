@@ -1,0 +1,271 @@
+uuid: c9c6b9e7-06a8-4ab0-b6d3-aa5459fc7b19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - field.storage.node.field_tr_description
+    - field.storage.node.field_abstract_lang
+    - field.storage.node.field_alternative_spelling_of_na
+    - field.storage.node.field_yearborn
+    - field.storage.node.field_yeardied
+    - field.storage.node.field_nationality
+    - field.storage.node.field_record_status_tax
+    - field.storage.node.field_db_tags
+    - field.storage.node.taxonomy_vocabulary_4
+    - field.storage.node.field_critical_writing_year
+    - field.storage.node.field_tr_year
+    - field.storage.node.field_work_year
+    - field.storage.node.field_platform_year
+    - field.storage.node.field_year_initiated
+    - search_api.server.mysql
+  module:
+    - node
+    - search_api
+id: kb_index
+name: 'KB content'
+description: ''
+read_only: false
+field_settings:
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_abstract:
+    label: 'Abstract (in English)'
+    datasource_id: 'entity:node'
+    property_path: field_abstract
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_abstract
+  field_abstract_lang:
+    label: 'Abstract (in original language)'
+    datasource_id: 'entity:node'
+    property_path: field_abstract_lang
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_abstract_lang
+  field_alternative_spelling_of_na:
+    label: 'Alternative spelling of name in original language alphabet'
+    datasource_id: 'entity:node'
+    property_path: field_alternative_spelling_of_na
+    type: text
+    boost: 1.3
+    dependencies:
+      config:
+        - field.storage.node.field_alternative_spelling_of_na
+  field_critical_writing_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_critical_writing_year
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_critical_writing_year
+  field_db_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_db_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_db_tags
+  field_nationality:
+    label: Nationality
+    datasource_id: 'entity:node'
+    property_path: field_nationality
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_nationality
+  field_platform_year:
+    label: 'Year initiated'
+    datasource_id: 'entity:node'
+    property_path: field_platform_year
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_platform_year
+  field_record_status_tax:
+    label: 'Record Status'
+    datasource_id: 'entity:node'
+    property_path: field_record_status_tax
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_record_status_tax
+  field_tr_description:
+    label: 'Abstract (in English)'
+    datasource_id: 'entity:node'
+    property_path: field_tr_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_tr_description
+  field_tr_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_tr_year
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_tr_year
+  field_work_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_work_year
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_work_year
+  field_year_initiated:
+    label: 'Year Initiated'
+    datasource_id: 'entity:node'
+    property_path: field_year_initiated
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_year_initiated
+  field_yearborn:
+    label: Born
+    datasource_id: 'entity:node'
+    property_path: field_yearborn
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_yearborn
+  field_yearborn_1:
+    label: Born
+    datasource_id: 'entity:node'
+    property_path: field_yearborn
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_yearborn
+  field_yeardied:
+    label: Died
+    datasource_id: 'entity:node'
+    property_path: field_yeardied
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_yeardied
+  taxonomy_vocabulary_4:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: taxonomy_vocabulary_4
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.taxonomy_vocabulary_4
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 5
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - class_group
+        - notebook
+        - notebook_entry
+        - page
+        - story
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  html_filter:
+    all_fields: false
+    fields:
+      - field_abstract
+      - field_abstract_lang
+      - field_alternative_spelling_of_na
+      - field_tr_description
+      - title
+      - type
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields:
+      - field_abstract
+      - field_abstract_lang
+      - field_alternative_spelling_of_na
+      - field_tr_description
+      - title
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - field_abstract
+      - field_abstract_lang
+      - field_tr_description
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: true
+    fields:
+      - field_abstract
+      - field_abstract_lang
+      - field_alternative_spelling_of_na
+      - field_tr_description
+      - title
+    ignored: ._-
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  track_changes_in_references: true
+  cron_limit: 50
+server: mysql

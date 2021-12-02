@@ -1,0 +1,28 @@
+uuid: bad479b6-79e1-4a92-9c94-ac6eecc766ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.record_status
+  module:
+    - facets
+    - system
+  theme:
+    - olivero
+id: recordstatus
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:record_status'
+settings:
+  id: 'facet_block:record_status'
+  label: 'Record Status'
+  provider: facets
+  label_display: visible
+  block_id: recordstatus
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false

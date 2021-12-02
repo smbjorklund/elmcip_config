@@ -1,0 +1,14 @@
+uuid: c432cc22-5f30-4e93-9655-05a534d677b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: mysql
+name: Mysql
+description: 'Fallback SQL server if Solr or better are available.'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words

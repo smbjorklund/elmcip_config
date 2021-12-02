@@ -18,6 +18,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_export_csv: 0
+  facets: 0
   field: 0
   field_permissions: 0
   field_ui: 0
@@ -60,8 +61,7 @@ module:
   rest_oai_pmh: 0
   restui: 0
   search_api: 0
-  search_api_solr: 0
-  search_api_solr_admin: 0
+  search_api_db: 0
   serialization: 0
   smart_sql_idmap: 0
   system: 0
