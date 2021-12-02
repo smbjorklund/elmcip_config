@@ -663,16 +663,19 @@ third_party_settings:
             uuid: 2ea0ded6-5d1e-4dc4-a8bf-83421e25d161
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_multi_images'
+              label: Images
+              provider: layout_builder
               label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_multi_images'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
+                view_mode: view_mode
             additional: {  }
             weight: 9
           9936dcd9-7b6a-47be-81d6-e139961eeb03:
