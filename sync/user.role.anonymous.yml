@@ -56,7 +56,6 @@ permissions:
   - 'view field_recordstatus'
   - 'view field_ref_about_event'
   - 'view field_series'
-  - 'view field_teacher_link'
   - 'view field_tech_notes'
   - 'view field_textfield'
   - 'view field_tr_author'
@@ -77,5 +76,4 @@ permissions:
   - 'view imagecache Thumb'
   - 'view media'
   - 'view own field_record_status_tax'
-  - 'view own field_teacher_link'
   - 'view uploaded files'
