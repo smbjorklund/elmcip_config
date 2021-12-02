@@ -1,0 +1,11 @@
+uuid: a40c5d6b-557e-46d2-858d-a7f3a585b1bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.notebook_entry
+id: node.notebook_entry
+target_entity_type_id: node
+target_bundle: notebook_entry
+default_langcode: site_default
+language_alterable: false

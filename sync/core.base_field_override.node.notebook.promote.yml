@@ -1,0 +1,22 @@
+uuid: e120b344-6938-4a56-846c-baa5430d1370
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.notebook
+id: node.notebook.promote
+field_name: promote
+entity_type: node
+bundle: notebook
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

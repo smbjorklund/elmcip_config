@@ -108,6 +108,7 @@ permissions:
   - 'edit own event content'
   - 'edit own field_auth_email'
   - 'edit own field_editorial_notes'
+  - 'edit own field_your_notes'
   - 'edit own notebook content'
   - 'edit own notebook_entry content'
   - 'edit own organization content'
