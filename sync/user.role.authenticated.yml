@@ -118,3 +118,4 @@ permissions:
   - 'view own files'
   - 'view own private files'
   - 'view uploaded files'
+  - 'view work revisions'
