@@ -10,6 +10,7 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'access in-place editing'
   - 'access media browser'
   - 'access search_knowledge_base search_api_page'
   - 'access site-wide contact form'
@@ -40,11 +41,9 @@ permissions:
   - 'edit field_record_status_tax'
   - 'edit own audio files'
   - 'edit own document files'
-  - 'edit own field_your_notes'
   - 'edit own image files'
   - 'edit own video files'
   - 'edit terms in 1'
-  - 'restful post oai_pmh'
   - 'show format selection for blocks'
   - 'show format selection for comments'
   - 'show format selection for nodes'
@@ -119,7 +118,6 @@ permissions:
   - 'view organization revisions'
   - 'view own field_record_status_tax'
   - 'view own field_teacher_link'
-  - 'view own field_your_notes'
   - 'view own files'
   - 'view own private files'
   - 'view own unpublished content'
