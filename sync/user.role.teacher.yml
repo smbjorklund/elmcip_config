@@ -27,6 +27,4 @@ permissions:
   - 'use text format basic_text_editor'
   - 'view class_group revisions'
   - 'view field_students'
-  - 'view field_teacher_link'
   - 'view own field_students'
-  - 'view own field_teacher_link'
