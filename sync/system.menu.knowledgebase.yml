@@ -1,0 +1,8 @@
+uuid: d946f40e-abde-495c-af5f-b3e46d5c6f5d
+langcode: en
+status: true
+dependencies: {  }
+id: knowledgebase
+label: Knowledgebase
+description: 'Used on knowledge base pages'
+locked: false

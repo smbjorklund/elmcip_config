@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_record_status_lib
     - node.type.critical_writing
     - node.type.work
+    - system.menu.knowledgebase
     - taxonomy.vocabulary.critical_writing_type
     - user.role.administrative_editor
     - user.role.administrator
@@ -600,6 +601,15 @@ display:
     display_options:
       display_extenders: {  }
       path: knowledgebase/library_status
+      menu:
+        type: normal
+        title: 'Library approved'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: knowledgebase
     cache_metadata:
       max-age: -1
       contexts:
