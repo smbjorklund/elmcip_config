@@ -1,0 +1,22 @@
+uuid: ea0d5006-d48d-46ba-9b3d-02aa6b02c8a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: landing_page
+label: 'Landing page'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  39465fa7-5317-42b0-8520-0d6d7c551afa:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 39465fa7-5317-42b0-8520-0d6d7c551afa
+selection_logic: and
+weight: -5
+relationships: {  }
