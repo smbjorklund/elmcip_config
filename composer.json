@@ -31,6 +31,7 @@
         "drupal/entity_export_csv": "^1.0@beta",
         "drupal/facets": "^1.8",
         "drupal/field_permissions": "^1.1",
+        "drupal/geofield": "^1.35",
         "drupal/location_migration": "^1.0@beta",
         "drupal/media_migration": "1.x-dev@dev",
         "drupal/metatag": "^1.16",
@@ -44,6 +45,7 @@
         "drupal/restui": "^1.20",
         "drupal/search_api": "^1.20",
         "drupal/search_api_solr": "^4.2",
+        "drupal/views_data_export": "^1.0",
         "smbjorklund/uib_humanists": "dev-elmcip"
     },
     "conflict": {
