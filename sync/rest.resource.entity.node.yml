@@ -1,0 +1,23 @@
+uuid: fac5ba9d-bc84-454c-9e4a-2d1ec7ffa6ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - csv_serialization
+    - node
+    - rest_oai_pmh
+    - serialization
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - csv
+    - oai_dc
+    - json
+    - xml
+  authentication:
+    - basic_auth

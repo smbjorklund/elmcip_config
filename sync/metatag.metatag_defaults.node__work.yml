@@ -1,0 +1,14 @@
+uuid: 64671766-45e6-4805-b6f9-1e9fe7e8484f
+langcode: en
+status: true
+dependencies: {  }
+id: node__work
+label: 'Content: Creative Work'
+tags:
+  dcterms_identifier: '[node:nid]'
+  dcterms_title: '[node:title]'
+  dcterms_type: '[node:field_venue_tax]'
+  dcterms_publisher: '[node:field_node_ref]'
+  dcterms_rights: '[node:field_license]'
+  dcterms_description: '[node:field_textfield:value]'
+  dcterms_language: '[node:field_language_tax]'

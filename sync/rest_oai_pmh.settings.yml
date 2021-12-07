@@ -7,9 +7,13 @@ view_displays:
   'cw_phm:entity_reference_1': 'cw_phm:entity_reference_1'
 support_sets: 1
 metadata_map_plugins:
+  mods: ''
   oai_dc: dublin_core_metatag
   oai_raw: default_metadata_map
 repository_name: ELMCIP
 repository_email: a@a.b
 expiration: '3600'
-cache_technique: liberal_cache
+cache_technique: conservative_cache
+mods_view:
+  view_machine_name: ''
+  view_display_name: ''
