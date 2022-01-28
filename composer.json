@@ -30,7 +30,7 @@
         "drupal/devel": "^4.0",
         "drupal/diff": "^1.0",
         "drupal/entity_export_csv": "^1.0@beta",
-        "drupal/facets": "^1.8",
+        "drupal/facets": "^2.0",
         "drupal/field_permissions": "^1.1",
         "drupal/geofield": "^1.35",
         "drupal/location_migration": "^1.0@beta",
