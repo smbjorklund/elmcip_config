@@ -33,57 +33,57 @@ bundle: event
 mode: teaser
 content:
   field_associated_event:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_curator:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_event_series:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_individual_organizers:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_node_ref:
-    label: inline
-    weight: 4
     type: entity_reference_label
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 4
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   taxonomy_vocabulary_2:
-    label: inline
-    weight: 2
     type: entity_reference_label
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_address: true

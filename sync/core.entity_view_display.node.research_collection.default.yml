@@ -26,114 +26,114 @@ bundle: research_collection
 mode: default
 content:
   field_collection_contributors:
-    label: above
-    weight: 1
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 1
     region: content
   field_collection_curated_by:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_collection_platform_ref:
-    label: above
-    weight: 2
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   field_creative_works:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 6
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_critical_writing:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 7
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_events:
     type: entity_reference_label
-    weight: 8
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 8
+    region: content
   field_media:
-    label: hidden
-    weight: 4
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 4
     region: content
   field_organizations:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 9
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_people:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 10
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_publishers:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 11
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_rc_db_archive:
     type: entity_reference_label
-    weight: 12
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 12
+    region: content
   field_rc_description:
-    label: above
-    weight: 3
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_teaching_resources:
     type: entity_reference_label
-    weight: 13
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-  links:
-    weight: 5
+    weight: 13
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 5
+    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

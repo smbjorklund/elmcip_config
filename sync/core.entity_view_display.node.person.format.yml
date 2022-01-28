@@ -35,47 +35,46 @@ bundle: person
 mode: format
 content:
   field_auth_email:
-    label: hidden
-    weight: 1
     type: email_mailto
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_first_name:
-    label: hidden
-    weight: -3
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: -3
     region: content
   field_last_name:
-    label: hidden
-    weight: -1
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: -1
     region: content
   field_middle_name:
-    label: hidden
-    weight: -2
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: -2
     region: content
   field_textfield:
-    label: hidden
-    weight: 13
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 13
     region: content
   field_url:
-    label: hidden
-    weight: 0
     type: link
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -83,29 +82,30 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 0
     region: content
   field_yearborn:
-    label: hidden
-    weight: 11
     type: datetime_default
+    label: hidden
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
+    weight: 11
     region: content
   field_yeardied:
-    label: hidden
-    weight: 12
     type: datetime_default
+    label: hidden
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
+    weight: 12
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_affiliation: true

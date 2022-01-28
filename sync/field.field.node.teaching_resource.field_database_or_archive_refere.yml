@@ -19,12 +19,12 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    behaviors:
-      views-select-list:
-        status: 0
+    target_bundles:
+      databases_and_archives: databases_and_archives
     sort:
       field: _none
       direction: ASC
-    target_bundles:
-      databases_and_archives: databases_and_archives
+    behaviors:
+      views-select-list:
+        status: 0
 field_type: entity_reference

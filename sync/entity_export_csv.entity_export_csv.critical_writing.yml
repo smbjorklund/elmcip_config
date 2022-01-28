@@ -6,6 +6,7 @@ id: critical_writing
 label: 'Critical writing'
 entity_type_id: node
 bundle: critical_writing
+delimiter: ','
 fields:
   nid:
     enable: true
@@ -894,4 +895,3 @@ fields:
         format: ''
         explode: ''
         separator: '|'
-delimiter: ','

@@ -58,181 +58,180 @@ bundle: work
 mode: token
 content:
   field_abstract_lang:
-    label: hidden
-    weight: 3
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_abstract_lang_tax:
-    label: above
-    weight: 30
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 30
     region: content
   field_author_name:
-    label: hidden
-    weight: -4
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: -4
     region: content
   field_contributor:
-    label: above
-    weight: 24
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 24
     region: content
   field_contributors:
-    label: hidden
-    weight: -3
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: -3
     region: content
   field_editorial_notes:
-    label: above
-    weight: 25
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 25
     region: content
   field_in_anthology:
-    label: hidden
-    weight: 1
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 1
     region: content
   field_language_tax:
-    label: above
-    weight: 29
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 29
     region: content
   field_license:
-    label: hidden
-    weight: 3
     type: list_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_media_asset:
-    label: above
-    weight: 23
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 23
     region: content
   field_multi_image:
-    label: hidden
-    weight: 0
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_node_ref:
-    label: hidden
-    weight: -1
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: -1
     region: content
   field_node_ref_event:
-    label: hidden
-    weight: 0
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_other_edition_work:
-    label: above
-    weight: 26
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 26
     region: content
   field_other_lang_ver_link:
-    label: hidden
-    weight: 5
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 5
     region: content
   field_part_of_another_work:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_pullquote:
-    label: hidden
-    weight: 6
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 6
     region: content
   field_record_status_tax:
-    label: above
-    weight: 27
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 27
     region: content
   field_tech_notes:
-    label: hidden
-    weight: 7
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 7
     region: content
   field_textfield:
-    label: hidden
-    weight: 2
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_translator:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_venue_tax:
-    label: above
-    weight: 28
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 28
     region: content
   field_worldcat_link:
-    label: above
-    weight: 31
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -240,19 +239,20 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 31
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   taxonomy_vocabulary_1:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_archiveurl: true

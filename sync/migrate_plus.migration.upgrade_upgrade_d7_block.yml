@@ -114,7 +114,7 @@ process:
 destination:
   plugin: 'entity:block'
 migration_dependencies:
+  required: {  }
   optional:
     - upgrade_upgrade_d7_custom_block
     - upgrade_upgrade_d7_user_role
-  required: {  }

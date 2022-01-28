@@ -19,61 +19,61 @@ bundle: story
 mode: default
 content:
   body:
-    label: hidden
-    weight: 2
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_files:
-    label: above
-    weight: 5
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 5
     region: content
   field_image:
-    label: hidden
-    weight: 1
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_media_asset:
-    label: above
-    weight: 3
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 3
     region: content
   field_multi_image:
-    label: hidden
-    weight: 4
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 4
     region: content
   field_news_tags:
-    label: inline
-    weight: 0
     type: entity_reference_label
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 6
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

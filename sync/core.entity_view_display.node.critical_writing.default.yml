@@ -61,15 +61,15 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_twocol_section
         layout_settings:
           label: ''
-          column_widths: 33-67
           context_mapping: {  }
+          column_widths: 33-67
         components:
           9e51e6d0-6285-4469-903e-0186f3129761:
             uuid: 9e51e6d0-6285-4469-903e-0186f3129761
@@ -77,159 +77,159 @@ third_party_settings:
             configuration:
               id: 'field_block:node:critical_writing:field_pubtype_tax'
               label: 'Publication Type'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 3
+            additional: {  }
           774d5cef-7aeb-4d2c-89ad-3a97fa7540c1:
             uuid: 774d5cef-7aeb-4d2c-89ad-3a97fa7540c1
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_language_tax'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_language_tax'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 4
+            additional: {  }
           c3274464-337c-4c37-ae58-7144d40f3bc2:
             uuid: c3274464-337c-4c37-ae58-7144d40f3bc2
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_translator'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_translator'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 5
+            additional: {  }
           f0db0698-0026-4ee8-893a-df029f1040d5:
             uuid: f0db0698-0026-4ee8-893a-df029f1040d5
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_editor_name'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_editor_name'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 6
+            additional: {  }
           10226f37-b19a-497e-9182-989d9da824e9:
             uuid: 10226f37-b19a-497e-9182-989d9da824e9
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_critical_writing_year'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_critical_writing_year'
               formatter:
-                label: above
                 type: datetime_default
+                label: above
                 settings:
                   timezone_override: ''
                   format_type: html_year
                 third_party_settings: {  }
-            additional: {  }
             weight: 7
+            additional: {  }
           bbdc0f81-136c-45b8-9824-25cf099b7cbb:
             uuid: bbdc0f81-136c-45b8-9824-25cf099b7cbb
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_node_ref_event'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_node_ref_event'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 8
+            additional: {  }
           a43a8265-3fd2-4397-9da8-ef42ad80fe98:
             uuid: a43a8265-3fd2-4397-9da8-ef42ad80fe98
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_node_ref'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_node_ref'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 9
+            additional: {  }
           b2876980-4b20-4085-be4c-1b3a5d23ab1d:
             uuid: b2876980-4b20-4085-be4c-1b3a5d23ab1d
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_university'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_university'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 10
+            additional: {  }
           178dd049-ceb6-4f71-bb51-e800b443f80c:
             uuid: 178dd049-ceb6-4f71-bb51-e800b443f80c
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_series_ref'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_series_ref'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 11
+            additional: {  }
           d6a0bece-4fa5-4a98-b3ec-030157dcc284:
             uuid: d6a0bece-4fa5-4a98-b3ec-030157dcc284
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_url'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_url'
               formatter:
-                label: above
                 type: link
+                label: above
                 settings:
                   trim_length: 80
                   url_only: false
@@ -237,19 +237,19 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            additional: {  }
             weight: 12
+            additional: {  }
           6174283d-770e-44d3-b42a-f8ffcc4ff27e:
             uuid: 6174283d-770e-44d3-b42a-f8ffcc4ff27e
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_archiveurl'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_archiveurl'
               formatter:
-                label: above
                 type: link
+                label: above
                 settings:
                   trim_length: 80
                   url_only: false
@@ -257,19 +257,22 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            additional: {  }
             weight: 13
+            additional: {  }
           11082fb5-a2e1-4c5c-88a7-dc3825f0db5f:
             uuid: 11082fb5-a2e1-4c5c-88a7-dc3825f0db5f
             region: first
             configuration:
               id: 'field_block:node:critical_writing:field_worldcat_link'
               label: 'WorldCat Permalink'
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                label: above
                 type: link
+                label: above
                 settings:
                   trim_length: 80
                   url_only: false
@@ -277,243 +280,240 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
             weight: 14
+            additional: {  }
           9b597428-8835-4865-98d2-68df1e211757:
             uuid: 9b597428-8835-4865-98d2-68df1e211757
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_isbn_text'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_isbn_text'
               formatter:
-                label: above
                 type: string
+                label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 16
+            additional: {  }
           9f1c9b49-d80a-496a-a9da-24a2e4a4da02:
             uuid: 9f1c9b49-d80a-496a-a9da-24a2e4a4da02
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_edition'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_edition'
               formatter:
-                label: above
                 type: string
+                label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 17
+            additional: {  }
           230c9cd5-2bc1-4411-bbc4-5861a3b6b0b8:
             uuid: 230c9cd5-2bc1-4411-bbc4-5861a3b6b0b8
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_inbook'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_inbook'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 18
+            additional: {  }
           304c4d1a-1f4b-4126-b921-177b3d92db88:
             uuid: 304c4d1a-1f4b-4126-b921-177b3d92db88
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_pagenumbers'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_pagenumbers'
               formatter:
-                label: above
                 type: string
+                label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 19
+            additional: {  }
           0ef60d7c-4035-4e4d-8d1b-e5c02b98c906:
             uuid: 0ef60d7c-4035-4e4d-8d1b-e5c02b98c906
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_journalissue'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_journalissue'
               formatter:
-                label: above
                 type: string
+                label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 20
+            additional: {  }
           8b06ca86-af09-4b0d-a7f8-c546d097354e:
             uuid: 8b06ca86-af09-4b0d-a7f8-c546d097354e
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_issn_text'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_issn_text'
               formatter:
-                label: above
                 type: string
+                label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 21
+            additional: {  }
           bd9a8c87-7dac-4b61-8120-3a1fba1fada2:
             uuid: bd9a8c87-7dac-4b61-8120-3a1fba1fada2
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_eissn'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_eissn'
               formatter:
-                label: above
                 type: string
+                label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 22
+            additional: {  }
           0f6ffa24-b0cb-4087-94e4-05477cad3593:
             uuid: 0f6ffa24-b0cb-4087-94e4-05477cad3593
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_cw_in_platform_software'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_cw_in_platform_software'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 23
+            additional: {  }
           5744964b-a97c-4008-9199-9339ee792988:
             uuid: 5744964b-a97c-4008-9199-9339ee792988
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_license'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_license'
               formatter:
-                label: above
                 type: list_default
+                label: above
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 24
+            additional: {  }
           190f8018-74b4-414b-b144-219253394370:
             uuid: 190f8018-74b4-414b-b144-219253394370
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_record_status_tax'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_record_status_tax'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 25
+            additional: {  }
           e1cbad2c-a9c5-48ad-b9a8-03264533f3ea:
             uuid: e1cbad2c-a9c5-48ad-b9a8-03264533f3ea
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_record_status_lib'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_record_status_lib'
               formatter:
-                label: above
                 type: list_default
+                label: above
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 26
+            additional: {  }
           c098e7b1-db0d-4313-ae32-55f8051b5fd8:
             uuid: c098e7b1-db0d-4313-ae32-55f8051b5fd8
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_editorial_notes'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_editorial_notes'
               formatter:
-                label: above
                 type: string
+                label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 27
+            additional: {  }
           ebc8d686-11b9-4bd1-9afa-a9288a3d09ee:
             uuid: ebc8d686-11b9-4bd1-9afa-a9288a3d09ee
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_doi'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_doi'
               formatter:
                 type: string
                 label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 15
+            additional: {  }
           67eb3839-a8c4-4541-a65d-22ccdd0c94a0:
             uuid: 67eb3839-a8c4-4541-a65d-22ccdd0c94a0
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_pullquote'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_pullquote'
               formatter:
-                label: above
                 type: text_default
+                label: above
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 8
+            additional: {  }
           ee0b3f05-41b5-4b0a-b090-71f8f8393d8d:
             uuid: ee0b3f05-41b5-4b0a-b090-71f8f8393d8d
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_electronic_literature_dire'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_electronic_literature_dire'
               formatter:
-                label: above
                 type: link
+                label: above
                 settings:
                   trim_length: 80
                   url_only: false
@@ -521,50 +521,50 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            additional: {  }
             weight: 6
+            additional: {  }
           171e99ea-e40c-4644-a38b-0256878320a5:
             uuid: 171e99ea-e40c-4644-a38b-0256878320a5
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:taxonomy_vocabulary_1'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:taxonomy_vocabulary_1'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
           6bbba280-8325-4dac-acf3-1c6b7bc8a1e0:
             uuid: 6bbba280-8325-4dac-acf3-1c6b7bc8a1e0
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_abstract_lang'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_abstract_lang'
               formatter:
-                label: above
                 type: text_default
+                label: above
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
           517c6be5-f6c8-43b8-b785-4b7d527ec782:
             uuid: 517c6be5-f6c8-43b8-b785-4b7d527ec782
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_po_ex_entry'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_po_ex_entry'
               formatter:
-                label: above
                 type: link
+                label: above
                 settings:
                   trim_length: 80
                   url_only: false
@@ -572,17 +572,18 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            additional: {  }
             weight: 4
+            additional: {  }
           1af07060-3a34-4b25-9a78-1be03e70cedc:
             uuid: 1af07060-3a34-4b25-9a78-1be03e70cedc
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_the_next'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_the_next'
               formatter:
+                type: link
                 label: above
                 settings:
                   trim_length: 80
@@ -591,128 +592,127 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-                type: link
-            additional: {  }
             weight: 5
+            additional: {  }
           f845ce65-8cc8-4466-be4e-c62b9d9c4ab8:
             uuid: f845ce65-8cc8-4466-be4e-c62b9d9c4ab8
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_other_lang_ver_link'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_other_lang_ver_link'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 7
+            additional: {  }
           32d2f7bc-35eb-41c6-8b34-06fd92e6fd73:
             uuid: 32d2f7bc-35eb-41c6-8b34-06fd92e6fd73
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_abstract'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_abstract'
               formatter:
-                label: above
                 type: text_default
+                label: above
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
           0c1c9824-b751-4791-a189-acb3e4335b52:
             uuid: 0c1c9824-b751-4791-a189-acb3e4335b52
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_media_asset'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_media_asset'
               formatter:
-                label: above
                 type: entity_reference_entity_view
+                label: above
                 settings:
                   view_mode: full
                   link: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 10
+            additional: {  }
           899badc4-3950-4135-99a6-ea3d0baed92d:
             uuid: 899badc4-3950-4135-99a6-ea3d0baed92d
             region: second
             configuration:
+              id: 'field_block:node:critical_writing:field_files'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_files'
               formatter:
-                label: above
                 type: entity_reference_entity_view
+                label: above
                 settings:
                   view_mode: default
                   link: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 11
+            additional: {  }
           2ea0ded6-5d1e-4dc4-a8bf-83421e25d161:
             uuid: 2ea0ded6-5d1e-4dc4-a8bf-83421e25d161
             region: second
             configuration:
               id: 'field_block:node:critical_writing:field_multi_images'
               label: Images
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
             weight: 9
+            additional: {  }
           9936dcd9-7b6a-47be-81d6-e139961eeb03:
             uuid: 9936dcd9-7b6a-47be-81d6-e139961eeb03
             region: first
             configuration:
+              id: 'field_block:node:critical_writing:field_author_name'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:critical_writing:field_author_name'
               formatter:
-                label: above
                 type: entity_reference_label
+                label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
           5772520a-58ad-4382-bf3a-c13974501949:
             uuid: 5772520a-58ad-4382-bf3a-c13974501949
             region: first
             configuration:
               id: 'field_block:node:critical_writing:type'
               label: 'Content type'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: visually_hidden
-                type: entity_reference_label
-                settings:
-                  link: false
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: visually_hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -723,12 +723,12 @@ third_party_settings:
             uuid: 4b91e41e-5e6f-42f5-ac3c-2678c68cbe43
             region: content
             configuration:
+              id: 'extra_field_block:node:critical_writing:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:critical_writing:links'
-            additional: {  }
             weight: 36
+            additional: {  }
         third_party_settings: {  }
 id: node.critical_writing.default
 targetEntityType: node
@@ -736,31 +736,30 @@ bundle: critical_writing
 mode: default
 content:
   field_abstract:
-    label: above
-    weight: 26
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 26
     region: content
   field_abstract_lang:
-    label: above
-    weight: 28
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 28
     region: content
   field_abstract_lang_tax:
     type: entity_reference_label
-    weight: 27
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 27
+    region: content
   field_archiveurl:
-    label: above
-    weight: 11
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -768,92 +767,92 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 11
     region: content
   field_author_name:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_critical_writing_year:
-    label: above
-    weight: 5
     type: datetime_default
+    label: above
     settings:
       timezone_override: ''
       format_type: html_year
     third_party_settings: {  }
+    weight: 5
     region: content
   field_criticalw_platform_ref:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 37
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_cw_in_platform_software:
-    label: above
-    weight: 20
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 20
     region: content
   field_database_or_archive_refere:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 38
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_doi:
     type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 39
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_edition:
-    label: above
-    weight: 14
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 14
     region: content
   field_editor_name:
-    label: above
-    weight: 4
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 4
     region: content
   field_editorial_notes:
-    label: above
-    weight: 23
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 23
     region: content
   field_eissn:
-    label: above
-    weight: 19
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 19
     region: content
   field_electronic_literature_dire:
-    label: above
-    weight: 32
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -861,140 +860,140 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 32
     region: content
   field_files:
-    label: above
-    weight: 35
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 35
     region: content
   field_inbook:
-    label: above
-    weight: 15
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 15
     region: content
   field_isbn_text:
-    label: above
-    weight: 13
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 13
     region: content
   field_issn_text:
-    label: above
-    weight: 18
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 18
     region: content
   field_journalissue:
-    label: above
-    weight: 17
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 17
     region: content
   field_language_tax:
-    label: above
-    weight: 2
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   field_license:
-    label: above
-    weight: 21
     type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 21
     region: content
   field_media_asset:
-    label: above
-    weight: 34
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: full
       link: false
     third_party_settings: {  }
+    weight: 34
     region: content
   field_multi_images:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 40
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_node_ref:
-    label: above
-    weight: 7
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 7
     region: content
   field_node_ref_event:
-    label: above
-    weight: 6
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 6
     region: content
   field_node_ref_work:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 41
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_organization_cw:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 42
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_other_edition_link:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 43
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_other_lang_ver_link:
-    label: above
-    weight: 29
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 29
     region: content
   field_pagenumbers:
-    label: above
-    weight: 16
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 16
     region: content
   field_po_ex_entry:
-    label: above
-    weight: 30
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -1002,63 +1001,64 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 30
     region: content
   field_publisher_referenced:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 44
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_pubtype_tax:
-    label: above
-    weight: 1
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 1
     region: content
   field_pullquote:
-    label: above
-    weight: 33
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 33
     region: content
   field_record_status_lib:
-    label: above
-    weight: 24
     type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 24
     region: content
   field_record_status_tax:
-    label: above
-    weight: 22
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 22
     region: content
   field_ref_about_event:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 45
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_series_ref:
-    label: above
-    weight: 9
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 9
     region: content
   field_the_next:
-    weight: 31
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -1067,36 +1067,35 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 31
     region: content
   field_tr_critical:
     type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 46
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   field_translator:
-    label: above
-    weight: 3
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 3
     region: content
   field_university:
-    label: above
-    weight: 8
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 8
     region: content
   field_url:
-    label: above
-    weight: 10
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -1104,31 +1103,32 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 10
     region: content
   field_worldcat_link:
-    label: above
-    weight: 12
     type: link_separate
+    label: above
     settings:
       trim_length: 80
-      rel: ''
-      target: ''
       url_only: false
       url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
+    weight: 12
     region: content
   links:
-    weight: 36
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 36
+    region: content
   taxonomy_vocabulary_1:
-    label: above
-    weight: 25
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 25
     region: content
 hidden:
   field_testmedia: true

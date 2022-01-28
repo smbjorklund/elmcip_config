@@ -23,23 +23,22 @@ bundle: organization
 mode: token
 content:
   field_email:
-    label: hidden
-    weight: -2
     type: email_mailto
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: -2
     region: content
   field_textfield:
-    label: hidden
-    weight: -2
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: -2
     region: content
   field_url:
-    label: hidden
-    weight: -1
     type: link
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -47,11 +46,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: -1
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_address: true

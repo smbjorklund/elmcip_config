@@ -19,36 +19,36 @@ bundle: story
 mode: token
 content:
   field_files:
-    label: above
-    weight: -1
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: -1
     region: content
   field_image:
-    label: hidden
-    weight: -4
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: -4
     region: content
   field_multi_image:
-    label: above
-    weight: -2
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: -2
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   body: true

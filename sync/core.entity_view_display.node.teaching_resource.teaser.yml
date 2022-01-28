@@ -32,17 +32,17 @@ bundle: teaching_resource
 mode: teaser
 content:
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   taxonomy_vocabulary_4:
-    label: inline
-    weight: 2
     type: entity_reference_label
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_abstract_lang: true

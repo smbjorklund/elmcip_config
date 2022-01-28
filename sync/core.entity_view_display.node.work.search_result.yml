@@ -59,16 +59,15 @@ bundle: work
 mode: search_result
 content:
   field_abstract_lang:
-    label: above
-    weight: 1
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_archiveurl:
-    label: above
-    weight: 8
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -76,34 +75,34 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 8
     region: content
   field_author_name:
-    label: above
-    weight: 3
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 3
     region: content
   field_contributor:
-    label: above
-    weight: 18
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 18
     region: content
   field_contributors:
-    label: above
-    weight: 5
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 5
     region: content
   field_downloadurl:
-    label: above
-    weight: 9
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -111,19 +110,19 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 9
     region: content
   field_editorial_notes:
-    label: above
-    weight: 19
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 19
     region: content
   field_electronic_literature_dire:
-    label: above
-    weight: 28
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -131,11 +130,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 28
     region: content
   field_i_e_poetry_entry:
-    label: above
-    weight: 29
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -143,59 +142,59 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 29
     region: content
   field_in_anthology:
-    label: above
-    weight: 14
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 14
     region: content
   field_isbn_text:
-    label: above
-    weight: 26
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 26
     region: content
   field_license:
-    label: above
-    weight: 7
     type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 7
     region: content
   field_media_asset:
-    label: above
-    weight: 17
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 17
     region: content
   field_node_ref:
-    label: above
-    weight: 11
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 11
     region: content
   field_node_ref_event:
-    label: above
-    weight: 12
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 12
     region: content
   field_nt2_entry:
-    label: above
-    weight: 30
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -203,35 +202,35 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 30
     region: content
   field_other_edition_work:
-    label: above
-    weight: 20
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 20
     region: content
   field_other_lang_ver_link:
-    label: above
-    weight: 2
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 2
     region: content
   field_part_of_another_work:
-    label: above
-    weight: 31
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 31
     region: content
   field_po_ex_entry:
-    label: above
-    weight: 32
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -239,18 +238,18 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 32
     region: content
   field_pullquote:
-    label: above
-    weight: 4
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_repository:
-    label: above
-    weight: 33
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -258,33 +257,33 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 33
     region: content
   field_tech_notes:
-    label: above
-    weight: 13
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 13
     region: content
   field_textfield:
-    label: above
-    weight: 0
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_translator:
-    label: above
-    weight: 27
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 27
     region: content
   field_url:
-    label: above
-    weight: 6
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -292,28 +291,28 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 6
     region: content
   field_work_platform_software:
-    label: above
-    weight: 34
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 34
     region: content
   field_work_year:
-    label: above
-    weight: 35
     type: datetime_default
+    label: above
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
+    weight: 35
     region: content
   field_worldcat_link:
-    label: above
-    weight: 25
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -321,11 +320,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 25
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_abstract_lang_tax: true

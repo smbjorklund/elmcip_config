@@ -1,7 +1,38 @@
 uuid: 7a1cfe1c-41d3-4761-be78-dc1924c9df4f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.image_flickr
+    - media.type.pdf_file
+    - media.type.remote_video
+    - media.type.video
+    - node.type.critical_writing
+    - node.type.databases_and_archives
+    - node.type.event
+    - node.type.notebook
+    - node.type.notebook_entry
+    - node.type.organization
+    - node.type.person
+    - node.type.platform_software
+    - node.type.publisher
+    - node.type.research_collection
+    - node.type.teaching_resource
+    - node.type.work
+    - taxonomy.vocabulary.tags
+  module:
+    - contact
+    - field_permissions
+    - filter
+    - media
+    - node
+    - quickedit
+    - system
+    - taxonomy
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -11,18 +42,11 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access in-place editing'
-  - 'access media browser'
-  - 'access search_knowledge_base search_api_page'
   - 'access site-wide contact form'
-  - 'access solr_search search_api_page'
   - 'access user contact forms'
   - 'access user profiles'
-  - 'add media from remote sources'
-  - 'collapse format fieldset by default'
-  - 'collapsible format selection'
   - 'create audio media'
   - 'create document media'
-  - 'create files'
   - 'create image media'
   - 'create image_flickr media'
   - 'create media'
@@ -30,127 +54,40 @@ permissions:
   - 'create remote_video media'
   - 'create video media'
   - 'delete media'
-  - 'delete own audio files'
   - 'delete own audio media'
-  - 'delete own document files'
   - 'delete own document media'
-  - 'delete own image files'
   - 'delete own image media'
   - 'delete own image_flickr media'
   - 'delete own pdf_file media'
   - 'delete own remote_video media'
-  - 'delete own video files'
   - 'delete own video media'
-  - 'diff view changes'
-  - 'download any audio files'
-  - 'download any document files'
-  - 'download any image files'
-  - 'download any video files'
-  - 'download own audio files'
-  - 'download own document files'
-  - 'download own image files'
-  - 'download own video files'
-  - 'edit any audio files'
   - 'edit any audio media'
-  - 'edit any document files'
   - 'edit any document media'
-  - 'edit any image files'
   - 'edit any image media'
   - 'edit any image_flickr media'
   - 'edit any pdf_file media'
   - 'edit any remote_video media'
-  - 'edit any video files'
   - 'edit any video media'
   - 'edit field_record_status_tax'
-  - 'edit own audio files'
   - 'edit own audio media'
-  - 'edit own document files'
   - 'edit own document media'
-  - 'edit own image files'
   - 'edit own image media'
   - 'edit own image_flickr media'
   - 'edit own pdf_file media'
   - 'edit own remote_video media'
-  - 'edit own video files'
   - 'edit own video media'
-  - 'edit terms in 1'
   - 'edit terms in tags'
-  - 'show format selection for blocks'
-  - 'show format selection for comments'
-  - 'show format selection for nodes'
-  - 'show format tips'
-  - 'show more format tips link'
   - 'update any media'
   - 'update media'
-  - 'use creative commons user defaults'
-  - 'use text format 1'
-  - 'use text format 2'
-  - 'use text format 3'
   - 'use text format basic_html'
   - 'view critical_writing revisions'
   - 'view databases_and_archives revisions'
   - 'view event revisions'
-  - 'view field_abstract'
-  - 'view field_abstract_lang'
-  - 'view field_author_name'
-  - 'view field_contributors'
-  - 'view field_date'
-  - 'view field_downloadurl'
-  - 'view field_edition'
-  - 'view field_editor_name'
-  - 'view field_eissn'
-  - 'view field_email'
-  - 'view field_first_name'
-  - 'view field_flickrset'
-  - 'view field_image'
-  - 'view field_in_anthology'
-  - 'view field_inbook'
-  - 'view field_isbn_text'
-  - 'view field_issn_text'
-  - 'view field_journalissue'
-  - 'view field_language'
-  - 'view field_last_name'
-  - 'view field_license'
-  - 'view field_location'
-  - 'view field_middle_name'
-  - 'view field_nationality'
-  - 'view field_node_ref'
-  - 'view field_node_ref_event'
-  - 'view field_node_ref_work'
-  - 'view field_number'
-  - 'view field_orig_lang'
-  - 'view field_other_lang_ver_link'
-  - 'view field_pagenumbers'
-  - 'view field_pubtype'
-  - 'view field_pullquote'
   - 'view field_record_status_tax'
-  - 'view field_recordstatus'
-  - 'view field_ref_about_event'
-  - 'view field_series'
-  - 'view field_tech_notes'
-  - 'view field_textfield'
-  - 'view field_tr_author'
-  - 'view field_tr_critical'
-  - 'view field_tr_description'
-  - 'view field_tr_org'
-  - 'view field_tr_work'
-  - 'view field_tr_year'
-  - 'view field_url'
-  - 'view field_venue'
-  - 'view field_video'
-  - 'view field_yearborn'
-  - 'view field_yeardied'
-  - 'view files'
-  - 'view imagecache Large'
-  - 'view imagecache Medium'
-  - 'view imagecache Small'
-  - 'view imagecache Thumb'
   - 'view notebook revisions'
   - 'view notebook_entry revisions'
   - 'view organization revisions'
   - 'view own field_record_status_tax'
-  - 'view own files'
-  - 'view own private files'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view person revisions'
@@ -158,5 +95,4 @@ permissions:
   - 'view publisher revisions'
   - 'view research_collection revisions'
   - 'view teaching_resource revisions'
-  - 'view uploaded files'
   - 'view work revisions'

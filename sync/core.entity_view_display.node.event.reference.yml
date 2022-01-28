@@ -34,9 +34,8 @@ bundle: event
 mode: reference
 content:
   field_archiveurl:
-    label: hidden
-    weight: 5
     type: link
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -44,11 +43,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 5
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_address: true

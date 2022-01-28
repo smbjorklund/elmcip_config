@@ -35,17 +35,17 @@ bundle: databases_and_archives
 mode: teaser
 content:
   field_project_type:
-    label: above
-    weight: 2
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_contact_email: true

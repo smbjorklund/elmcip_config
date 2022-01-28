@@ -31,41 +31,40 @@ bundle: platform_software
 mode: search_result
 content:
   field_editorial_notes:
-    label: above
-    weight: 14
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 14
     region: content
   field_license:
-    label: above
-    weight: 5
     type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 5
     region: content
   field_media:
-    label: above
-    weight: 8
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 8
     region: content
   field_platform_developers:
-    label: above
-    weight: 11
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 11
     region: content
   field_platform_versions:
-    label: above
-    weight: 12
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -73,61 +72,61 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 12
     region: content
   field_platform_year:
-    label: above
-    weight: 10
     type: datetime_default
+    label: above
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
+    weight: 10
     region: content
   field_ps_attachment:
-    label: above
-    weight: 7
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 7
     region: content
   field_ps_description:
-    label: above
-    weight: 2
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_ps_image:
-    label: above
-    weight: 6
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 6
     region: content
   field_publisher_or_organization:
-    label: above
-    weight: 9
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 9
     region: content
   field_record_status_tax:
-    label: above
-    weight: 13
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 13
     region: content
   field_repository:
-    label: above
-    weight: 3
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -135,11 +134,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 3
     region: content
   field_url:
-    label: above
-    weight: 1
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -147,18 +146,19 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   field_version_history:
-    label: above
-    weight: 4
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true

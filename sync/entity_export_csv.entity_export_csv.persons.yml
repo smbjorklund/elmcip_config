@@ -6,6 +6,7 @@ id: persons
 label: Persons
 entity_type_id: node
 bundle: person
+delimiter: ','
 fields:
   nid:
     enable: true
@@ -507,4 +508,3 @@ fields:
         property_separate_column: 0
         format: ''
         custom_date_format: ''
-delimiter: ','

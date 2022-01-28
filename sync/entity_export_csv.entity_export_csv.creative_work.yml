@@ -6,6 +6,7 @@ id: creative_work
 label: 'Creative work'
 entity_type_id: node
 bundle: work
+delimiter: ','
 fields:
   nid:
     enable: true
@@ -820,4 +821,3 @@ fields:
         format: ''
         explode: ''
         separator: '|'
-delimiter: ','

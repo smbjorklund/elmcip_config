@@ -60,25 +60,25 @@ bundle: critical_writing
 mode: teaser
 content:
   field_author_name:
-    label: inline
-    weight: 2
     type: entity_reference_label
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   field_pubtype_tax:
-    label: inline
-    weight: 3
     type: entity_reference_label
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 3
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_abstract: true

@@ -35,73 +35,72 @@ bundle: teaching_resource
 mode: token
 content:
   field_abstract_lang:
-    label: hidden
-    weight: 22
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 22
     region: content
   field_image:
-    label: hidden
-    weight: 27
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 27
     region: content
   field_tr_author:
-    label: hidden
-    weight: 19
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 19
     region: content
   field_tr_critical:
-    label: hidden
-    weight: 26
     type: entity_reference_label
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 26
     region: content
   field_tr_description:
-    label: hidden
-    weight: 21
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 21
     region: content
   field_tr_org:
-    label: hidden
-    weight: 20
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 20
     region: content
   field_tr_work:
-    label: hidden
-    weight: 25
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 25
     region: content
   field_tr_year:
-    label: hidden
-    weight: 21
     type: datetime_default
+    label: hidden
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
+    weight: 21
     region: content
   field_url:
-    label: hidden
-    weight: 22
     type: link
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -109,11 +108,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 22
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_abstract_lang_tax: true

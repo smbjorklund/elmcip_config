@@ -6,8 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: ''
     available_menus: {  }
+    parent: ''
 name: Organizations
 type: organization
 description: 'Institutional entities in which groups of persons collaborate for some end related to the field of electronic literature. Examples include: nonprofit organizations, arts organizations, research groups, academic consortia, academic departments, academic prgrams programs, etc. The record includes a descriptions, the location, and contact information about the organization. Note: Journals and presses are listed as Publishers, not as Organizations.'

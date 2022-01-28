@@ -26,63 +26,62 @@ bundle: publisher
 mode: search_result
 content:
   field_editor_name:
-    label: above
-    weight: 3
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 3
     region: content
   field_editorial_notes:
-    label: above
-    weight: 3
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
     region: content
   field_eissn:
-    label: above
-    weight: 0
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_email:
-    label: above
-    weight: 4
     type: email_mailto
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_issn_text:
-    label: above
-    weight: 5
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 5
     region: content
   field_record_status_tax:
-    label: above
-    weight: 2
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   field_textfield:
-    label: hidden
-    weight: 4
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_url:
-    label: above
-    weight: 1
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -90,11 +89,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_address: true

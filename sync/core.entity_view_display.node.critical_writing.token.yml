@@ -63,31 +63,30 @@ bundle: critical_writing
 mode: token
 content:
   field_abstract:
-    label: hidden
-    weight: 36
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 36
     region: content
   field_abstract_lang:
-    label: hidden
-    weight: 37
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 37
     region: content
   field_abstract_lang_tax:
-    label: above
-    weight: 42
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 42
     region: content
   field_archiveurl:
-    label: hidden
-    weight: 12
     type: link
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -95,211 +94,211 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 12
     region: content
   field_author_name:
-    label: hidden
-    weight: 5
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 5
     region: content
   field_edition:
-    label: hidden
-    weight: 35
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 35
     region: content
   field_editor_name:
-    label: hidden
-    weight: 6
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 6
     region: content
   field_editorial_notes:
-    label: above
-    weight: 37
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 37
     region: content
   field_eissn:
-    label: hidden
-    weight: 41
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 41
     region: content
   field_inbook:
-    label: hidden
-    weight: 36
     type: entity_reference_label
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 36
     region: content
   field_isbn_text:
-    label: hidden
-    weight: 34
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 34
     region: content
   field_issn_text:
-    label: hidden
-    weight: 40
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 40
     region: content
   field_journalissue:
-    label: hidden
-    weight: 39
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 39
     region: content
   field_language_tax:
-    label: above
-    weight: 41
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 41
     region: content
   field_license:
-    label: hidden
-    weight: 14
     type: list_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 14
     region: content
   field_media_asset:
-    label: above
-    weight: 33
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 33
     region: content
   field_multi_images:
-    label: hidden
-    weight: 44
     type: entity_reference_entity_view
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 44
     region: content
   field_node_ref:
-    label: hidden
-    weight: 10
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 10
     region: content
   field_node_ref_event:
-    label: hidden
-    weight: 9
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 9
     region: content
   field_node_ref_work:
-    label: hidden
-    weight: 40
     type: entity_reference_label
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 40
     region: content
   field_other_edition_link:
-    label: above
-    weight: 38
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 38
     region: content
   field_other_lang_ver_link:
-    label: hidden
-    weight: 43
     type: entity_reference_label
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 43
     region: content
   field_pagenumbers:
-    label: hidden
-    weight: 37
     type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 37
     region: content
   field_pubtype_tax:
-    label: above
-    weight: 40
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 40
     region: content
   field_pullquote:
-    label: hidden
-    weight: 39
     type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 39
     region: content
   field_record_status_tax:
-    label: above
-    weight: 39
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 39
     region: content
   field_ref_about_event:
-    label: hidden
-    weight: 42
     type: entity_reference_label
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 42
     region: content
   field_tr_critical:
-    label: hidden
-    weight: 41
     type: entity_reference_label
+    label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 41
     region: content
   field_translator:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_worldcat_link:
-    label: above
-    weight: 43
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -307,19 +306,20 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 43
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   taxonomy_vocabulary_1:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_critical_writing_year: true

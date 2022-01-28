@@ -6,8 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: ''
     available_menus: {  }
+    parent: ''
 name: 'Teaching Resource'
 type: teaching_resource
 description: 'Teaching resources including syllabi, lesson plans, exercises, video tutorials, and other pedagogic aids.'

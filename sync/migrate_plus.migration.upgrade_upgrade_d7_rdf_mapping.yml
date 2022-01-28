@@ -51,7 +51,7 @@ process:
 destination:
   plugin: 'entity:rdf_mapping'
 migration_dependencies:
+  required: {  }
   optional:
     - upgrade_upgrade_d7_node_type
     - upgrade_upgrade_d7_taxonomy_vocabulary
-  required: {  }

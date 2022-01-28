@@ -23,48 +23,47 @@ bundle: organization
 mode: search_result
 content:
   field_editorial_notes:
-    label: above
-    weight: 5
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 5
     region: content
   field_email:
-    label: above
-    weight: 4
     type: email_mailto
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_multi_images:
-    label: above
-    weight: 8
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 8
     region: content
   field_record_status_tax:
-    label: above
-    weight: 6
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 6
     region: content
   field_textfield:
-    label: above
-    weight: 2
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_url:
-    label: above
-    weight: 0
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -72,11 +71,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_address: true

@@ -27,32 +27,32 @@ bundle: research_collection
 mode: teaser
 content:
   field_collection_curated_by:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_events:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
   field_rc_description:
-    label: above
-    weight: 0
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_collection_contributors: true

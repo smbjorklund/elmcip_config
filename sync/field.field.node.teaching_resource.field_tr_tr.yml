@@ -18,12 +18,12 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    behaviors:
-      views-select-list:
-        status: 0
+    target_bundles:
+      teaching_resource: teaching_resource
     sort:
       field: _none
       direction: ASC
-    target_bundles:
-      teaching_resource: teaching_resource
+    behaviors:
+      views-select-list:
+        status: 0
 field_type: entity_reference

@@ -33,34 +33,34 @@ bundle: person
 mode: reference
 content:
   field_auth_email:
-    label: hidden
-    weight: 1
     type: email_mailto
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_yearborn:
-    label: hidden
-    weight: 11
     type: datetime_default
+    label: hidden
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
+    weight: 11
     region: content
   field_yeardied:
-    label: hidden
-    weight: 12
     type: datetime_default
+    label: hidden
     settings:
-      format_type: long
       timezone_override: ''
+      format_type: long
     third_party_settings: {  }
+    weight: 12
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_affiliation: true

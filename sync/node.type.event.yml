@@ -6,8 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: ''
     available_menus: {  }
+    parent: ''
 name: Event
 type: event
 description: 'Events include conferences, symposia, festivals, exhibitions, and other occasions where works of scholarship and/or works of electronic literature are presented.'

@@ -13,8 +13,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
     enabled: true
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
@@ -25,30 +25,30 @@ third_party_settings:
             uuid: 3c6ca1ce-32f3-4a60-8f86-aab8230edf69
             region: content
             configuration:
+              id: 'extra_field_block:node:landing_page:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:landing_page:links'
-            additional: {  }
             weight: 0
+            additional: {  }
           a244b123-8271-43ab-8206-ad057e8fe738:
             uuid: a244b123-8271-43ab-8206-ad057e8fe738
             region: content
             configuration:
               id: 'field_block:node:landing_page:field_ingress'
               label: Ingress
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
 id: node.landing_page.default
 targetEntityType: node
@@ -56,16 +56,16 @@ bundle: landing_page
 mode: default
 content:
   field_ingress:
-    weight: 101
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 101
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true

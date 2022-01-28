@@ -6,8 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: ''
     available_menus: {  }
+    parent: ''
 name: Notebook
 type: notebook
 description: 'Users can create notebooks for specific individual research projects and then add references and individual notes to them. To begin a notebook, create a title (e.g. "Research on early hypertext" or "Database narratives" or "Notes for my dissertation"). After you have created the notebook, you can begin adding entries to it.'

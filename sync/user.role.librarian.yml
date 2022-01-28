@@ -1,15 +1,31 @@
 uuid: ee63f023-6268-4141-ac44-7f246213fb23
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.critical_writing
+    - node.type.databases_and_archives
+    - node.type.event
+    - node.type.notebook
+    - node.type.notebook_entry
+    - node.type.organization
+    - node.type.page
+    - node.type.person
+    - node.type.platform_software
+    - node.type.publisher
+    - node.type.research_collection
+    - node.type.story
+    - node.type.teaching_resource
+    - node.type.work
+  module:
+    - field_permissions
+    - node
 id: librarian
 label: Librarian
 weight: 2
 is_admin: null
 permissions:
-  - 'access dashboard'
   - 'change own username'
-  - 'create book content'
   - 'create critical_writing content'
   - 'create databases_and_archives content'
   - 'create event content'
@@ -27,7 +43,6 @@ permissions:
   - 'create story content'
   - 'create teaching_resource content'
   - 'create work content'
-  - 'delete any book content'
   - 'delete any critical_writing content'
   - 'delete any databases_and_archives content'
   - 'delete any event content'
@@ -42,7 +57,6 @@ permissions:
   - 'delete any story content'
   - 'delete any teaching_resource content'
   - 'delete any work content'
-  - 'delete own book content'
   - 'delete own critical_writing content'
   - 'delete own databases_and_archives content'
   - 'delete own event content'
@@ -57,8 +71,6 @@ permissions:
   - 'delete own story content'
   - 'delete own teaching_resource content'
   - 'delete own work content'
-  - 'delete revisions'
-  - 'edit any book content'
   - 'edit any critical_writing content'
   - 'edit any databases_and_archives content'
   - 'edit any event content'
@@ -75,7 +87,6 @@ permissions:
   - 'edit any work content'
   - 'edit field_auth_email'
   - 'edit field_editorial_notes'
-  - 'edit own book content'
   - 'edit own critical_writing content'
   - 'edit own databases_and_archives content'
   - 'edit own event content'
@@ -93,13 +104,8 @@ permissions:
   - 'edit own story content'
   - 'edit own teaching_resource content'
   - 'edit own work content'
-  - 'flag librarian_approved'
-  - 'revert revisions'
-  - 'unflag librarian_approved'
-  - 'use text format basic_text_editor'
   - 'view field_auth_email'
   - 'view field_editorial_notes'
   - 'view own field_auth_email'
   - 'view own field_editorial_notes'
   - 'view own unpublished content'
-  - 'view revisions'

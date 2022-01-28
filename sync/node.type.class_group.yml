@@ -6,9 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: 'main:'
     available_menus:
       - main
+    parent: 'main:'
 name: 'Class Group'
 type: class_group
 description: 'This content type is made for teachers who are using the Knowledge Base with their classes, in order for them to be able to quickly produce a watchlist so that they can access and monitor their students''s work in the Knowledge Base. Students must first have accounts in the Knowledge Base before they can be added to a class list.'

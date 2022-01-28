@@ -64,31 +64,30 @@ bundle: critical_writing
 mode: search_result
 content:
   field_abstract:
-    label: above
-    weight: 6
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 6
     region: content
   field_abstract_lang:
-    label: above
-    weight: 24
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 24
     region: content
   field_abstract_lang_tax:
-    label: above
-    weight: 21
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 21
     region: content
   field_archiveurl:
-    label: above
-    weight: 10
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -96,84 +95,84 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 10
     region: content
   field_author_name:
-    label: above
-    weight: 2
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   field_critical_writing_year:
-    label: above
-    weight: 31
     type: datetime_default
+    label: above
     settings:
-      format_type: year
       timezone_override: ''
+      format_type: year
     third_party_settings: {  }
+    weight: 31
     region: content
   field_criticalw_platform_ref:
-    label: above
-    weight: 39
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 39
     region: content
   field_cw_in_platform_software:
-    label: above
-    weight: 40
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 40
     region: content
   field_database_or_archive_refere:
-    label: above
-    weight: 27
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 27
     region: content
   field_edition:
-    label: above
-    weight: 30
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 30
     region: content
   field_editor_name:
-    label: above
-    weight: 14
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 14
     region: content
   field_editorial_notes:
-    label: above
-    weight: 13
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 13
     region: content
   field_eissn:
-    label: above
-    weight: 9
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 9
     region: content
   field_electronic_literature_dire:
-    label: above
-    weight: 29
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -181,115 +180,115 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 29
     region: content
   field_inbook:
-    label: above
-    weight: 12
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 12
     region: content
   field_isbn_text:
-    label: above
-    weight: 22
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 22
     region: content
   field_issn_text:
-    label: above
-    weight: 19
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 19
     region: content
   field_journalissue:
-    label: above
-    weight: 11
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 11
     region: content
   field_language_tax:
-    label: above
-    weight: 20
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 20
     region: content
   field_license:
-    label: above
-    weight: 3
     type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_multi_images:
-    label: above
-    weight: 37
     type: entity_reference_entity_view
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 37
     region: content
   field_node_ref:
-    label: above
-    weight: 4
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 4
     region: content
   field_node_ref_event:
-    label: above
-    weight: 5
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 5
     region: content
   field_organization_cw:
-    label: above
-    weight: 34
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 34
     region: content
   field_other_edition_link:
-    label: above
-    weight: 15
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 15
     region: content
   field_other_lang_ver_link:
-    label: above
-    weight: 28
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 28
     region: content
   field_pagenumbers:
-    label: above
-    weight: 16
     type: string
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 16
     region: content
   field_po_ex_entry:
-    label: above
-    weight: 38
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -297,74 +296,74 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 38
     region: content
   field_publisher_referenced:
-    label: above
-    weight: 36
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 36
     region: content
   field_pubtype_tax:
-    label: above
-    weight: 18
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 18
     region: content
   field_pullquote:
-    label: above
-    weight: 32
     type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 32
     region: content
   field_record_status_tax:
-    label: above
-    weight: 17
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 17
     region: content
   field_ref_about_event:
-    label: above
-    weight: 8
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 8
     region: content
   field_series_ref:
-    label: above
-    weight: 25
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 25
     region: content
   field_translator:
-    label: above
-    weight: 26
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 26
     region: content
   field_university:
-    label: above
-    weight: 33
     type: entity_reference_label
+    label: above
     settings:
       link: false
     third_party_settings: {  }
+    weight: 33
     region: content
   field_url:
-    label: above
-    weight: 1
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -372,11 +371,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   field_worldcat_link:
-    label: above
-    weight: 23
     type: link
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -384,19 +383,20 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 23
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   taxonomy_vocabulary_1:
-    label: above
-    weight: 0
     type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_doi: true

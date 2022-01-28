@@ -6,8 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    parent: ''
     available_menus: {  }
+    parent: ''
 name: 'Notebook entry'
 type: notebook_entry
 description: 'A content type for individual users to record their own notes with references to records in the Knowledge Base.'
