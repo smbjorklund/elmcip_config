@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24792db61b68117d9a428282532b7ed6",
+    "content-hash": "be7ddaedae3b8f90db66c9338d2df966",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3315,11 +3315,17 @@
         },
         {
             "name": "drupal/media_migration",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/media_migration.git",
-                "reference": "35cd13f7030d271eaaac00b2eb2ffbf0663fc494"
+                "reference": "8.x-1.0-alpha14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_migration-8.x-1.0-alpha14.zip",
+                "reference": "8.x-1.0-alpha14",
+                "shasum": "d0c3617d4198b915a2eec116a5d8ca0873e03067"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3344,15 +3350,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-alpha14+1-dev",
-                    "datestamp": "1651158701",
+                    "version": "8.x-1.0-alpha14",
+                    "datestamp": "1643628516",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -13363,7 +13366,7 @@
         "drupal/config_split": 10,
         "drupal/entity_export_csv": 10,
         "drupal/location_migration": 10,
-        "drupal/media_migration": 20,
+        "drupal/media_migration": 15,
         "drupal/oembed_providers": 5,
         "drupal/rest_oai_pmh": 10,
         "smbjorklund/uib_humanists": 20
@@ -13372,5 +13375,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
