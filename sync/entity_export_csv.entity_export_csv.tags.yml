@@ -1,0 +1,47 @@
+uuid: 4ff7d269-448d-499e-86d0-7cb05158bfde
+langcode: en
+status: true
+dependencies: {  }
+id: tags
+label: Tags
+entity_type_id: taxonomy_term
+bundle: tags
+delimiter: ','
+fields:
+  tid:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  name:
+    enable: true
+    order: 1
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  description:
+    enable: true
+    order: 2
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+          format: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''

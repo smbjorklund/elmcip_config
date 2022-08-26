@@ -54,6 +54,7 @@ dependencies:
     - system
     - taxonomy
     - toolbar
+    - update
 id: administrator
 label: administrator
 weight: 0
@@ -260,3 +261,4 @@ permissions:
   - 'view page revisions'
   - 'view story revisions'
   - 'view the administration theme'
+  - 'view update notifications'

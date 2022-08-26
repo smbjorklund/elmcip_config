@@ -19,7 +19,96 @@ entity_types:
     limit_per_bundle: {  }
   node:
     enable: 1
-    limit_per_bundle: {  }
+    limit_per_bundle:
+      critical_writing: critical_writing
+      databases_and_archives: databases_and_archives
+      event: event
+      organization: organization
+      person: person
+      platform_software: platform_software
+      publisher: publisher
+      work: work
+    bundles:
+      critical_writing:
+        nid: nid
+        uuid: uuid
+        title: title
+        field_abstract: field_abstract
+        field_abstract_lang: field_abstract_lang
+        field_abstract_lang_tax: field_abstract_lang_tax
+        field_author_name: field_author_name
+        field_critical_writing_year: field_critical_writing_year
+        field_criticalw_platform_ref: field_criticalw_platform_ref
+        field_cw_in_platform_software: field_cw_in_platform_software
+        field_database_or_archive_refere: field_database_or_archive_refere
+        field_doi: field_doi
+        field_edition: field_edition
+        field_editor_name: field_editor_name
+        field_eissn: field_eissn
+        field_electronic_literature_dire: field_electronic_literature_dire
+        field_isbn_text: field_isbn_text
+        field_issn_text: field_issn_text
+        field_journalissue: field_journalissue
+        field_language_tax: field_language_tax
+        field_license: field_license
+        field_node_ref: field_node_ref
+        field_node_ref_event: field_node_ref_event
+        field_node_ref_work: field_node_ref_work
+        field_organization_cw: field_organization_cw
+        field_other_edition_link: field_other_edition_link
+        field_other_lang_ver_link: field_other_lang_ver_link
+        field_pagenumbers: field_pagenumbers
+        field_po_ex_entry: field_po_ex_entry
+        field_publisher_referenced: field_publisher_referenced
+        field_pubtype_tax: field_pubtype_tax
+        field_pullquote: field_pullquote
+        field_ref_about_event: field_ref_about_event
+        field_series_ref: field_series_ref
+        field_the_next: field_the_next
+        field_tr_critical: field_tr_critical
+        field_university: field_university
+        field_worldcat_link: field_worldcat_link
+        taxonomy_vocabulary_1: taxonomy_vocabulary_1
+      databases_and_archives: {  }
+      event: {  }
+      organization: {  }
+      person: {  }
+      platform_software: {  }
+      publisher: {  }
+      work:
+        nid: nid
+        uuid: uuid
+        title: title
+        created: created
+        field_abstract_lang: field_abstract_lang
+        field_abstract_lang_tax: field_abstract_lang_tax
+        field_archiveurl: field_archiveurl
+        field_author_name: field_author_name
+        field_authoring_software_entry: field_authoring_software_entry
+        field_brown_digital_repository: field_brown_digital_repository
+        field_doi: field_doi
+        field_electronic_literature_dire: field_electronic_literature_dire
+        field_i_e_poetry_entry: field_i_e_poetry_entry
+        field_in_anthology: field_in_anthology
+        field_isbn_text: field_isbn_text
+        field_language_tax: field_language_tax
+        field_license: field_license
+        field_node_ref: field_node_ref
+        field_node_ref_event: field_node_ref_event
+        field_nt2_entry: field_nt2_entry
+        field_other_edition_work: field_other_edition_work
+        field_other_lang_ver_link: field_other_lang_ver_link
+        field_part_of_another_work: field_part_of_another_work
+        field_po_ex_entry: field_po_ex_entry
+        field_pullquote: field_pullquote
+        field_repository: field_repository
+        field_series_ref: field_series_ref
+        field_textfield: field_textfield
+        field_the_next: field_the_next
+        field_work_platform_software: field_work_platform_software
+        field_work_year: field_work_year
+        field_worldcat_link: field_worldcat_link
+        taxonomy_vocabulary_1: taxonomy_vocabulary_1
   path_alias:
     enable: 0
     limit_per_bundle: {  }
@@ -30,10 +119,45 @@ entity_types:
     enable: 0
     limit_per_bundle: {  }
   taxonomy_term:
-    enable: 0
-    limit_per_bundle: {  }
+    enable: 1
+    limit_per_bundle:
+      creative_work_type: creative_work_type
+      critical_writing_type: critical_writing_type
+      event_type: event_type
+      language: language
+      project_type: project_type
+      publisher_and_journal_types: publisher_and_journal_types
+      tags: tags
+    bundles:
+      creative_work_type:
+        tid: tid
+        name: name
+        description: description
+      critical_writing_type:
+        tid: tid
+        name: name
+        description: description
+      event_type:
+        tid: tid
+        name: name
+        description: description
+      language:
+        tid: tid
+        name: name
+      project_type:
+        tid: tid
+        name: name
+        description: description
+      publisher_and_journal_types:
+        tid: tid
+        name: name
+        description: description
+      tags:
+        tid: tid
+        name: name
+        description: description
   user:
     enable: 0
     limit_per_bundle: {  }
 multiple:
-  columns: '3'
+  columns: '10'

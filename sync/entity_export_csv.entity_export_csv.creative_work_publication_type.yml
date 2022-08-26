@@ -1,0 +1,47 @@
+uuid: e2dbb0dc-987b-463c-aedb-58b9533faca9
+langcode: en
+status: true
+dependencies: {  }
+id: creative_work_publication_type
+label: 'Creative work publication type'
+entity_type_id: taxonomy_term
+bundle: creative_work_type
+delimiter: ','
+fields:
+  tid:
+    enable: true
+    order: 0
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  name:
+    enable: true
+    order: 1
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
+  description:
+    enable: true
+    order: 2
+    exporter: default_export
+    form:
+      options:
+        header: label
+        property:
+          value: value
+          format: '0'
+        property_separator: '|'
+        property_separate_column: 0
+        format: ''
