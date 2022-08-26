@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be7ddaedae3b8f90db66c9338d2df966",
+    "content-hash": "dea1d2e17a6d2fba835afade7760f413",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6607,14 +6607,8 @@
             "version": "dev-elmcip",
             "source": {
                 "type": "git",
-                "url": "https://github.com/smbjorklund/uib_humanists.git",
+                "url": "https://github.com/smbjorklund/uib_humanists",
                 "reference": "fbfe2d887660ce4d8278f74ba0dcdf728493be98"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/smbjorklund/uib_humanists/zipball/fbfe2d887660ce4d8278f74ba0dcdf728493be98",
-                "reference": "fbfe2d887660ce4d8278f74ba0dcdf728493be98",
-                "shasum": ""
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -6625,9 +6619,6 @@
             ],
             "description": "ELMCIP custom migration from Drupal 7 to 9.",
             "homepage": "https://github.org/smbjorklund/uib_humanists",
-            "support": {
-                "source": "https://github.com/smbjorklund/uib_humanists/tree/elmcip"
-            },
             "time": "2021-11-18T16:18:39+00:00"
         },
         {

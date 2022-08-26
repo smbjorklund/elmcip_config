@@ -14,8 +14,9 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/smbjorklund/uib_humanists"
+            "type": "git",
+            "url": "https://github.com/smbjorklund/uib_humanists",
+            "no-api": true
         }
     ],
     "require": {
